@@ -4,41 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <section class="home" id="topo">
-        <h1>Nome ou logo da loja</h1>
-
-        <nav class="navegacao">
-            <ul>
-                <li><a href="#" target="_blank">sobre</a></li>
-                <li><a href="#" target="_blank">para homens</a></li>
-                <li><a href="#" target="_blank">para mulheres</a></li>
-                <li><a href="#" target="_blank">blog</a></li>
-                <li><a href="#" target="_blank">contatos</a></li>
-            </ul>
-        </nav>
-        <a href="">Compre agora!</a>
+        <div>
+            <h1 class="logotipo">Nome ou logo da loja</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#" target="_blank">sobre</a></li>
+                    <li><a href="#" target="_blank">para homens</a></li>
+                    <li><a href="#" target="_blank">para mulheres</a></li>
+                    <li><a href="#" target="_blank">blog</a></li>
+                    <li><a href="#" target="_blank">contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a class="compra" href="#">Compre agora seus sapatos!</a>
     </section>
 
     <section class="oferta-do-dia">
         <div class="oferta">
-            <video src="">
-                <source src="" type="">
-            </video>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <h1 class="titulo-oferta">Oferta do dia</h1>
+            <hr>
+            <p class="descricao-oferta">Tênis Adidas Samba Og</p>
+            <p class="preco-oferta">R$699 ou em 10x de R$70 sem juros</p>
+            <p class="tamanho">
+                <label for="tamanho">Tamanho do calçado: </label>
+                <input type="number" name="tamanhos" id="tamanho">
+            </p>
+            <a href="#" class="comprar-agora">comprar agora</a>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/RUW6X_J_c_0?si=BccDRzxi4l9UBP7c&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3 class="escolha-cor">Escolha a sua cor</h3>
+            <hr class="abaixo">
+            <div class="cores">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Tenis_Samba_OG_Branco_B75806_01_standard.jpg" alt="tênis Samba na cor branca">
+                <input type="checkbox" name="cor" id="branco">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c70105150234ac4b948a8bf01187e0c_9366/Tenis_Samba_OG_Preto_B75807_01_standard.jpg" alt="Tênis Samba na cor preta">
+                <input type="checkbox" name="cor" id="preto">
+            </div>
         </div>
         <div class="adicional">
-            <img src="" alt="" class="over">
-            <p>Sua preferência:</p>
-            <button>Confortável</button>
-            <button>Normal</button>
-            <button>solto</button>
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ec595635a2994adea094a8bf0117ef1a_9366/Tenis_Samba_OG_Branco_B75806_02_standard.jpg" alt="parte de cima do tênis" class="over">
         </div>
     </section>
 
