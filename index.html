@@ -22,7 +22,7 @@
                     <li><a href="#" target="_blank">sobre</a></li>
                     <li><a href="#" target="_blank">para homens</a></li>
                     <li><a href="#" target="_blank">para mulheres</a></li>
-                    <li><a href="#" target="_blank">blog</a></li>
+                    <li><a href="#" target="_blank">loja</a></li>
                     <li><a href="#" target="_blank">contatos</a></li>
                 </ul>
             </nav>
@@ -40,7 +40,7 @@
             <hr>
 
             <p class="descricao-oferta">Tênis Adidas Samba Og</p>
-            <p class="preco-oferta">de <del>R$699</del> por R$399 ou em 10x de R$40 sem juros</p>
+            <p class="preco-oferta" onmousemove="mostrarCaixaDeZoom(event)" onmouseout="esconderCaixaDeZoom()">de <del>R$699</del> por R$399 ou em 10x de R$40 sem juros</p>
             <p class="tamanho">
                 <label for="tamanho">Tamanho do calçado: </label>
                 <input type="number" name="tamanhos" id="tamanho">
@@ -52,46 +52,51 @@
             <h3 class="escolha-cor">Escolha a sua cor</h3>
             <hr class="abaixo">
             <div class="cores">
-                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Tenis_Samba_OG_Branco_B75806_01_standard.jpg" alt="tênis Samba na cor branca">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Tenis_Samba_OG_Branco_B75806_01_standard.jpg" alt="tênis Samba na cor branca" class="cor">
                 <input type="checkbox" name="cor" id="branco">
 
-                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c70105150234ac4b948a8bf01187e0c_9366/Tenis_Samba_OG_Preto_B75807_01_standard.jpg" alt="Tênis Samba na cor preta">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c70105150234ac4b948a8bf01187e0c_9366/Tenis_Samba_OG_Preto_B75807_01_standard.jpg" alt="Tênis Samba na cor preta" class="cor">
                 <input type="checkbox" name="cor" id="preto">
             </div>
         </div>
 
         <div class="adicional">
-            <img class="seta-esquerda" id="seta-left" src="src/icons/seta.png" alt="seta para a esquerda - mudar imagem" onmouseover="this.src='src/icons/seta-m.gif'" onmouseout="this.src='src/icons/seta.png'">
+            <img class="seta-esquerda" id="seta-left" src="src/icons/seta.png" alt="seta para a esquerda - mudar imagem" onmouseover="this.src='src/icons/seta-m1.gif';style='top: 45.5%;'" onmouseout="this.src='src/icons/seta.png';style='top: 48%;'">
 
             <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ec595635a2994adea094a8bf0117ef1a_9366/Tenis_Samba_OG_Branco_B75806_02_standard.jpg" alt="parte de cima do tênis" class="over">
 
-            <img class="seta-direita" id="seta-right" src="src/icons/seta.png" alt="seta para a direita - mudar imagem" onmouseover="this.src='src/icons/seta-m1.gif'" onmouseout="this.src='src/icons/seta.png'">
+            <img class="seta-direita" id="seta-right" src="src/icons/seta.png" alt="seta para a direita - mudar imagem" onmouseover="this.src='src/icons/seta-m1.gif';style='top: 45.5%;'" onmouseout="this.src='src/icons/seta.png';style='top: 48%;'">
         </div>
     </section>
 
     <section class="lancamentos">
-        <div class="produto-lancamento">
-            <video src=""></video>
-            <p><a href=""></a></p>
-            <p></p>
-        </div>
+        <h1 class="titulo-lancamento">Lançamentos</h1>
 
-        <div class="produto-lancamento">
-            <video src=""></video>
-            <p><a href=""></a></p>
-            <p></p>
-        </div>
+        <div class="container">
+            <div class="produto-lancamento">
+                <video src="src/video/Tênis_Asics_Gel_Nagoya_6_Preto_e_Branco(1080p).mp4" playsinline class="video"></video>
+                <p class="nome-lancamento"><a href="">TÊNIS ASICS GEL-NAGOYA 6 - FEMININO - PRETO COM BRANCO E DOURADO</a></p>
+                <p class="preco-lancamento">R$499,99</p>
+                <p class="segunda-opcao" onmousemove="mostrarCaixaDeZoom(event)" onmouseout="esconderCaixaDeZoom()">ou até 10x de R$50,00 </p>
+            </div>
 
-        <div class="produto-lancamento">
-            <video src=""></video>
-            <p><a href=""></a></p>
-            <p></p>
-        </div>
+            <div class="produto-lancamento">
+                <video src="" playsinline class="video"></video>
+                <p><a href=""></a></p>
+                <p></p>
+            </div>
 
-        <div class="produto-lancamento">
-            <video src=""></video>
-            <p><a href=""></a></p>
-            <p></p>
+            <div class="produto-lancamento">
+                <video src="" playsinline class="video"></video>
+                <p><a href=""></a></p>
+                <p></p>
+            </div>
+
+            <div class="produto-lancamento">
+                <video src="" playsinline class="video"></video>
+                <p><a href=""></a></p>
+                <p></p>
+            </div>
         </div>
     </section>
 
@@ -160,6 +165,10 @@
         <h2></h2>
         <h6></h6>
     </section>
+
+    <div class="caixa-de-zoom" id="caixa-de-zoom"></div>
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
