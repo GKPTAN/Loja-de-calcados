@@ -227,6 +227,7 @@ body {
             & .preco-oferta {
                 font-family: 'Caladea', serif;
                 margin-bottom: 5px;
+                width: 40%;
             }
 
             & .tamanho {
@@ -492,6 +493,138 @@ body {
                 }
             }
         }
+    }
+
+    & .pagamento {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        padding: 50px 50px;
+        
+        & .titulo-pagamento {
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Caladea', serif;
+            font-size: 3rem;
+            margin-bottom: 50px;
+        }
+
+        & .metodos {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 250px;
+
+            & .cartoes {
+                display: flex;
+                flex-direction: column;
+
+                & .titulo-cartoes {
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    font-family: 'Caladea', serif;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    & img {
+                        margin-left: 10px;
+                    }
+                }
+
+                & .icones-cartoes {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 15px;
+                    row-gap: 5px;
+                }
+            }
+
+            & .intermediario {
+                display: flex;
+                flex-direction: column;
+
+                & .titulo-intermediario {
+                    color: white;
+                    font-family: 'Caladea', serif;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                & .meios-online {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 30px;
+                    row-gap: 20px;
+
+                    & .branco {
+                        background-color: white;
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+
+                    & .branco-2 {
+                        background-color: white;
+                        border-radius: 20px;
+                    }
+                }
+            }
+
+            & .outros-meios {
+                display: flex;
+                flex-direction: column;
+
+                & .titulo-outros-meios {
+                    color: white;
+                    font-family: 'Caladea', serif;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                & .metodos-adicionais {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 15px;
+                    margin-bottom: 20px;
+
+                    & div {
+                        display: flex;
+                        align-items: center;
+
+                        & .nome {
+                            margin-left: 2px;
+                            color: white;
+                        }
+                    }
+                }
+
+                & .camera {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & .titulo-camera {
+                        color: white;
+                        font-family: 'Caladea', serif;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    & .fundo {
+                        background-color: white;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .depoimentos {
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 
