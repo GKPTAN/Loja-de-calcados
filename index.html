@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="src/style/reset.css" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="src/style/submit.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/js/reveal.js" defer></script>
     <title>Document</title>
   </head>
 
@@ -34,10 +36,10 @@
         </nav>
       </div>
 
-      <a class="compra" href="#">Compre agora seus sapatos!</a>
+      <a class="compra" href="https://www.adidas.com.br/" target="_blank">Compre agora seus sapatos!</a>
     </section>
 
-    <section class="oferta-do-dia">
+    <section class="oferta-do-dia efeito-reveal-oferta">
       <div class="oferta">
         <span class="esquerda">CH</span>
         <h2 class="titulo-oferta">Oferta do dia</h2>
@@ -51,11 +53,12 @@
         >
           de <del>R$699</del> por R$399 ou em 10x de R$40 sem juros
         </p>
-        <button id="zoom"><img class="zoom" src="src/icons/zoom-in.png" alt="aumentar fonte" title="aumentar fonte"></button>
+        <button id="zoom-up"><img class="zoom" src="src/icons/zoom-in.png" alt="aumentar fonte" title="aumentar fonte"></button>
+        <button id="zoom-down"><img src="src/icons/zoom-out.png" alt="diminuir fonte" title="diminuir fonte"></button>
 
         <p class="tamanho">
           <label for="tamanho">Tamanho do calçado: </label>
-          <input type="number" name="tamanhos" id="tamanho" />
+          <input type="number" name="tamanhos" id="tamanho" min="1" max="99" />
         </p>
         <a href="#" class="comprar-agora">comprar agora</a>
 
@@ -113,11 +116,11 @@
       </div>
     </section>
 
-    <section class="lancamentos">
+    <section class="lancamentos efeito-reveal-lancamentos">
       <h2 class="titulo-lancamento">Lançamentos</h2>
 
       <div class="container">
-        <div class="produto-lancamento">
+        <div class="produto-lancamento efeito-reveal-produto1">
           <video
             src="src/video/Tênis_Asics_Gel_Nagoya_6_Preto_e_Branco(1080p).mp4"
             playsinline
@@ -137,7 +140,7 @@
           </p>
         </div>
 
-        <div class="produto-lancamento">
+        <div class="produto-lancamento efeito-reveal-produto2">
           <video
             src="src/video/Air_Jordan_38_Low_Black_Gamma_Blue_Basketball_Shoes(720p).mp4"
             playsinline
@@ -154,7 +157,7 @@
           </p>
         </div>
 
-        <div class="produto-lancamento">
+        <div class="produto-lancamento efeito-reveal-produto3">
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Mater_Splinter_Shoes(720p).mp4"
             playsinline
@@ -171,7 +174,7 @@
           </p>
         </div>
 
-        <div class="produto-lancamento">
+        <div class="produto-lancamento efeito-reveal-produto4">
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Shredder_Shoes(720p).mp4"
             playsinline
@@ -188,12 +191,14 @@
           </p>
         </div>
       </div>
+
+      <a class="loja" href="https://www.nike.com.br/nav?sorting=DescReleaseDate" target="_blank">Ir direto pra loja</a> <!-- Opcional -->
     </section>
 
-    <section class="destaques">
+    <section class="destaques efeito-reveal-destaques">
       <h2 class="titulo-destaque">Destaques</h2>
       <div class="container">
-        <div class="produto-destaque">
+        <div class="produto-destaque efeito-reveal-destaque1">
           <video
             src="src/video/ADIDAS_SAMBA_OG___KICKS_ON_FEET(720p).mp4"
             poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
@@ -207,7 +212,7 @@
           </p>
         </div>
 
-        <div class="produto-destaque">
+        <div class="produto-destaque efeito-reveal-destaque2">
           <video
             src="src/video/Tênis_Adidas_FX3632_Ultimashow_Preto(720p)_1.mp4"
           ></video>
@@ -220,7 +225,7 @@
           </p>
         </div>
 
-        <div class="produto-destaque">
+        <div class="produto-destaque efeito-reveal-destaque3">
           <video
             src="src/video/Sapato_Social_Masculino_Derby_Sandro_Moscoloni_Rafael(720p).mp4"
             poster="src/image/file.avif"
@@ -239,7 +244,7 @@
           </p>
         </div>
 
-        <div class="produto-destaque">
+        <div class="produto-destaque efeito-reveal-destaque4">
           <video
             src="src/video/Sapato_Social_Masculino_Penny_Loafer_Sandro_Moscoloni_Miguel_Preto(720p).mp4"
             poster="src/image/file (1).avif"
@@ -258,13 +263,15 @@
           </p>
         </div>
       </div>
+
+      <a class="loja" href="https://www.adidas.com.br/" target="_blank">Ir direto pra loja</a> <!-- Opcional -->
     </section>
 
-    <section class="pagamento">
+    <section class="pagamento efeito-reveal-pagamento">
       <h2 class="titulo-pagamento">métodos de pagamento aceitos</h2>
 
       <div class="metodos">
-        <div class="cartoes">
+        <div class="cartoes efeito-reveal-cartoes">
           <h3 class="titulo-cartoes">
             Cartão de Crédito e Débito<img
               width="48px"
@@ -324,7 +331,7 @@
 
         <hr />
 
-        <div class="intermediario">
+        <div class="intermediario efeito-reveal-intermediario">
           <h3 class="titulo-intermediario">Meios de Pagamento Online</h3>
 
           <div class="meios-online">
@@ -355,7 +362,7 @@
 
         <hr />
 
-        <div class="outros-meios">
+        <div class="outros-meios efeito-reveal-meios">
           <h3 class="titulo-outros-meios">Outros Meios</h3>
 
           <div class="metodos-adicionais">
@@ -379,7 +386,7 @@
       </div>
     </section>
 
-    <section class="depoimentos">
+    <section class="depoimentos efeito-reveal-depoimentos">
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
 
       <div class="avaliacoes">
@@ -446,7 +453,7 @@
     </section>
 
     <section class="atualizacoes">
-      <div class="comunidade">
+      <div class="comunidade efeito-reveal-comunidade">
         <h2 class="titulo-atualizacoes">SE JUNTE A NOSSA COMUNIDADE</h2>
 
         <p class="texto-comunidade">
@@ -481,6 +488,14 @@
                   target="_blank"
                   >Foto de Ray Piedra</a
                 >
+              </li>
+              <li>
+                <a 
+                href="https://www.flaticon.com/free-icons/zoom-out" 
+                title="zoom out icons"
+                rel="nofollow"
+                target="_blank"
+                >Icone zoom - Gregor Cresnar - Flaticon</a>
               </li>
               <li>
                 <a

@@ -1,29 +1,63 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const botaoZoom = document.getElementById('zoom');
+    const botaoZoomUp = document.getElementById('zoom-up');
+    const botaoZoomDown = document.getElementById('zoom-down');
     const fonteTextos = document.querySelectorAll('.upFonte');
     const maxFontSize = Number(24);
-    let limite = true;
+    const minFontSize = Number(14);
+    let limiteUp = true;
+    let limiteDown = true;
     
-    botaoZoom.addEventListener("click", () => {
+    botaoZoomUp.addEventListener("click", () => {
         fonteTextos.forEach(function(upFonte) {
             let tamanhoFonteAtual = window.getComputedStyle(upFonte).fontSize;
             let novoTamanho = parseFloat(tamanhoFonteAtual) + 2;
 
             if (novoTamanho > maxFontSize) {
-                limite = false;
+                limiteUp = false;
             };
         });
 
-        if (limite) {
+        if (limiteUp) {
             fonteTextos.forEach(function(upFonte) {
                 let tamanhoFonteAtual = window.getComputedStyle(upFonte).fontSize;
                 let novoTamanho = parseFloat(tamanhoFonteAtual) + 2;
                 upFonte.style.fontSize = novoTamanho + "px";
             });
 
-            let currentPosition = parseFloat(window.getComputedStyle(botaoZoom).left);
-            let newPosition = currentPosition + (window.innerWidth * 0.022);
-            botaoZoom.style.left = newPosition + 'px';
+            let currentPositionUp = parseFloat(window.getComputedStyle(botaoZoomUp).left);
+            let newPositionUp = currentPositionUp + (window.innerWidth * 0.022);
+            botaoZoomUp.style.left = newPositionUp + 'px';
+
+            let currentPositionDown = parseFloat(window.getComputedStyle(botaoZoomDown).left);
+            let newPositionDown = currentPositionDown + (window.innerWidth * 0.022);
+            botaoZoomDown.style.left = newPositionDown + 'px';
+        };
+    });
+
+    botaoZoomDown.addEventListener("click", () => {
+        fonteTextos.forEach(function(upFonte) {
+            let tamanhoFonteAtual = window.getComputedStyle(upFonte).fontSize;
+            let novoTamanho = parseFloat(tamanhoFonteAtual) - 2;
+
+            if (novoTamanho < minFontSize) {
+                limiteDown = false
+            };
+        });
+
+        if (limiteDown) {
+            fonteTextos.forEach(function(upFonte) {
+                let tamanhoFonteAtual = window.getComputedStyle(upFonte).fontSize;
+                let novoTamanho = parseFloat(tamanhoFonteAtual) - 2;
+                upFonte.style.fontSize = novoTamanho + "px";
+            });
+
+            let currentPositionUp = parseFloat(window.getComputedStyle(botaoZoomUp).left);
+            let newPositionUp = currentPositionUp - (window.innerWidth * 0.022);
+            botaoZoomUp.style.left = newPositionUp + 'px';
+
+            let currentPositionDown = parseFloat(window.getComputedStyle(botaoZoomDown).left);
+            let newPositionDown = currentPositionDown - (window.innerWidth * 0.022);
+            botaoZoomDown.style.left = newPositionDown + 'px';
         };
     });
 });

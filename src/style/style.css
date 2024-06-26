@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #cec7c3;
   font-family: Arial, Helvetica, sans-serif;
@@ -185,10 +189,18 @@ body {
         height: 100%;
       }
 
-      & #zoom {
+      & #zoom-up {
         position: absolute;
         top: 16%;
         left: 33%;
+        border: none;
+        cursor: pointer;
+      }
+
+      & #zoom-down {
+        position: absolute;
+        top: 16%;
+        left: 36%;
         border: none;
         cursor: pointer;
       }
@@ -347,6 +359,10 @@ body {
     }
   }
 
+  & .efeito-reveal-oferta {
+    visibility: hidden;
+  }
+
   & .lancamentos {
     display: flex;
     flex-direction: column;
@@ -394,6 +410,7 @@ body {
     & .container {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 50px;
 
       &:hover > :not(:hover) {
         opacity: 0.4;
@@ -438,6 +455,35 @@ body {
         }
       }
     }
+
+    & .loja {
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-family: "Calligraffitti", cursive;
+      font-size: 1.5rem;
+      width: 50%;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+  & .efeito-reveal-lancamentos {
+    visibility: hidden;
+
+    & .efeito-reveal-produto1, .efeito-reveal-produto2, .efeito-reveal-produto3, .efeito-reveal-produto4 {
+      visibility: hidden;
+    }
   }
 
   & .destaques {
@@ -460,6 +506,7 @@ body {
     & .container {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 50px;
 
       &:hover > :not(:hover) {
         opacity: 0.4;
@@ -503,6 +550,36 @@ body {
           touch-action: pinch-zoom;
         }
       }
+    }
+
+    & .loja {
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-family: "Calligraffitti", cursive;
+      font-size: 1.5rem;
+      width: 50%;
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  & .efeito-reveal-destaques {
+    visibility: hidden;
+
+    & .efeito-reveal-destaque1, .efeito-reveal-destaque2, .efeito-reveal-destaque3, .efeito-reveal-destaque4 {
+      visibility: hidden;
     }
   }
 
@@ -632,6 +709,14 @@ body {
     }
   }
 
+  & .efeito-reveal-pagamento {
+    visibility: hidden;
+
+    & .efeito-reveal-cartoes, .efeito-reveal-intermediario, .efeito-reveal-meios {
+      visibility: hidden;
+    }
+  }
+
   & .depoimentos {
     display: flex;
     flex-direction: column;
@@ -670,6 +755,10 @@ body {
         }
       }
     }
+  }
+
+  & .efeito-reveal-depoimentos {
+    visibility: hidden;
   }
 
   & .atualizacoes {
@@ -716,6 +805,10 @@ body {
         background-color: transparent;
         border: none;
       }
+    }
+
+    & .efeito-reveal-comunidade {
+      visibility: hidden;
     }
 
     & hr {
