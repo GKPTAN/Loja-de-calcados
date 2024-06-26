@@ -185,6 +185,14 @@ body {
         height: 100%;
       }
 
+      & #zoom {
+        position: absolute;
+        top: 16%;
+        left: 33%;
+        border: none;
+        cursor: pointer;
+      }
+
       & .esquerda {
         font-family: "Women and Shoes";
         font-size: 5rem;
@@ -227,8 +235,9 @@ body {
 
       & .preco-oferta {
         font-family: "Caladea", serif;
+        font-size: 14px;
         margin-bottom: 5px;
-        width: 40%;
+        width: 80%;
       }
 
       & .tamanho {
@@ -788,18 +797,4 @@ body {
       margin-bottom: 20px;
     }
   }
-}
-
-.caixa-de-zoom {
-  position: absolute;
-  display: none;
-  background-color: #000;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 24px;
-  pointer-events: none;
-  white-space: nowrap;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
 }
