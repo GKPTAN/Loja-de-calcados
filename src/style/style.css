@@ -1,12 +1,12 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 @font-face {
   font-family: "Women and Shoes";
   src: url(../fonts/WomenAndShoes.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +22,6 @@ body {
     color: white;
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 60px;
 
     &::before {
       content: "";
@@ -119,6 +118,51 @@ body {
         color: black;
       }
     }
+  }
+
+  & .rotas {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 60px;
+    padding: 20px 50px;
+
+    & .navigation {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+
+      & li > a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        font-weight: normal;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 0px;
+          background: white;
+          bottom: -4px;
+          left: 50%;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+          height: 3px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  & nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   & .oferta-do-dia {
