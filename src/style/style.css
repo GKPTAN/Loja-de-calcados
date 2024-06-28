@@ -1,5 +1,6 @@
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
+  scroll-padding-top: 170px;
 }
 
 @font-face {
@@ -124,8 +125,8 @@ body {
     background-color: black;
     color: white;
     font-weight: 700;
-    margin-bottom: 60px;
     padding: 20px 50px;
+    margin-bottom: 60px;
 
     & .navigation {
       display: flex;
@@ -172,7 +173,8 @@ body {
     width: 80vw;
     background-color: white;
     margin: auto;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     padding: 20px 0px 20px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.363);
     border-bottom: 1px solid rgba(0, 0, 0, 0.363);
@@ -414,7 +416,8 @@ body {
     background-color: black;
     width: 80vw;
     margin: auto;
-    margin-bottom: 100px;
+    margin-top: 110px;
+    margin-bottom: 40px;
     padding: 50px;
     box-shadow: 3px 3px 10px #4b4846;
     border-radius: 10px;
@@ -536,7 +539,8 @@ body {
     justify-content: space-between;
     width: 80vw;
     margin: auto;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     padding: 50px;
 
     & .titulo-destaque {
@@ -632,7 +636,8 @@ body {
     flex-direction: column;
     background-color: black;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     padding: 50px 50px;
 
     & .titulo-pagamento {
@@ -766,7 +771,8 @@ body {
     flex-direction: column;
     width: 80vw;
     margin: auto;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 
     & .titulo-depoimentos {
       font-family: "Caladea", serif;
@@ -808,6 +814,7 @@ body {
   & .atualizacoes {
     background-color: black;
     color: white;
+    margin-top: 60px;
     padding: 50px 50px 40px 50px;
 
     & .comunidade {

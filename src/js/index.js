@@ -61,3 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     });
 });
+
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const sticky = navbar.offsetTop;
+    const secaoTopo = document.getElementById('topo');
+    const secaoTopoBottom = secaoTopo.getBoundingClientRect().bottom;
+    
+    if (secaoTopoBottom <= 0) {
+        navbar.classList.add('fixed');
+    } else {
+        navbar.classList.remove('fixed');
+    };
+});
