@@ -1,9 +1,9 @@
-window.revelar = ScrollReveal({reset: true});
+window.revelar = ScrollReveal({reset: false});
 
 // OFERTA DO DIA
 revelar.reveal('.efeito-reveal-oferta', {
     duration: 2000,
-    distance: '90px',
+    distance: '90px'
 });
 
 revelar.reveal('.efeito-reveal-lancamentos', {
@@ -42,7 +42,7 @@ revelar.reveal('.efeito-reveal-produto4', {
 
 revelar.reveal('.efeito-reveal-destaques', {
     duration: 2000,
-    distance: '90px',
+    distance: '90px'
 });
 
 revelar.reveal('.efeito-reveal-destaque1', {
@@ -75,7 +75,7 @@ revelar.reveal('.efeito-reveal-destaque4', {
 
 revelar.reveal('.efeito-reveal-pagamento', {
     duration: 2000,
-    distance: '90px',
+    distance: '90px'
 });
 
 revelar.reveal('.efeito-reveal-cartoes', {
@@ -114,20 +114,4 @@ revelar.reveal('.efeito-reveal-comunidade', {
     distance: '90px',
     origin: 'left',
     interval: 1000
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const ofertaReveal = document.getElementById('promocao');
-    const lancamentosReveal = document.getElementById('lancamentos');
-    const produto1Reveal = document.getElementById('produto1');
-    const produto2Reveal = document.getElementById('produto2');
-    const produto3Reveal = document.getElementById('produto3');
-    const produto4Reveal = document.getElementById('produto4');
-    const destaquesReveal = document.getElementById('destaques');
-    const destaque1Reveal = document.getElementById('destaque1');
-    const destaque2Reveal = document.getElementById('destaque2');
-    const destaque3Reveal = document.getElementById('destaque3');
-    const destaque4Reveal = document.getElementById('destaque4');
-
-    let reveals = [ofertaReveal, lancamentosReveal, produto1Reveal, produto2Reveal, produto3Reveal, produto4Reveal, destaquesReveal, destaque1Reveal, destaque2Reveal, destaque3Reveal, destaque4Reveal];
 });
