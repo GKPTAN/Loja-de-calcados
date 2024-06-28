@@ -1,6 +1,5 @@
-window.revelar = ScrollReveal({reset: false});
+window.revelar = ScrollReveal({ reset: false });
 
-// OFERTA DO DIA
 revelar.reveal('.efeito-reveal-oferta', {
     duration: 2000,
     distance: '90px'
