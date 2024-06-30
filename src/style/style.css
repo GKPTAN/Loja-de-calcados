@@ -126,7 +126,7 @@ body {
     color: white;
     font-weight: 700;
     padding: 20px 50px;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 
     & .navigation {
       display: flex;
@@ -173,8 +173,8 @@ body {
     width: 80vw;
     background-color: white;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
     padding: 20px 0px 20px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.363);
     border-bottom: 1px solid rgba(0, 0, 0, 0.363);
@@ -416,8 +416,8 @@ body {
     background-color: black;
     width: 80vw;
     margin: auto;
-    margin-top: 110px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
     padding: 50px;
     box-shadow: 3px 3px 10px #4b4846;
     border-radius: 10px;
@@ -460,8 +460,8 @@ body {
       margin-bottom: 50px;
 
       &:hover > :not(:hover) {
-        opacity: 0.4;
-        transform: scale(0.9);
+        opacity: 0.4 !important;
+        transform: scale(0.9) !important;
       }
 
       & .produto-lancamento {
@@ -472,7 +472,7 @@ body {
         padding: 0px 10px 10px 10px;
         align-items: center;
         gap: 10px;
-        transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out !important;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
 
@@ -540,8 +540,8 @@ body {
     justify-content: space-between;
     width: 80vw;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
     padding: 50px;
 
     & .titulo-destaque {
@@ -558,8 +558,8 @@ body {
       margin-bottom: 50px;
 
       &:hover > :not(:hover) {
-        opacity: 0.4;
-        transform: scale(0.9);
+        opacity: 0.4 !important;
+        transform: scale(0.9) !important;
       }
 
       & .produto-destaque {
@@ -570,7 +570,7 @@ body {
         padding: 0px 10px 10px 10px;
         align-items: center;
         gap: 10px;
-        transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out !important;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
 
@@ -638,8 +638,8 @@ body {
     flex-direction: column;
     background-color: black;
     justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
     padding: 50px 50px;
 
     & .titulo-pagamento {
@@ -773,8 +773,8 @@ body {
     flex-direction: column;
     width: 80vw;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
 
     & .titulo-depoimentos {
       font-family: "Caladea", serif;
@@ -816,7 +816,7 @@ body {
   & .atualizacoes {
     background-color: black;
     color: white;
-    margin-top: 60px;
+    margin-top: 200px;
     padding: 50px 50px 40px 50px;
 
     & .comunidade {
