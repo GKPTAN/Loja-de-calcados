@@ -385,10 +385,29 @@ body {
         cursor: pointer;
       }
 
-      & .over {
-        max-height: 65.86vh;
-        max-width: 65.86vw;
-        z-index: 1;
+      & .slides {
+        list-style-type: none;
+        height: 100%;
+
+         & .slide {
+          width: 100%;
+          height: 100%;
+          display: none;
+
+            & img {
+              /*max-height: 65.86vh;
+              max-width: 65.86vw;*/
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              /*z-index: 1;*/
+            }
+         }
+
+         & .slide[data-active] {
+          display: block;
+         }
       }
 
       & .seta-direita {

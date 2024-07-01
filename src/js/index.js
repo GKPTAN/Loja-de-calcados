@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
-    const sticky = navbar.offsetTop;
     const secaoTopo = document.getElementById('topo');
     const secaoTopoBottom = secaoTopo.getBoundingClientRect().bottom;
     
@@ -74,3 +73,30 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('fixed');
     };
 });
+
+const changeSlideButton = document.querySelectorAll("[data-change-slide-button]");
+
+changeSlideButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const slides = document.querySelector('.slides');
+        const activeSlide = slides.querySelector('[data-active]');
+        let indexActiveSlide = Array.from(slides.children).indexOf(activeSlide);
+
+        if (indexActiveSlide = button.dataset.changeSlideButton === "next") {
+            indexActiveSlide + 1;
+        } else {
+            indexActiveSlide - 1;
+        };
+
+        if (indexActiveSlide >= slides.children.length) {
+            indexActiveSlide = 0;
+        };
+
+        if (indexActiveSlide < 0) {
+            indexActiveSlide = slides.children.length - 1;
+        };
+
+        activeSlide.removeAttribute("data-active");
+        slides.children[indexActiveSlide].dataset.active = true;
+    })
+})

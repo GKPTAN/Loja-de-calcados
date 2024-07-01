@@ -2,7 +2,26 @@ window.revelar = ScrollReveal({ reset: false });
 
 revelar.reveal('.efeito-reveal-oferta', {
     duration: 2000,
-    distance: '90px'
+    distance: '90px',
+    afterReveal: function(el) {
+        const videoOferta = document.getElementById('video-oferta');
+        if (videoOferta) {
+            videoOferta.muted = true;
+            videoOferta.play().then(() => {
+                document.addEventListener('click', function unmuteVideo() {
+                    videoOferta.muted = false;
+
+                    document.removeEventListener('click', unmuteVideo);
+                });
+
+                document.addEventListener('mouseover', () => {
+                    videoOferta.setAttribute('controls', 'controls');
+                });
+            }).catch((error) => {
+                console.error('falha ao reproduzir o video', error);
+            });
+        };
+    }
 });
 
 revelar.reveal('.efeito-reveal-lancamentos', {
@@ -36,7 +55,117 @@ revelar.reveal('.efeito-reveal-produto4', {
     duration: 2000,
     distance: '90px',
     delay: 1100,
-    easing: 'ease-out'
+    easing: 'ease-out',
+    afterReveal: function(el) {
+        const produto1 = document.getElementById('produto1');
+        const produto2 = document.getElementById('produto2');
+        const produto3 = document.getElementById('produto3');
+        const produto4 = document.getElementById('produto4');
+        const videoLancamento1 = document.getElementById('video-lancamento1');
+        const videoLancamento2 = document.getElementById('video-lancamento2');
+        const videoLancamento3 = document.getElementById('video-lancamento3');
+        const videoLancamento4 = document.getElementById('video-lancamento4');
+
+        produto1.addEventListener('mouseover', () => {
+            if (videoLancamento1) {
+                videoLancamento1.muted = true;
+                videoLancamento1.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoLancamento1.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoLancamento1.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        produto1.addEventListener('mouseout', () => {
+            if (videoLancamento1) {
+                videoLancamento1.pause();
+            };
+        });
+
+        produto2.addEventListener('mouseover', () => {
+            if (videoLancamento2) {
+                videoLancamento2.muted = true;
+                videoLancamento2.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoLancamento2.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoLancamento2.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        produto2.addEventListener('mouseout', () => {
+            if (videoLancamento2) {
+                videoLancamento2.pause();
+            };
+        });
+
+        produto3.addEventListener('mouseover', () => {
+            if (videoLancamento3) {
+                videoLancamento3.muted = true;
+                videoLancamento3.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoLancamento3.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoLancamento3.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        produto3.addEventListener('mouseout', () => {
+            if (videoLancamento3) {
+                videoLancamento3.pause();
+            };
+        });
+
+        produto4.addEventListener('mouseover', () => {
+            if (videoLancamento4) {
+                videoLancamento4.muted = true;
+                videoLancamento4.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoLancamento4.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoLancamento4.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        produto4.addEventListener('mouseout', () => {
+            if (videoLancamento4) {
+                videoLancamento4.pause();
+            };
+        });
+    }
 });
 
 revelar.reveal('.efeito-reveal-destaques', {
@@ -69,7 +198,117 @@ revelar.reveal('.efeito-reveal-destaque4', {
     duration: 2000,
     distance: '90px',
     delay: 1100,
-    easing: 'ease-out'
+    easing: 'ease-out',
+    afterReveal: function(el) {
+        const destaque1 = document.getElementById('destaque1');
+        const destaque2 = document.getElementById('destaque2');
+        const destaque3 = document.getElementById('destaque3');
+        const destaque4 = document.getElementById('destaque4');
+        const videoDestaque1 = document.getElementById('video-destaque1');
+        const videoDestaque2 = document.getElementById('video-destaque2');
+        const videoDestaque3 = document.getElementById('video-destaque3');
+        const videoDestaque4 = document.getElementById('video-destaque4');
+
+        destaque1.addEventListener('mouseover', () => {
+            if (videoDestaque1) {
+                videoDestaque1.muted = true;
+                videoDestaque1.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoDestaque1.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoDestaque1.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        destaque1.addEventListener('mouseout', () => {
+            if (videoDestaque1) {
+                videoDestaque1.pause();
+            };
+        });
+
+        destaque2.addEventListener('mouseover', () => {
+            if (videoDestaque2) {
+                videoDestaque2.muted = true;
+                videoDestaque2.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoDestaque2.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoDestaque2.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        destaque2.addEventListener('mouseout', () => {
+            if (videoDestaque2) {
+                videoDestaque2.pause();
+            };
+        });
+
+        destaque3.addEventListener('mouseover', () => {
+            if (videoDestaque3) {
+                videoDestaque3.muted = true;
+                videoDestaque3.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoDestaque3.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoDestaque3.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        destaque3.addEventListener('mouseout', () => {
+            if (videoDestaque3) {
+                videoDestaque3.pause();
+            };
+        });
+
+        destaque4.addEventListener('mouseover', () => {
+            if (videoDestaque4) {
+                videoDestaque4.muted = true;
+                videoDestaque4.play().then(() => {
+                    document.addEventListener('click', function unmuteVideo() {
+                        videoDestaque4.muted = false;
+
+                        document.removeEventListener('click', unmuteVideo);
+                    });
+
+                    document.addEventListener('mouseover', () => {
+                        videoDestaque4.setAttribute('controls', 'controls');
+                    });
+                }).catch((error), () => {
+                    console.error('Falha ao reproduzir video', error);
+                });
+            };
+        });
+
+        destaque4.addEventListener('mouseout', () => {
+            if (videoDestaque4) {
+                videoDestaque4.pause();
+            };
+        });
+    }
 });
 
 revelar.reveal('.efeito-reveal-pagamento', {
