@@ -105,10 +105,31 @@ const branco = document.getElementById('branco');
 const preto = document.getElementById('preto');
     
 function updateFilter() {
+    const slides = document.querySelector('.slides');
     const divCorBranca = document.getElementById('cor-branca');
     const divCorPreta = document.getElementById('cor-preta');
     const imgBranco = document.getElementById('imagem1');
     const imgPreto = document.getElementById('imagem2');
+
+    const brancoImagens = [
+        "src/image/Tenis_Samba_OG_Branco_B75806_02_standard.avif",
+        "src/image/Tenis_Samba_OG_Branco_B75806_01_standard (1).jpg",
+        "src/image/Tenis_Samba_OG_Branco_B75806_03_standard.avif",
+        "src/image/Tenis_Samba_OG_Branco_B75806_04_standard.avif",
+        "src/image/Tenis_Samba_OG_Branco_B75806_05_standard.avif",
+        "src/image/Tenis_Samba_OG_Branco_B75806_41_detail.avif",
+        "src/image/Tenis_Samba_OG_Branco_B75806_42_detail.avif"
+    ]
+
+    const pretoImagens = [
+        "src/image/Tenis_Samba_OG_Preto_B75807_02_standard.avif",
+        "src/image/Tenis_Samba_OG_Preto_B75807_01_standard.avif",
+        "src/image/Tenis_Samba_OG_Branco_B75806_03_standard.avif",
+        "src/image/Tenis_Samba_OG_Preto_B75807_04_standard.avif",
+        "src/image/Tenis_Samba_OG_Preto_B75807_05_standard.avif",
+        "src/image/Tenis_Samba_OG_Preto_B75807_41_detail.avif",
+        "src/image/Tenis_Samba_OG_Preto_B75807_42_detail.avif"
+    ]
 
     if (preto.checked) {
         divCorBranca.classList.remove('escolhido');
@@ -121,6 +142,13 @@ function updateFilter() {
         divCorBranca.classList.add('escolhido');
         imgBranco.classList.add('opacidade');
     }
+
+    const imagens = branco.checked ? brancoImagens : pretoImagens;
+    const liElements = slides.querySelectorAll('li img');
+
+    for (let i = 0; i < liElements.length; i++) {
+        liElements[i].src = imagens[i];
+    };
 };
 
 branco.addEventListener('change', updateFilter);
