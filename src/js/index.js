@@ -82,10 +82,10 @@ changeSlideButton.forEach(button => {
         const activeSlide = slides.querySelector('[data-active]');
         let indexActiveSlide = Array.from(slides.children).indexOf(activeSlide);
 
-        if (indexActiveSlide = button.dataset.changeSlideButton === "next") {
-            indexActiveSlide + 1;
+        if (button.dataset.changeSlideButton === "next") {
+            indexActiveSlide++;
         } else {
-            indexActiveSlide - 1;
+            indexActiveSlide--;
         };
 
         if (indexActiveSlide >= slides.children.length) {
@@ -97,6 +97,33 @@ changeSlideButton.forEach(button => {
         };
 
         activeSlide.removeAttribute("data-active");
-        slides.children[indexActiveSlide].dataset.active = true;
-    })
-})
+        slides.children[indexActiveSlide].setAttribute("data-active", "true");
+    });
+});
+
+const branco = document.getElementById('branco');
+const preto = document.getElementById('preto');
+    
+function updateFilter() {
+    const divCorBranca = document.getElementById('cor-branca');
+    const divCorPreta = document.getElementById('cor-preta');
+    const imgBranco = document.getElementById('imagem1');
+    const imgPreto = document.getElementById('imagem2');
+
+    if (preto.checked) {
+        divCorBranca.classList.remove('escolhido');
+        imgBranco.classList.remove('opacidade');
+        divCorPreta.classList.add('escolhido');
+        imgPreto.classList.add('opacidade');
+    } else {
+        divCorPreta.classList.remove('escolhido');
+        imgPreto.classList.remove('opacidade')
+        divCorBranca.classList.add('escolhido');
+        imgBranco.classList.add('opacidade');
+    }
+};
+
+branco.addEventListener('change', updateFilter);
+preto.addEventListener('change', updateFilter);
+
+updateFilter();

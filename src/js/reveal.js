@@ -8,10 +8,10 @@ revelar.reveal('.efeito-reveal-oferta', {
         if (videoOferta) {
             videoOferta.muted = true;
             videoOferta.play().then(() => {
-                document.addEventListener('click', function unmuteVideo() {
+                videoOferta.addEventListener('click', function unmuteVideo() {
                     videoOferta.muted = false;
 
-                    document.removeEventListener('click', unmuteVideo);
+                    videoOferta.removeEventListener('click', unmuteVideo);
                 });
 
                 document.addEventListener('mouseover', () => {
