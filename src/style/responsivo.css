@@ -1,0 +1,42 @@
+@media (min-width: 1921px) {
+    #topo {
+        background-image: url(../image/pexels-craytive-1478442\ \(1\).jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #novidades {
+        grid-template-columns: 1000px 700px;
+    }
+
+    #novidades > button.enviar {
+        left: 91.8%;
+    }
+
+    .depoimentos .avaliacoes {
+        justify-content: center;
+    }
+
+    .depoimentos .avaliacoes .depoimento {
+        width: 30%;
+    }
+
+    .depoimentos .avaliacoes .depoimento img {
+        width: auto;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}

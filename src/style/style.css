@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 170px;
+  width: 100%;
 }
 
 @font-face {
@@ -17,8 +18,8 @@ body {
 
   & .home {
     position: relative;
-    height: 30vw;
-    background-size: 1920px 576px;
+    height: 62.67vh;
+    background-size: 100% 100%;
     background-image: url(../image/pexels-craytive-1478442.jpg);
     color: white;
     z-index: 1;
@@ -49,17 +50,16 @@ body {
     & div {
       display: flex;
       justify-content: space-between;
+      padding: 0px 30px;
 
       & .logotipo {
         color: white;
         margin-top: 30px;
-        margin-left: 30px;
         z-index: 2;
       }
 
       & .navegacao {
         margin-top: 30px;
-        margin-right: 30px;
         z-index: 2;
 
         & ul {
@@ -433,10 +433,6 @@ body {
         right: 5%;
         cursor: pointer;
       }
-
-      & .image-hidden {
-        z-index: 0;
-      }
     }
   }
 
@@ -705,6 +701,7 @@ body {
 
           & img {
             margin-left: 10px;
+            max-width: 100%;
           }
         }
 
@@ -831,6 +828,7 @@ body {
 
         & img {
           width: 400px;
+          max-width: 100%;
         }
 
         & .nome-cliente {
@@ -853,6 +851,7 @@ body {
     color: white;
     margin-top: 200px;
     padding: 50px 50px 40px 50px;
+    width: 100%;
 
     & .comunidade {
       display: grid;
