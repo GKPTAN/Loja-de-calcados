@@ -5,22 +5,26 @@ revelar.reveal('.efeito-reveal-oferta', {
     distance: '90px',
     afterReveal: function(el) {
         const videoOferta = document.getElementById('video-oferta');
-        if (videoOferta) {
-            videoOferta.muted = true;
-            videoOferta.play().then(() => {
-                videoOferta.addEventListener('click', function unmuteVideo() {
-                    videoOferta.muted = false;
-
-                    videoOferta.removeEventListener('click', unmuteVideo);
+        const oferta = document.getElementById('promocao');
+        oferta.addEventListener('mouseover', () => {
+            if (videoOferta) {
+                videoOferta.muted = true;
+                videoOferta.play().then(() => {
+                    videoOferta.addEventListener('click', function unmuteVideo() {
+                        videoOferta.muted = false;
+                        videoOferta.setAttribute('controls', 'controls');
+    
+                        videoOferta.removeEventListener('click', unmuteVideo);
+                    });
+                }).catch((error) => {
+                    console.error('falha ao reproduzir o video', error);
                 });
+            };
+        });
 
-                document.addEventListener('mouseover', () => {
-                    videoOferta.setAttribute('controls', 'controls');
-                });
-            }).catch((error) => {
-                console.error('falha ao reproduzir o video', error);
-            });
-        };
+        oferta.addEventListener('mouseout', () => {
+            videoOferta.pause();
+        });
     }
 });
 
@@ -72,14 +76,11 @@ revelar.reveal('.efeito-reveal-produto4', {
                 videoLancamento1.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoLancamento1.muted = false;
+                        videoLancamento1.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoLancamento1.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -97,14 +98,11 @@ revelar.reveal('.efeito-reveal-produto4', {
                 videoLancamento2.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoLancamento2.muted = false;
+                        videoLancamento2.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoLancamento2.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -122,14 +120,11 @@ revelar.reveal('.efeito-reveal-produto4', {
                 videoLancamento3.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoLancamento3.muted = false;
+                        videoLancamento3.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoLancamento3.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -147,14 +142,11 @@ revelar.reveal('.efeito-reveal-produto4', {
                 videoLancamento4.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoLancamento4.muted = false;
+                        videoLancamento4.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoLancamento4.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -215,14 +207,11 @@ revelar.reveal('.efeito-reveal-destaque4', {
                 videoDestaque1.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoDestaque1.muted = false;
+                        videoDestaque1.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoDestaque1.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -240,14 +229,11 @@ revelar.reveal('.efeito-reveal-destaque4', {
                 videoDestaque2.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoDestaque2.muted = false;
+                        videoDestaque2.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoDestaque2.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -265,14 +251,11 @@ revelar.reveal('.efeito-reveal-destaque4', {
                 videoDestaque3.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoDestaque3.muted = false;
+                        videoDestaque3.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoDestaque3.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };
@@ -290,14 +273,11 @@ revelar.reveal('.efeito-reveal-destaque4', {
                 videoDestaque4.play().then(() => {
                     document.addEventListener('click', function unmuteVideo() {
                         videoDestaque4.muted = false;
+                        videoDestaque4.setAttribute('controls', 'controls');
 
                         document.removeEventListener('click', unmuteVideo);
                     });
-
-                    document.addEventListener('mouseover', () => {
-                        videoDestaque4.setAttribute('controls', 'controls');
-                    });
-                }).catch((error), () => {
+                }).catch((error) => {
                     console.error('Falha ao reproduzir video', error);
                 });
             };

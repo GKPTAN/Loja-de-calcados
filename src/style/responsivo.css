@@ -5,9 +5,40 @@
         background-repeat: no-repeat;
     }
 
+    section#promocao span.asterisco {
+        top: 8.7%;
+        left: 78.5%;
+    }
+
+    section#promocao button#zoom-up {
+        top: 10%;
+        left: 92%;
+    }
+
+    section#promocao button#zoom-down {
+        top: 10%;
+        left: 95%;
+    }
+
     .container {
         width: 80%;
         margin: 0 auto;
+    }
+
+    #produto1, #produto2, #produto3, #produto4 {
+        width: 14vw;
+
+        & video {
+            width: 14vw;
+        }
+    }
+
+    #destaque1, #destaque2, #destaque3, #destaque4 {
+        width: 14vw;
+
+        & video {
+            width: 14vw;
+        }
     }
 
     #novidades {

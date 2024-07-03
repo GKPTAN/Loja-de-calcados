@@ -15,6 +15,7 @@ body {
   background-color: #cec7c3;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+  width: 100%;
 
   & .home {
     position: relative;
@@ -235,18 +236,24 @@ body {
         height: 100%;
       }
 
+      & .asterisco {
+        position: absolute;
+        top: 10%;
+        left: 76%;
+      }
+
       & #zoom-up {
         position: absolute;
-        top: 16%;
-        left: 33%;
+        top: 10%;
+        left: 92%;
         border: none;
         cursor: pointer;
       }
 
       & #zoom-down {
         position: absolute;
-        top: 16%;
-        left: 36%;
+        top: 10%;
+        left: 95%;
         border: none;
         cursor: pointer;
       }

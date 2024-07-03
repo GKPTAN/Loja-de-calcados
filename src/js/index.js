@@ -23,14 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 let novoTamanho = parseFloat(tamanhoFonteAtual) + 2;
                 upFonte.style.fontSize = novoTamanho + "px";
             });
-
-            let currentPositionUp = parseFloat(window.getComputedStyle(botaoZoomUp).left);
-            let newPositionUp = currentPositionUp + (window.innerWidth * 0.022);
-            botaoZoomUp.style.left = newPositionUp + 'px';
-
-            let currentPositionDown = parseFloat(window.getComputedStyle(botaoZoomDown).left);
-            let newPositionDown = currentPositionDown + (window.innerWidth * 0.022);
-            botaoZoomDown.style.left = newPositionDown + 'px';
         };
     });
 
@@ -50,14 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 let novoTamanho = parseFloat(tamanhoFonteAtual) - 2;
                 upFonte.style.fontSize = novoTamanho + "px";
             });
-
-            let currentPositionUp = parseFloat(window.getComputedStyle(botaoZoomUp).left);
-            let newPositionUp = currentPositionUp - (window.innerWidth * 0.022);
-            botaoZoomUp.style.left = newPositionUp + 'px';
-
-            let currentPositionDown = parseFloat(window.getComputedStyle(botaoZoomDown).left);
-            let newPositionDown = currentPositionDown - (window.innerWidth * 0.022);
-            botaoZoomDown.style.left = newPositionDown + 'px';
         };
     });
 });
