@@ -238,8 +238,8 @@ body {
 
       & .asterisco {
         position: absolute;
-        top: 10%;
-        left: 76%;
+        top: 8.8%;
+        left: 75.2%;
       }
 
       & #zoom-up {
@@ -394,8 +394,6 @@ body {
       display: flex;
       width: 40%;
       justify-content: center;
-      max-height: 88.2vh;
-      max-height: 600px;
       position: relative;
       touch-action: pan-x;
 

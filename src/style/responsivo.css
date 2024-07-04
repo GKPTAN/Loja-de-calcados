@@ -25,7 +25,14 @@
         margin: 0 auto;
     }
 
-    #produto1, #produto2, #produto3, #produto4 {
+    section#promocao .abaixo {
+        margin-bottom: 50px;
+    }
+
+    #produto1,
+    #produto2,
+    #produto3,
+    #produto4 {
         width: 14vw;
 
         & video {
@@ -33,11 +40,14 @@
         }
     }
 
-    #destaque1, #destaque2, #destaque3, #destaque4 {
+    #destaque1,
+    #destaque2,
+    #destaque3,
+    #destaque4 {
         width: 14vw;
 
         & video {
-            width: 14vw;
+        width: 14vw;
         }
     }
 
@@ -67,7 +77,134 @@
 }
 
 @media (max-width: 1440px) {
-  body {
-    width: 100%;
+  section#promocao span.esquerda {
+    font-size: 3rem;
+  }
+
+  section#promocao span.direita {
+    font-size: 3rem;
+  }
+
+  section#promocao h2.titulo-oferta {
+    font-size: 1.5rem;
+  }
+
+  section#promocao .descricao-oferta {
+    font-size: 1rem;
+  }
+
+  section#promocao span.asterisco {
+    top: 6%;
+    left: 66%;
+  }
+
+  section#promocao #zoom-up {
+    top: 7.5%;
+    left: 89.5%;
+  }
+
+  section#promocao #zoom-down {
+    top: 7.5%;
+    left: 93.5%;
+  }
+
+  section#promocao video.video {
+    width: 60%;
+    height: 48%;
+  }
+
+  section#promocao .cores {
+    justify-content: space-between;
+    height: 83px;
+  }
+
+  section#promocao #cor-preta, section#promocao #cor-branca {
+    position: relative;
+    width: 20%;
+    height: 70%;
+  }
+
+  section#promocao #branco {
+    width: 10px;
+    left: 76%;
+  }
+
+  section#promocao #preto {
+    width: 10px;
+  }
+
+
+  section#lancamentos .segunda-opcao {
+    text-align: center;
+  }
+
+  section#destaques .segunda-opcao {
+    text-align: center;
+  }
+
+  #novidades {
+    grid-template-columns: 500px 300px;
+    width: 80%;
+    justify-content: center;
+  }
+
+  #novidades .titulo-atualizacoes {
+    margin-top: 50px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  section#promocao .oferta {
+    width: 50%;
+  }
+
+  section#promocao span.esquerda, section#promocao span.direita {
+    font-size: 2.5rem;
+  }
+
+  section#promocao span.asterisco {
+    top: 6%;
+    left: 52%;
+  }
+
+  section#promocao #zoom-up {
+    top: 7.5%;
+    left: 87.5%;
+  }
+
+  section#promocao #zoom-down {
+    top: 7.5%;
+    left: 93.5%;
+  }
+
+  section#promocao .cores {
+    height: 170px;
+  }
+
+  section#promocao #cor-branca {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  section#promocao #cor-preta {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  section#promocao #branco {
+    left: 72%;
+    bottom: 0;
+  }
+
+  section#promocao #preto {
+    bottom: 0;
+  }
+
+  section#promocao .adicional {
+    width: 45%;
+    height: 400px;
   }
 }
