@@ -184,31 +184,41 @@
 }
 
 @media (max-width: 1024px) {
+  section#promocao {
+    flex-direction: column;
+    align-items: center;
+  }
+
   section#promocao .oferta {
-    width: 50%;
+    width: 80%;
+    margin-bottom: 10px;
   }
 
   section#promocao span.esquerda, section#promocao span.direita {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+
+  section#promocao .titulo-oferta {
+    font-size: 2rem;
   }
 
   section#promocao span.asterisco {
     top: 6%;
-    left: 52%;
+    left: 67%;
   }
 
   section#promocao #zoom-up {
-    top: 7.5%;
-    left: 87.5%;
+    top: 8%;
+    left: 90%;
   }
 
   section#promocao #zoom-down {
-    top: 7.5%;
-    left: 93.5%;
+    top: 8%;
+    left: 94%;
   }
 
   section#promocao .cores {
-    height: 170px;
+    height: 60px;
   }
 
   section#promocao #cor-branca {
@@ -233,7 +243,13 @@
   }
 
   section#promocao .adicional {
-    width: 45%;
+    width: 80%;
     height: 400px;
+  }
+}
+
+@media (max-width: 965px) {
+  #novidades .enviar {
+    left: 100%;
   }
 }
