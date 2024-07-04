@@ -133,13 +133,37 @@
     width: 10px;
   }
 
+  section#lancamentos .produto-lancamento {
+    gap: 5px;
+  }
+
+  section#lancamentos .produto-lancamento .nome-lancamento {
+    text-align: left;
+  }
 
   section#lancamentos .segunda-opcao {
     text-align: center;
   }
 
+  section#destaques .produto-destaque {
+    gap: 5px;
+  }
+
   section#destaques .segunda-opcao {
     text-align: center;
+  }
+
+  section#pagamentos {
+    padding: 25px;
+  }
+
+  section#pagamentos .titulo-pagamento {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  section#pagamentos .metodos {
+    padding: 0px 100px;
   }
 
   #novidades {
@@ -151,6 +175,11 @@
   #novidades .titulo-atualizacoes {
     margin-top: 50px;
     font-size: 2.5rem;
+  }
+
+  #novidades .enviar {
+    top: 56.3%;
+    left: 82.5%;
   }
 }
 
