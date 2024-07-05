@@ -891,9 +891,10 @@ body {
       }
 
       & .enviar {
-        position: absolute;
-        top: 49.5%;
-        left: 92.6%;
+        display: block;
+        position: fixed;
+        top: 12vh;
+        left: 65vw;
         background-color: transparent;
         border: none;
       }
