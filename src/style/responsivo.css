@@ -52,12 +52,16 @@
     }
 
     #novidades {
-        grid-template-columns: 1000px 700px;
+        grid-template-columns: 58% 42%;
     }
 
-    #novidades > button.enviar {
-        top: 9.2vh;
-        left: 91.8%;
+    #novidades .titulo-atualizacoes {
+      margin-top: 10px;
+    }
+
+    #novidades #div-botao {
+      width: 99.8%;
+      bottom: 60.5%;
     }
 
     .depoimentos .avaliacoes {
@@ -168,19 +172,23 @@
   }
 
   #novidades {
-    grid-template-columns: 500px 300px;
-    width: 80%;
+    grid-template-columns: 62.5% 37.5%;
+    width: 100%;
     justify-content: center;
+  }
+
+  #novidades #div-botao {
+    bottom: 54.4%;
   }
 
   #novidades .titulo-atualizacoes {
     margin-top: 50px;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
-  #novidades .enviar {
-    top: 56.3%;
-    left: 82.5%;
+  #novidades .texto-comunidade {
+    text-align: justify;
+    font-size: 14px;
   }
 }
 
@@ -246,6 +254,18 @@
   section#promocao .adicional {
     width: 80%;
     height: 400px;
+  }
+
+  #novidades {
+    grid-template-columns: 66% 34%;
+  }
+
+  #novidades .titulo-atualizacoes {
+    margin-top: 90px;
+  }
+
+  #novidades #div-botao {
+    bottom: 45.8%;
   }
 }
 

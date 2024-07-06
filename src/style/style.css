@@ -860,8 +860,8 @@ body {
 
     & .comunidade {
       display: grid;
-      grid-template-columns: 800px 500px;
-      width: 70.15vw;
+      grid-template-columns: 61% 39%;
+      width: 100%;
       margin: auto;
       position: relative;
 
@@ -890,13 +890,20 @@ body {
         }
       }
 
-      & .enviar {
-        display: block;
-        position: fixed;
-        top: 12vh;
-        left: 65vw;
-        background-color: transparent;
-        border: none;
+      & .secao-enviar {
+        display: flex;
+        position: absolute;
+        left: 0px;
+        bottom: 50.7%;
+        width: 99.5%;
+        border-radius: 10px;
+        justify-content: right;
+
+        & .enviar {
+          position: fixed;
+          background-color: transparent;
+          border: none;
+        }
       }
     }
 
