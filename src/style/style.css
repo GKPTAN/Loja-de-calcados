@@ -870,6 +870,7 @@ body {
         font-size: 3rem;
         grid-column: 1 / 2;
         margin-top: 50px;
+        text-align: center;
       }
 
       & .texto-comunidade {

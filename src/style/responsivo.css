@@ -269,8 +269,190 @@
   }
 }
 
-@media (max-width: 965px) {
-  #novidades .enviar {
-    left: 100%;
+@media (max-width: 950px) {
+  #navbar {
+    display: none;
+  }
+
+  #promocao {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #lancamentos {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  #destaques {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  #pagamentos {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  #depoimentos {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  #comunidade {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  #topo .navegacao ul {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body strong {
+    display: none;
+  }
+
+  #topo {
+    height: 40vh;
+  }
+
+  #topo .compra {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  #promocao {
+    width: 90vw;
+  }
+
+  section#promocao .oferta {
+    width: 90%;
+  }
+
+  section#promocao span.esquerda, #promocao span.direita {
+    font-size: 3rem;
+  }
+
+  section#promocao h2.titulo-oferta {
+    font-size: 1.5rem;
+  }
+
+  #promocao .asterisco {
+    display: none;
+  }
+
+  #promocao #zoom-up, #promocao #zoom-down {
+    display: none;
+  }
+
+  #lancamentos {
+    padding: 25px;
+    width: 90vw;
+  }
+
+  section#lancamentos h2.titulo-lancamento {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  section#lancamentos div.container {
+    margin-bottom: 25px;
+  }
+
+  section#lancamentos .container .produto-lancamento {
+    width: 20vw;
+    font-size: 14px;
+  }
+
+  section#lancamentos div#container div.produto-lancamento video {
+    width: 20vw;
+  }
+
+  section#lancamentos .loja {
+    font-size: 1rem;
+    width: 25%;
+  }
+
+  section#destaques {
+    padding: 25px;
+    width: 90vw;
+  }
+
+  section#destaques h2.titulo-destaque {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  section#destaques div.container {
+    margin-bottom: 25px;
+  }
+
+  section#destaques div.container div.produto-destaque {
+    width: 20vw;
+    font-size: 14px;
+  }
+
+  section#destaques div.container div.produto-destaque video {
+    width: 20vw;
+  }
+
+  section#destaques .loja {
+    font-size: 1rem;
+    width: 25%;
+  }
+
+  section#pagamentos .metodos {
+    padding: 0;
+  }
+
+  section#pagamentos .metodos #cartoes, section#pagamentos .metodos #intermediario, section#pagamentos .metodos #meios {
+    width: 30%;
+  }
+
+  section#pagamentos .metodos #meios .metodos-adicionais {
+    grid-template-columns: 0fr 0fr;
+    column-gap: 5px;
+    align-self: center;
+  }
+
+  section#depoimentos {
+    width: 90vw;
+  }
+
+  section#depoimentos h2.titulo-depoimentos {
+    font-size: 2.5rem;
+  }
+
+  section#depoimentos div.avaliacoes .depoimento {
+    width: 25vw;
+  }
+
+  section#comunidade #novidades {
+    grid-template-columns: 100%;
+    margin-bottom: 30px;
+    row-gap: 20px;
+  }
+
+  section#comunidade #novidades .titulo-atualizacoes {
+    grid-column: 1;
+    margin-top: 0px;
+    font-size: 2.5rem;
+  }
+
+  section#comunidade #novidades .texto-comunidade {
+    grid-column: 1;
+  }
+
+  section#comunidade #novidades input[type="email"] {
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+
+  #novidades #div-botao {
+    bottom: 28%;
   }
 }
