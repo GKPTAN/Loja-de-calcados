@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 170px;
@@ -53,10 +55,16 @@ body {
       justify-content: space-between;
       padding: 0px 30px;
 
-      & .logotipo {
-        color: white;
-        margin-top: 30px;
+      & .fundo-logo {
+        display: flex;
+        background-color: #e6ded9;
+        width: 10%;
+        justify-content: center;
         z-index: 2;
+
+        & .logotipo {
+          width: 200px;
+        }
       }
 
       & .navegacao {
@@ -989,6 +997,10 @@ body {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
+
+      & .nome-loja {
+        font-family: "Life Savers", serif;
+      }
     }
   }
 }
