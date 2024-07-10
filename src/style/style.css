@@ -55,16 +55,8 @@ body {
       justify-content: space-between;
       padding: 0px 30px;
 
-      & .fundo-logo {
-        display: flex;
-        background-color: #e6ded9;
-        width: 10%;
-        justify-content: center;
+      & .logotipo {
         z-index: 2;
-
-        & .logotipo {
-          width: 200px;
-        }
       }
 
       & .navegacao {
