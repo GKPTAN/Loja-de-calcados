@@ -34,9 +34,12 @@
   <body>
     <section class="home" id="topo">
       <div>
-        <img src="src/icons/9NOyPZ-LogoMakr.png" alt="logomarca" class="logotipo">
+        <div class="logo" id="logo">
+          <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca">
+          <h1 class="logotipo">UROP</h1>
+        </div>
 
-        <nav class="navegacao">
+        <nav class="navegacao nav-hidden" id="navigate">
           <ul>
             <li><a href="#" target="_blank">sobre</a></li>
             <li><a href="#" target="_blank">para homens</a></li>
@@ -46,6 +49,9 @@
           </ul>
         </nav>
       </div>
+
+      <img src="src/icons/menu.png" alt="menu" class="menu" id="menu" onclick="revelarMenu()">
+      <img src="src/icons/close.png" alt="fechar menu" class="fechar hidden" id="fechar" onclick="esconderMenu()">
 
       <a class="compra" href="https://www.adidas.com.br/" target="_blank"
         >Compre agora seus sapatos!</a
