@@ -527,4 +527,31 @@
     transition: all 0.3s ease-in-out;
     transition-delay: 0.3s;
   }
+
+  section#topo .compra {
+    top: 83%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.233);
+  }
+
+  section#promocao div.oferta span.esquerda, section#promocao div.oferta span.direita {
+    font-size: 1.5rem;
+  }
+
+  section#promocao div.oferta span.esquerda {
+    top: 2.5%;
+  }
+
+  section#promocao div.oferta span.direita {
+    top: 2.5%;
+    right: 2.5%;
+  }
+
+  section#promocao div.oferta h2.titulo-oferta {
+    font-size: 1.5rem;
+  }
+
+  section#promocao div.oferta p.tamanho input[type="number"] {
+    width: 10%;
+  }
 }
