@@ -470,6 +470,10 @@
 
 @media (max-width: 425px) {
 
+  body {
+    overflow: scroll;
+  }
+
   section#topo div {
     display: block;
   }
@@ -481,7 +485,7 @@
   section#topo div #logo h1.logotipo {
     font-size: 9px;
     top: 27%;
-    left: 12%;
+    left: 6.8cap;
   }
 
   section#topo div nav#navigate {
