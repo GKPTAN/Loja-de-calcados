@@ -730,7 +730,6 @@ body {
 
           & img {
             margin-left: 10px;
-            max-width: 100%;
           }
         }
 
@@ -739,6 +738,10 @@ body {
           grid-template-columns: 1fr 1fr 1fr;
           column-gap: 15px;
           row-gap: 5px;
+
+          & img {
+            max-width: 100%;
+          }
         }
       }
 
@@ -861,7 +864,7 @@ body {
         }
 
         & .nome-cliente {
-          font-family: "Calligraffitti", serif;
+          font-family: "Caladea", serif;
         }
 
         & .avaliacao {

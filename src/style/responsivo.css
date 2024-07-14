@@ -554,4 +554,151 @@
   section#promocao div.oferta p.tamanho input[type="number"] {
     width: 10%;
   }
+
+  section#lancamentos h2.titulo-lancamento {
+    font-size: 1.5rem;
+  }
+
+  section#lancamentos div#container {
+    flex-wrap: wrap;
+  }
+
+  section#lancamentos div#container div#produto1, section#lancamentos div#container div#produto2 {
+    width: 45%;
+    padding: 0px 5px 5px 5px;
+    margin-bottom: 20px;
+  }
+
+  section#lancamentos div#container div#produto3, section#lancamentos div#container div#produto4 {
+    width: 45%;
+    padding: 0px 5px 5px 5px;
+  }
+
+  section#lancamentos div#container div#produto1 video, section#lancamentos div#container div#produto2 video {
+    width: 149.63px;
+  }
+
+  section#lancamentos div#container div#produto3 video, section#lancamentos div#container div#produto4 video {
+    width: 149.63px;
+  }
+
+  section#lancamentos .loja {
+    width: 60%;
+  }
+
+  section#destaques h2.titulo-destaque {
+    font-size: 1.5rem;
+  }
+
+  section#destaques div.container {
+    flex-wrap: wrap;
+  }
+
+  section#destaques div.container div#destaque1, section#destaques div.container div#destaque2 {
+    width: 45%;
+    padding: 0px 5px 5px 5px;
+    margin-bottom: 20px;
+  }
+
+  section#destaques div.container div#destaque3, section#destaques div.container div#destaque4 {
+    width: 45%;
+    padding: 0px 5px 5px 5px;
+  }
+
+  section#destaques div.container div#destaque1 video, section#destaques div.container div#destaque2 video {
+    width: 149.63px;
+  }
+
+  section#destaques div.container div#destaque3 video, section#destaques div.container div#destaque4 video {
+    width: 149.63px;
+  }
+
+  section#destaques .loja {
+    width: 60%;
+  }
+
+  section#pagamentos h2.titulo-pagamento {
+    font-size: 1.5rem;
+  }
+
+  section#pagamentos div.metodos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  section#pagamentos .metodos #cartoes .titulo-cartoes {
+    margin-bottom: 5px;
+  }
+
+  section#pagamentos .metodos #cartoes .icones-cartoes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section#pagamentos .metodos #cartoes .icones-cartoes img {
+    width: 15%;
+  }
+
+  section#pagamentos .metodos #intermediario .meios-online {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section#pagamentos .metodos #intermediario .meios-online img {
+    width: 15%;
+  }
+
+  section#pagamentos .metodos #intermediario .meios-online .branco img, section#pagamentos .metodos #intermediario .meios-online .branco-2 {
+    width: 25%;
+  }
+
+  section#pagamentos .metodos #intermediario .meios-online .branco img, section#pagamentos .metodos #intermediario .meios-online .branco-2 img {
+    width: 100%;
+  }
+
+  section#pagamentos .metodos #meios .metodos-adicionais {
+    display: flex;
+  }
+
+  section#pagamentos .metodos #cartoes, section#pagamentos .metodos #intermediario, section#pagamentos .metodos #meios {
+    width: 80%;
+  }
+
+  section#pagamentos div.metodos hr {
+    width: 80%;
+  }
+
+  section#depoimentos h2.titulo-depoimentos {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  section#depoimentos div.avaliacoes {
+    flex-wrap: wrap;
+  }
+
+  section#depoimentos div.avaliacoes .depoimento {
+    width: 47%;
+    margin-bottom: 10px;
+  }
+
+  section#depoimentos div.avaliacoes #depoimento-mulher {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+
+  section#comunidade div#novidades h2.titulo-atualizacoes {
+    font-size: 1.5rem;
+  }
+
+  section#comunidade div#novidades #div-botao {
+    bottom: 22.5%;
+  }
+
+  section#comunidade footer.rodape h6.direitos {
+    width: 150px;
+  }
 }
