@@ -196,6 +196,7 @@
   section#promocao {
     flex-direction: column;
     align-items: center;
+    padding: 20px 0px;
   }
 
   section#promocao .oferta {
@@ -575,11 +576,11 @@
   }
 
   section#lancamentos div#container div#produto1 video, section#lancamentos div#container div#produto2 video {
-    width: 149.63px;
+    width: 35.20vw;
   }
 
   section#lancamentos div#container div#produto3 video, section#lancamentos div#container div#produto4 video {
-    width: 149.63px;
+    width: 35.20vw;
   }
 
   section#lancamentos .loja {
@@ -606,11 +607,11 @@
   }
 
   section#destaques div.container div#destaque1 video, section#destaques div.container div#destaque2 video {
-    width: 149.63px;
+    width: 35.20vw;
   }
 
   section#destaques div.container div#destaque3 video, section#destaques div.container div#destaque4 video {
-    width: 149.63px;
+    width: 35.20vw;
   }
 
   section#destaques .loja {
