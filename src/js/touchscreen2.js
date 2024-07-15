@@ -1,4 +1,4 @@
-const slidesContainer = document.getElementById('carousel');
+const slidesContainer = document.getElementById('carrossel');
 let startX = 0;
 let startY = 0;
 let endX = 0;
@@ -9,22 +9,24 @@ slidesContainer.addEventListener('touchstart', (e) => {
   startY = e.touches[0].clientY;
 }, { passive: true });
 
-slidesContainer.addEventListener('touchend', (e) => {
-  endX = e.changedTouches[0].clientX;
-  endY = e.changedTouches[0].clientY;
-  handleSwipe();
+slidesContainer.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+  endY = e.touches[0].clientY;
 }, { passive: true });
 
-function handleSwipe() {
-  const threshold = 50; // mín. distância para considerar o gesto de swipe
+slidesContainer.addEventListener('touchend', (e) => {
   const diffX = endX - startX;
   const diffY = endY - startY;
 
-  if (Math.abs(diffX) > threshold && Math.abs(diffX) > Math.abs(diffY)) {
-    const direction = diffX > 0 ? 'previous' : 'next';
-    changeSlide(direction);
+  // Somente considera o gesto de swipe se o movimento horizontal for maior que o vertical
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    const threshold = 50; // mín. distância para considerar o gesto de swipe
+    if (Math.abs(diffX) > threshold) {
+      const direction = diffX > 0 ? 'previous' : 'next';
+      changeSlide(direction);
+    }
   }
-}
+}, { passive: true });
 
 function changeSlide(direction) {
   const slides = document.querySelector('.slides');
