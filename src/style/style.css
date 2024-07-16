@@ -1044,3 +1044,7 @@ body {
     opacity: 1;
   }
 }
+
+.efeito-vertical-depoimentos {
+  visibility: hidden;
+}

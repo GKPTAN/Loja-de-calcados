@@ -317,6 +317,22 @@ revelar.reveal('.efeito-reveal-meios', {
     scale: 0.7
 });
 
+function mudarReveal() {
+    if (window.innerWidth > 820) {
+        console.log(window.innerWidth);
+        return;
+    };
+
+    const depoimentos = document.getElementById('depoimentos');
+    depoimentos.classList.remove('.efeito-reveal-depoimentos');
+    depoimentos.classList.add('.efeito-vertical-depoimentos');
+    revelar.reveal('.efeito-vertical-depoimentos', {
+        duration: 2000,
+        distance: '90px',
+        interval: 1000,
+    });
+};
+
 revelar.reveal('.efeito-reveal-depoimentos', {
     duration: 2000,
     distance: '90px',
