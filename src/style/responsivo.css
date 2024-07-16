@@ -470,10 +470,6 @@
 
 @media (max-width: 425px) {
 
-  body {
-    overflow: scroll;
-  }
-
   section#topo div {
     display: block;
   }
@@ -693,6 +689,10 @@
     display: block;
     margin: auto;
     width: 60%;
+  }
+
+  section#comunidade {
+    padding: 50px 25px 40px 25px;
   }
 
   section#comunidade div#novidades h2.titulo-atualizacoes {

@@ -3,7 +3,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 170px;
-  width: 100%;
 }
 
 @font-face {
@@ -17,7 +16,6 @@ body {
   background-color: #cec7c3;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  width: 100%;
 
   & .home {
     position: relative;
@@ -420,7 +418,6 @@ body {
       width: 40%;
       justify-content: center;
       position: relative;
-      touch-action: pan-x;
 
       & .seta-esquerda {
         position: absolute;
@@ -857,7 +854,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        width: 20.94vw;
+        width: 20vw;
 
         & img {
           width: 400px;
