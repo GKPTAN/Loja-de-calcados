@@ -29,6 +29,10 @@
         margin-bottom: 50px;
     }
 
+    section#promocao div.oferta div.cores #branco {
+      left: 6cqi;
+    }
+
     #produto1,
     #produto2,
     #produto3,
@@ -120,22 +124,25 @@
 
   section#promocao .cores {
     justify-content: space-between;
-    height: 83px;
+    height: 120px;
   }
 
   section#promocao #cor-preta, section#promocao #cor-branca {
     position: relative;
     width: 20%;
-    height: 70%;
+    height: fit-content;
   }
 
   section#promocao #branco {
     width: 10px;
-    left: 76%;
+    left: 2.4cqi;
+    bottom: 0.3cap;
   }
 
   section#promocao #preto {
     width: 10px;
+    right: 0.4cap;
+    bottom: 0.3cap;
   }
 
   section#lancamentos .produto-lancamento {
@@ -255,6 +262,11 @@
   section#promocao .adicional {
     width: 80%;
     height: 400px;
+    padding-right: 0;
+  }
+
+  section#promocao div.adicional .seta-direita {
+    right: 0;
   }
 
   #novidades {
@@ -266,7 +278,7 @@
   }
 
   #novidades #div-botao {
-    bottom: 45.8%;
+    bottom: 9.9cap;
   }
 }
 
@@ -464,7 +476,54 @@
   }
 
   #novidades #div-botao {
-    bottom: 28%;
+    bottom: 4.7cap;
+  }
+}
+
+@media (max-width: 650px) {
+  section#topo div nav#navigate {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.849);
+    padding: 0px 0px;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+  }
+
+  section#topo div nav.nav-hidden {
+    width: 0;
+    height: 0;
+    transition: all 0.6s ease-in-out;
+  }
+
+  section#topo div nav#navigate ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    gap: 40px;
+  }
+
+  section#topo img#menu {
+    z-index: 1000;
+    position: absolute;
+    scale: 0.5;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  section#topo img#fechar {
+    scale: 0;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
   }
 }
 
@@ -554,6 +613,11 @@
 
   section#promocao div.oferta p.tamanho input[type="number"] {
     width: 10%;
+  }
+
+  section#promocao div.oferta div.cores {
+    width: 80%;
+    padding: 0px 30px;
   }
 
   section#lancamentos h2.titulo-lancamento {
@@ -700,7 +764,7 @@
   }
 
   section#comunidade div#novidades #div-botao {
-    bottom: 22.5%;
+    bottom: 4.7cap;
   }
 
   section#comunidade footer.rodape h6.direitos {

@@ -1,3 +1,12 @@
+function mudarReveal() {
+    if (window.innerWidth <= 820) {
+        console.log(window.innerWidth);
+        const depoimentos = document.getElementById('depoimentos');
+        depoimentos.classList.remove('efeito-reveal-depoimentos');
+        depoimentos.classList.add('efeito-vertical-depoimentos');
+    };
+};
+
 document.addEventListener("DOMContentLoaded", () => {
     const botaoZoomUp = document.getElementById('zoom-up');
     const botaoZoomDown = document.getElementById('zoom-down');
@@ -164,3 +173,5 @@ function esconderMenu() {
     menuNavegacao.style.height = '0';
     menuNavegacao.style.padding = '0';
 }
+
+mudarReveal();

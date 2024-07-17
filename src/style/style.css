@@ -397,16 +397,16 @@ body {
 
         & #branco {
           position: absolute;
-          left: 27%;
-          bottom: 5%;
+          left: 6cqi;
+          bottom: 0.6cap;
           width: 20px;
           height: 20px;
         }
 
         & #preto {
           position: absolute;
-          right: 8%;
-          bottom: 5%;
+          right: 3.9cap;
+          bottom: 0.6cap;
           width: 20px;
           height: 20px;
         }
@@ -418,6 +418,7 @@ body {
       width: 40%;
       justify-content: center;
       position: relative;
+      padding-right: 10px;
 
       & .seta-esquerda {
         position: absolute;
@@ -457,7 +458,7 @@ body {
         position: absolute;
         z-index: 2;
         top: 48%;
-        right: 5%;
+        right: 10px;
         cursor: pointer;
       }
     }
