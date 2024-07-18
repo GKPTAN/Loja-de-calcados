@@ -141,6 +141,10 @@ body {
         background-color: white;
         color: black;
       }
+
+      &:focus {
+        outline: 1px solid lightgreen;
+      }
     }
   }
 
@@ -535,6 +539,10 @@ body {
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
 
+        &:focus {
+          outline: 2px solid lightgreen;
+        }
+
         & video {
           width: 16vw;
           cursor: pointer;
@@ -579,11 +587,11 @@ body {
       transition: all 0.3s ease-in-out;
 
       &:hover {
-      background-color: white;
-      color: black;
+        background-color: white;
+        color: black;
+      }
     }
   }
-}
 
   & .efeito-reveal-lancamentos {
     visibility: hidden;
@@ -632,6 +640,10 @@ body {
         transition: 0.5s ease-in-out !important;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
+
+        &:focus {
+          outline: 2px solid lightgreen;
+        }
 
         & video {
           width: 16vw;
@@ -911,6 +923,10 @@ body {
         margin-bottom: 60px;
         padding: 20px;
         border-radius: 10px;
+
+        &:focus{
+          outline: 2px solid green;
+        }
 
         &::placeholder {
           color: white;

@@ -41,38 +41,38 @@
 
         <nav class="navegacao nav-hidden" id="navigate">
           <ul>
-            <li><a href="#" target="_blank">sobre</a></li>
-            <li><a href="#" target="_blank">para homens</a></li>
-            <li><a href="#" target="_blank">para mulheres</a></li>
-            <li><a href="#" target="_blank">loja</a></li>
-            <li><a href="#" target="_blank">contatos</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="sobre">sobre</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="homens">para homens</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="mulheres">para mulheres</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="loja-nav">loja</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="contatos">contatos</a></li>
           </ul>
         </nav>
       </div>
 
-      <img src="src/icons/menu.png" alt="menu" class="menu" id="menu" onclick="revelarMenu()">
+      <img src="src/icons/menu.png" alt="abrir menu" class="menu" id="menu" onclick="revelarMenu()">
       <img src="src/icons/close.png" alt="fechar menu" class="fechar hidden" id="fechar" onclick="esconderMenu()">
 
-      <a class="compra" href="https://www.adidas.com.br/" target="_blank"
-        >Compre agora seus sapatos!</a
+      <a id="compra1-nav" class="compra" href="https://www.adidas.com.br/" target="_blank"
+        tabindex="0">Compre agora seus sapatos!</a
       >
     </section>
 
     <nav class="rotas" id="navbar">
       <ul class="navigation">
-        <li><a href="#topo">Inicio</a></li>
+        <li><a href="#topo" id="inicio" tabindex="0">Inicio</a></li>
         <li>></li>
-        <li><a href="#promocao">Oferta do dia</a></li>
+        <li><a href="#promocao" id="oferta-do-dia-nav" tabindex="0">Oferta do dia</a></li>
         <li>></li>
-        <li><a href="#lancamentos">Lançamentos</a></li>
+        <li><a href="#lancamentos" id="lancamentos-nav" tabindex="0">Lançamentos</a></li>
         <li>></li>
-        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#destaques" id="destaques-nav" tabindex="0">Destaques</a></li>
         <li>></li>
-        <li><a href="#pagamentos">Meios de Pagamento</a></li>
+        <li><a href="#pagamentos" id="meios-nav" tabindex="0">Meios de Pagamento</a></li>
         <li>></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#depoimentos" id="depoimentos-nav" tabindex="0">Depoimentos</a></li>
         <li>></li>
-        <li><a href="#comunidade">Comunidade</a></li>
+        <li><a href="#comunidade" id="comunidade-nav" tabindex="0">Comunidade</a></li>
       </ul>
     </nav>
 
@@ -107,9 +107,9 @@
 
         <p class="tamanho">
           <label for="tamanho">Tamanho do calçado: </label>
-          <input type="number" name="tamanhos" id="tamanho" min="1" max="99" />
+          <input type="number" name="tamanhos" id="tamanho" min="1" max="99" tabindex="0"/>
         </p>
-        <a href="#" class="comprar-agora">comprar agora</a>
+        <a href="#" id="agora" class="comprar-agora">comprar agora</a>
 
         <video
           class="video"
@@ -130,7 +130,7 @@
               class="cor"
               id="imagem1"
             />
-            <input type="radio" name="cor" id="branco" checked/>
+            <input type="radio" name="cor" id="branco" aria-label="tênis branco" tabindex="0" checked/>
           </div>
 
           <div id="cor-preta">
@@ -140,7 +140,7 @@
               class="cor"
               id="imagem2"
             />
-            <input type="radio" name="cor" id="preto" />
+            <input type="radio" name="cor" id="preto" aria-label="tênis preto"/>
           </div>
         </div>
       </div>
@@ -154,6 +154,7 @@
           onmouseover="this.src='src/icons/seta-m1.gif';style='top: 45.5%;'"
           onmouseout="this.src='src/icons/seta.png';style='top: 48%;'"
           data-change-slide-button="previous"
+          tabindex="0"
         />
 
         <ul class="slides">
@@ -215,6 +216,7 @@
           onmouseover="this.src='src/icons/seta-m1.gif';style='top: 45.5%;'"
           onmouseout="this.src='src/icons/seta.png';style='top: 48%;'"
           data-change-slide-button="next"
+          tabindex="0"
         />
       </div>
     </section>
@@ -223,7 +225,7 @@
       <h2 class="titulo-lancamento">Lançamentos</h2>
 
       <div class="container" id="container">
-        <div class="produto-lancamento efeito-reveal-produto1" id="produto1">
+        <div class="produto-lancamento efeito-reveal-produto1" id="produto1" tabindex="0">
           <video
             src="src/video/Tênis_Asics_Gel_Nagoya_6_Preto_e_Branco(1080p).mp4"
             playsinline
@@ -231,7 +233,7 @@
             id="video-lancamento1"
           ></video>
           <p class="nome-lancamento">
-            <a href="#"
+            <a href="#" tabindex="0" id="link1"
               >TÊNIS ASICS GEL-NAGOYA 6 - FEMININO - PRETO COM BRANCO E
               DOURADO</a
             >
@@ -240,7 +242,7 @@
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$50,00</p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto2" id="produto2">
+        <div class="produto-lancamento efeito-reveal-produto2" id="produto2" tabindex="0">
           <video
             src="src/video/Air_Jordan_38_Low_Black_Gamma_Blue_Basketball_Shoes(720p).mp4"
             playsinline
@@ -248,13 +250,13 @@
             id="video-lancamento2"
           ></video>
           <p class="nome-lancamento">
-            <a href="#">NIKE AIR JORDAN XXXVIII LOW</a>
+            <a href="#" tabindex="0" id="link2">NIKE AIR JORDAN XXXVIII LOW</a>
           </p>
           <p class="preco-lancamento">R$1.519,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$152,00</p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto3" id="produto3">
+        <div class="produto-lancamento efeito-reveal-produto3" id="produto3" tabindex="0">
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Mater_Splinter_Shoes(720p).mp4"
             playsinline
@@ -262,13 +264,13 @@
             id="video-lancamento3"
           ></video>
           <p class="nome-lancamento">
-            <a href="#">TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a>
+            <a href="#" tabindex="0" id="link3">TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a>
           </p>
           <p class="preco-lancamento">R$799,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$80,00</p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto4" id="produto4">
+        <div class="produto-lancamento efeito-reveal-produto4" id="produto4" tabindex="0">
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Shredder_Shoes(720p).mp4"
             playsinline
@@ -276,7 +278,7 @@
             id="video-lancamento4"
           ></video>
           <p class="nome-lancamento">
-            <a href="#">TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a>
+            <a href="#" tabindex="0" id="link4">TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a>
           </p>
           <p class="preco-lancamento">R$799,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$80,00</p>
@@ -287,6 +289,8 @@
         class="loja"
         href="https://www.nike.com.br/nav?sorting=DescReleaseDate"
         target="_blank"
+        tabindex="0"
+        id="loja-lancamentos"
         >Ir direto pra loja</a
       >
       <!-- Opcional -->
@@ -295,30 +299,30 @@
     <section class="destaques efeito-reveal-destaques" id="destaques">
       <h2 class="titulo-destaque">Destaques</h2>
       <div class="container">
-        <div class="produto-destaque efeito-reveal-destaque1" id="destaque1">
+        <div class="produto-destaque efeito-reveal-destaque1" id="destaque1" tabindex="0">
           <video
             src="src/video/ADIDAS_SAMBA_OG___KICKS_ON_FEET(720p).mp4"
             poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
             playsinline
             id="video-destaque1"
           ></video>
-          <p class="nome-destaque"><a href="#">ADIDAS SAMBA OG</a></p>
+          <p class="nome-destaque"><a href="#" tabindex="0" id="link5">ADIDAS SAMBA OG</a></p>
           <p class="preco-destaque">R$399,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$40,00</p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque2" id="destaque2">
+        <div class="produto-destaque efeito-reveal-destaque2" id="destaque2" tabindex="0">
           <video
             src="src/video/Tênis_Adidas_FX3632_Ultimashow_Preto(720p)_1.mp4"
             playsinline
             id="video-destaque2"
           ></video>
-          <p class="nome-destaque"><a href="#">TÊNIS ADIDAS ULTIMASHOW</a></p>
+          <p class="nome-destaque"><a href="#" tabindex="0" id="link6">TÊNIS ADIDAS ULTIMASHOW</a></p>
           <p class="preco-destaque">R$229,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$23,00</p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque3" id="destaque3">
+        <div class="produto-destaque efeito-reveal-destaque3" id="destaque3" tabindex="0">
           <video
             src="src/video/Sapato_Social_Masculino_Derby_Sandro_Moscoloni_Rafael(720p).mp4"
             poster="src/image/file.avif"
@@ -327,6 +331,8 @@
           ></video>
           <p class="nome-destaque">
             <a href="#"
+               tabindex="0"
+               id="link7"
               >SAPATO SOCIAL MASCULINO DERBY SANDRO MOSCOLONI RAFAEL MARROM
               CLARO</a
             >
@@ -335,7 +341,7 @@
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$17,09</p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque4" id="destaque4">
+        <div class="produto-destaque efeito-reveal-destaque4" id="destaque4" tabindex="0"> 
           <video
             src="src/video/Sapato_Social_Masculino_Penny_Loafer_Sandro_Moscoloni_Miguel_Preto(720p).mp4"
             poster="src/image/file (1).avif"
@@ -344,6 +350,8 @@
           ></video>
           <p class="nome-destaque">
             <a href="#"
+               tabindex="0"
+               id="link8"
               >SAPATO SOCIAL MASCULINO PENNY LOAFER SANDRO MOSCOLONI MIGUEL
               PRETO</a
             >
@@ -353,7 +361,7 @@
         </div>
       </div>
 
-      <a class="loja" href="https://www.adidas.com.br/" target="_blank"
+      <a class="loja" href="https://www.adidas.com.br/" target="_blank" tabindex="0" id="loja-destaques"
         >Ir direto pra loja</a
       >
       <!-- Opcional -->
@@ -485,7 +493,7 @@
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
 
       <div class="avaliacoes">
-        <div class="depoimento">
+        <div class="depoimento" id="depoimento1">
           <img
             src="src/image/pexels-hasibullah-zhowandai-248954-819530 (1).jpg"
             alt="nome do cliente"
@@ -497,14 +505,14 @@
           </p>
           <p class="avaliacao">
             <q
-              >Adorei minha experiência na [Nome da loja]! A qualidade dos
+              >Adorei minha experiência na Europe! A qualidade dos
               calçados é excepcional e o conforto é indescritível. Recomendo a
               todos!</q
             >
           </p>
         </div>
 
-        <div class="depoimento">
+        <div class="depoimento" id="depoimento2">
           <img
             src="src/image/pexels-latronico-713520 (1).jpg"
             alt="nome do cliente"
@@ -536,7 +544,7 @@
           </p>
           <p class="avaliacao">
             <q
-              >Encontrei exatamente o que procurava na [Nome da loja]. A
+              >Encontrei exatamente o que procurava na Europe. A
               qualidade dos produtos é excelente. Além disso, a equipe de vendas
               é super simpática e prestativa. Comprei um par de sandálias e
               estou completamente satisfeita. Recomendo sem dúvidas e já estou
@@ -563,10 +571,12 @@
           name="emails"
           id="email-usuario"
           placeholder="Escreva o seu e-mail aqui..."
+          aria-label="email"
+          tabindex="0"
         />
 
         <div class="secao-enviar" id="div-botao">
-          <button class="enviar">
+          <button class="enviar" aria-label="enviar email">
             <span class="material-symbols-outlined desativado" id="button"
               >arrow_forward</span
             >
