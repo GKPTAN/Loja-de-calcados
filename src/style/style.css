@@ -48,7 +48,7 @@ body {
       background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     }
 
-    & div {
+    & section {
       display: flex;
       justify-content: space-between;
       padding: 0px 30px;
@@ -70,6 +70,7 @@ body {
           position: absolute;
           top: 27.5%;
           left: 43%;
+          text-transform: uppercase;
         }
       }
       
@@ -115,10 +116,12 @@ body {
 
     & .menu {
         scale: 0;
+        visibility: hidden;
       }
 
     & .hidden {
         scale: 0;
+        visibility: hidden;
       }
 
     & .compra {
@@ -580,7 +583,7 @@ body {
       width: 50%;
       text-decoration: none;
       color: white;
-      border: 1px solid white;
+      border: 1px solid green;
       padding: 10px;
       border-radius: 25px;
       cursor: pointer;
@@ -682,7 +685,7 @@ body {
       width: 50%;
       text-decoration: none;
       color: black;
-      border: 1px solid black;
+      border: 1px solid green;
       background-color: #fff;
       padding: 10px;
       border-radius: 25px;
@@ -876,6 +879,7 @@ body {
 
         & .nome-cliente {
           font-family: "Caladea", serif;
+          text-transform: uppercase;
         }
 
         & .avaliacao {
@@ -909,6 +913,7 @@ body {
         grid-column: 1 / 2;
         margin-top: 50px;
         text-align: center;
+        text-transform: uppercase;
       }
 
       & .texto-comunidade {
@@ -1034,6 +1039,11 @@ body {
 
       & .nome-loja {
         font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+      }
+
+      & .direitos {
+        font-size: 16px;
       }
     }
   }

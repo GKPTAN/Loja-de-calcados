@@ -155,6 +155,7 @@ function revelarMenu() {
     const menuNavegacao = document.getElementById('navigate');
 
     menu.style.scale = '0';
+    fecharMenu.style.visibility = 'visible';
     fecharMenu.style.scale = '0.5';
     menuNavegacao.style.width = '100%';
     menuNavegacao.style.height = '100%';

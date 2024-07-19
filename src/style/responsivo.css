@@ -5,18 +5,18 @@
         background-repeat: no-repeat;
     }
 
-    section#promocao span.asterisco {
-        top: 8.7%;
+    main#promocao span.asterisco {
+        top: 8%;
         left: 78.5%;
     }
 
-    section#promocao button#zoom-up {
-        top: 10%;
+    main#promocao button#zoom-up {
+        top: 9%;
         left: 92%;
     }
 
-    section#promocao button#zoom-down {
-        top: 10%;
+    main#promocao button#zoom-down {
+        top: 9%;
         left: 95%;
     }
 
@@ -25,11 +25,11 @@
         margin: 0 auto;
     }
 
-    section#promocao .abaixo {
+    main#promocao .abaixo {
         margin-bottom: 50px;
     }
 
-    section#promocao div.oferta div.cores #branco {
+    main#promocao section.oferta div.cores #branco {
       left: 6cqi;
     }
 
@@ -86,95 +86,95 @@
 }
 
 @media (max-width: 1440px) {
-  section#promocao span.esquerda {
+  main#promocao span.esquerda {
     font-size: 3rem;
   }
 
-  section#promocao span.direita {
+  main#promocao span.direita {
     font-size: 3rem;
   }
 
-  section#promocao h2.titulo-oferta {
+  main#promocao h2.titulo-oferta {
     font-size: 1.5rem;
   }
 
-  section#promocao .descricao-oferta {
+  main#promocao .descricao-oferta {
     font-size: 1rem;
   }
 
-  section#promocao span.asterisco {
+  main#promocao span.asterisco {
     top: 6%;
     left: 66%;
   }
 
-  section#promocao #zoom-up {
+  main#promocao #zoom-up {
     top: 7.5%;
     left: 89.5%;
   }
 
-  section#promocao #zoom-down {
+  main#promocao #zoom-down {
     top: 7.5%;
     left: 93.5%;
   }
 
-  section#promocao video.video {
+  main#promocao video.video {
     width: 60%;
     height: 48%;
   }
 
-  section#promocao .cores {
+  main#promocao .cores {
     justify-content: space-between;
     height: 120px;
   }
 
-  section#promocao #cor-preta, section#promocao #cor-branca {
+  main#promocao #cor-preta, main#promocao #cor-branca {
     position: relative;
     width: 20%;
     height: fit-content;
   }
 
-  section#promocao #branco {
+  main#promocao #branco {
     width: 10px;
     left: 2.4cqi;
     bottom: 0.3cap;
   }
 
-  section#promocao #preto {
+  main#promocao #preto {
     width: 10px;
     right: 0.4cap;
     bottom: 0.3cap;
   }
 
-  section#lancamentos .produto-lancamento {
+  main#lancamentos .produto-lancamento {
     gap: 5px;
   }
 
-  section#lancamentos .produto-lancamento .nome-lancamento {
+  main#lancamentos .produto-lancamento .nome-lancamento {
     text-align: left;
   }
 
-  section#lancamentos .segunda-opcao {
+  main#lancamentos .segunda-opcao {
     text-align: center;
   }
 
-  section#destaques .produto-destaque {
+  main#destaques .produto-destaque {
     gap: 5px;
   }
 
-  section#destaques .segunda-opcao {
+  main#destaques .segunda-opcao {
     text-align: center;
   }
 
-  section#pagamentos {
+  main#pagamentos {
     padding: 25px;
   }
 
-  section#pagamentos .titulo-pagamento {
+  main#pagamentos .titulo-pagamento {
     font-size: 2.5rem;
     margin-bottom: 30px;
   }
 
-  section#pagamentos .metodos {
+  main#pagamentos .metodos {
     padding: 0px 100px;
   }
 
@@ -200,72 +200,72 @@
 }
 
 @media (max-width: 1024px) {
-  section#promocao {
+  main#promocao {
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
   }
 
-  section#promocao .oferta {
+  main#promocao .oferta {
     width: 80%;
     margin-bottom: 10px;
   }
 
-  section#promocao span.esquerda, section#promocao span.direita {
+  main#promocao span.esquerda, main#promocao span.direita {
     font-size: 3rem;
   }
 
-  section#promocao .titulo-oferta {
+  main#promocao .titulo-oferta {
     font-size: 2rem;
   }
 
-  section#promocao span.asterisco {
+  main#promocao span.asterisco {
     top: 6%;
     left: 67%;
   }
 
-  section#promocao #zoom-up {
+  main#promocao #zoom-up {
     top: 8%;
     left: 90%;
   }
 
-  section#promocao #zoom-down {
+  main#promocao #zoom-down {
     top: 8%;
     left: 94%;
   }
 
-  section#promocao .cores {
+  main#promocao .cores {
     height: 60px;
   }
 
-  section#promocao #cor-branca {
+  main#promocao #cor-branca {
     position: relative;
     width: 50px;
     height: 50px;
   }
 
-  section#promocao #cor-preta {
+  main#promocao #cor-preta {
     position: relative;
     width: 50px;
     height: 50px;
   }
 
-  section#promocao #branco {
+  main#promocao #branco {
     left: 72%;
     bottom: 0;
   }
 
-  section#promocao #preto {
+  main#promocao #preto {
     bottom: 0;
   }
 
-  section#promocao .adicional {
+  main#promocao .adicional {
     width: 80%;
     height: 400px;
     padding-right: 0;
   }
 
-  section#promocao div.adicional .seta-direita {
+  main#promocao section.adicional .seta-direita {
     right: 0;
   }
 
@@ -333,11 +333,11 @@
     height: 40vh;
   }
 
-  #topo div #logo #logomarca {
+  #topo section #logo #logomarca {
     width: 150px;
   }
 
-  #topo div #logo h1.logotipo {
+  #topo section #logo h1.logotipo {
     top: 30.5%;
     left: 43.5%;
     font-size: 12px;
@@ -352,15 +352,15 @@
     width: 90vw;
   }
 
-  section#promocao .oferta {
+  main#promocao .oferta {
     width: 90%;
   }
 
-  section#promocao span.esquerda, #promocao span.direita {
+  main#promocao span.esquerda, main#promocao span.direita {
     font-size: 3rem;
   }
 
-  section#promocao h2.titulo-oferta {
+  main#promocao h2.titulo-oferta {
     font-size: 1.5rem;
   }
 
@@ -377,100 +377,100 @@
     width: 90vw;
   }
 
-  section#lancamentos h2.titulo-lancamento {
+  main#lancamentos h2.titulo-lancamento {
     font-size: 2.5rem;
     margin-bottom: 30px;
   }
 
-  section#lancamentos div.container {
+  main#lancamentos section.container {
     margin-bottom: 25px;
   }
 
-  section#lancamentos .container .produto-lancamento {
+  main#lancamentos .container .produto-lancamento {
     width: 20vw;
     font-size: 14px;
   }
 
-  section#lancamentos div#container div.produto-lancamento video {
+  main#lancamentos section#container div.produto-lancamento video {
     width: 20vw;
   }
 
-  section#lancamentos .loja {
+  main#lancamentos .loja {
     font-size: 1rem;
     width: 25%;
   }
 
-  section#destaques {
+  main#destaques {
     padding: 25px;
     width: 90vw;
   }
 
-  section#destaques h2.titulo-destaque {
+  main#destaques h2.titulo-destaque {
     font-size: 2.5rem;
     margin-bottom: 30px;
   }
 
-  section#destaques div.container {
+  main#destaques section.container {
     margin-bottom: 25px;
   }
 
-  section#destaques div.container div.produto-destaque {
+  main#destaques section.container div.produto-destaque {
     width: 20vw;
     font-size: 14px;
   }
 
-  section#destaques div.container div.produto-destaque video {
+  main#destaques section.container div.produto-destaque video {
     width: 20vw;
   }
 
-  section#destaques .loja {
+  main#destaques .loja {
     font-size: 1rem;
     width: 25%;
   }
 
-  section#pagamentos .metodos {
+  main#pagamentos .metodos {
     padding: 0;
   }
 
-  section#pagamentos .metodos #cartoes, section#pagamentos .metodos #intermediario, section#pagamentos .metodos #meios {
+  main#pagamentos .metodos #cartoes, main#pagamentos .metodos #intermediario, main#pagamentos .metodos #meios {
     width: 30%;
   }
 
-  section#pagamentos .metodos #meios .metodos-adicionais {
+  main#pagamentos .metodos #meios .metodos-adicionais {
     grid-template-columns: 0fr 0fr;
     column-gap: 5px;
     align-self: center;
   }
 
-  section#depoimentos {
+  main#depoimentos {
     width: 90vw;
   }
 
-  section#depoimentos h2.titulo-depoimentos {
+  main#depoimentos h2.titulo-depoimentos {
     font-size: 2.5rem;
   }
 
-  section#depoimentos div.avaliacoes .depoimento {
+  main#depoimentos section.avaliacoes .depoimento {
     width: 25vw;
   }
 
-  section#comunidade #novidades {
+  main#comunidade #novidades {
     grid-template-columns: 100%;
     margin-bottom: 30px;
     row-gap: 20px;
   }
 
-  section#comunidade #novidades .titulo-atualizacoes {
+  main#comunidade #novidades .titulo-atualizacoes {
     grid-column: 1;
     margin-top: 0px;
     font-size: 2.5rem;
   }
 
-  section#comunidade #novidades .texto-comunidade {
+  main#comunidade #novidades .texto-comunidade {
     grid-column: 1;
   }
 
-  section#comunidade #novidades input[type="email"] {
+  main#comunidade #novidades input[type="email"] {
     grid-column: 1;
     margin-bottom: 0;
   }
@@ -481,7 +481,7 @@
 }
 
 @media (max-width: 650px) {
-  section#topo div nav#navigate {
+  main#topo section nav#navigate {
     display: flex;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.849);
@@ -494,29 +494,30 @@
     transition: all 0.6s ease-in-out;
   }
 
-  section#topo div nav.nav-hidden {
+  main#topo section nav.nav-hidden {
     width: 0;
     height: 0;
     transition: all 0.6s ease-in-out;
   }
 
-  section#topo div nav#navigate ul {
+  main#topo section nav#navigate ul {
     display: flex;
     flex-direction: column;
     z-index: 2;
     gap: 40px;
   }
 
-  section#topo img#menu {
+  main#topo img#menu {
     z-index: 1000;
     position: absolute;
     scale: 0.5;
     top: 0;
     right: 0;
+    visibility: visible;
     transition: all 0.3s ease-in-out;
   }
 
-  section#topo img#fechar {
+  main#topo img#fechar {
     scale: 0;
     z-index: 1000;
     position: absolute;
@@ -529,21 +530,21 @@
 
 @media (max-width: 425px) {
 
-  section#topo div {
+  main#topo section {
     display: block;
   }
 
-  section#topo div #logo #logomarca {
+  main#topo section #logo #logomarca {
     width: 100px;
   }
 
-  section#topo div #logo h1.logotipo {
+  main#topo section #logo h1.logotipo {
     font-size: 9px;
     top: 27%;
     left: 6.8cap;
   }
 
-  section#topo div nav#navigate {
+  main#topo section nav#navigate {
     display: flex;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.849);
@@ -556,20 +557,20 @@
     transition: all 0.6s ease-in-out;
   }
 
-  section#topo div nav.nav-hidden {
+  main#topo section nav.nav-hidden {
     width: 0;
     height: 0;
     transition: all 0.6s ease-in-out;
   }
 
-  section#topo div nav#navigate ul {
+  main#topo section nav#navigate ul {
     display: flex;
     flex-direction: column;
     z-index: 2;
     gap: 40px;
   }
 
-  section#topo img#menu {
+  main#topo img#menu {
     z-index: 1000;
     position: absolute;
     scale: 0.5;
@@ -578,7 +579,7 @@
     transition: all 0.3s ease-in-out;
   }
 
-  section#topo img#fechar {
+  main#topo img#fechar {
     scale: 0;
     z-index: 1000;
     position: absolute;
@@ -588,186 +589,186 @@
     transition-delay: 0.3s;
   }
 
-  section#topo .compra {
+  main#topo .compra {
     top: 83%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.233);
   }
 
-  section#promocao div.oferta span.esquerda, section#promocao div.oferta span.direita {
+  main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
     font-size: 1.5rem;
   }
 
-  section#promocao div.oferta span.esquerda {
+  main#promocao section.oferta span.esquerda {
     top: 2.5%;
   }
 
-  section#promocao div.oferta span.direita {
+  main#promocao section.oferta span.direita {
     top: 2.5%;
     right: 2.5%;
   }
 
-  section#promocao div.oferta h2.titulo-oferta {
+  main#promocao section.oferta h2.titulo-oferta {
     font-size: 1.5rem;
   }
 
-  section#promocao div.oferta p.tamanho input[type="number"] {
+  main#promocao section.oferta p.tamanho input[type="number"] {
     width: 10%;
   }
 
-  section#promocao div.oferta div.cores {
+  main#promocao section.oferta div.cores {
     width: 80%;
     padding: 0px 30px;
   }
 
-  section#lancamentos h2.titulo-lancamento {
+  main#lancamentos h2.titulo-lancamento {
     font-size: 1.5rem;
   }
 
-  section#lancamentos div#container {
+  main#lancamentos section#container {
     flex-wrap: wrap;
   }
 
-  section#lancamentos div#container div#produto1, section#lancamentos div#container div#produto2 {
+  main#lancamentos section#container div#produto1, main#lancamentos section#container div#produto2 {
     width: 45%;
     padding: 0px 5px 5px 5px;
     margin-bottom: 20px;
   }
 
-  section#lancamentos div#container div#produto3, section#lancamentos div#container div#produto4 {
+  main#lancamentos section#container div#produto3, main#lancamentos section#container div#produto4 {
     width: 45%;
     padding: 0px 5px 5px 5px;
   }
 
-  section#lancamentos div#container div#produto1 video, section#lancamentos div#container div#produto2 video {
+  main#lancamentos section#container div#produto1 video, main#lancamentos section#container div#produto2 video {
     width: 35.20vw;
   }
 
-  section#lancamentos div#container div#produto3 video, section#lancamentos div#container div#produto4 video {
+  main#lancamentos section#container div#produto3 video, main#lancamentos section#container div#produto4 video {
     width: 35.20vw;
   }
 
-  section#lancamentos .loja {
+  main#lancamentos .loja {
     width: 60%;
   }
 
-  section#destaques h2.titulo-destaque {
+  main#destaques h2.titulo-destaque {
     font-size: 1.5rem;
   }
 
-  section#destaques div.container {
+  main#destaques section.container {
     flex-wrap: wrap;
   }
 
-  section#destaques div.container div#destaque1, section#destaques div.container div#destaque2 {
+  main#destaques section.container div#destaque1, main#destaques section.container div#destaque2 {
     width: 45%;
     padding: 0px 5px 5px 5px;
     margin-bottom: 20px;
   }
 
-  section#destaques div.container div#destaque3, section#destaques div.container div#destaque4 {
+  main#destaques section.container div#destaque3, main#destaques section.container div#destaque4 {
     width: 45%;
     padding: 0px 5px 5px 5px;
   }
 
-  section#destaques div.container div#destaque1 video, section#destaques div.container div#destaque2 video {
+  main#destaques section.container div#destaque1 video, main#destaques section.container div#destaque2 video {
     width: 35.20vw;
   }
 
-  section#destaques div.container div#destaque3 video, section#destaques div.container div#destaque4 video {
+  main#destaques section.container div#destaque3 video, main#destaques section.container div#destaque4 video {
     width: 35.20vw;
   }
 
-  section#destaques .loja {
+  main#destaques .loja {
     width: 60%;
   }
 
-  section#pagamentos h2.titulo-pagamento {
+  main#pagamentos h2.titulo-pagamento {
     font-size: 1.5rem;
   }
 
-  section#pagamentos div.metodos {
+  main#pagamentos section.metodos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
   }
 
-  section#pagamentos .metodos #cartoes .titulo-cartoes {
+  main#pagamentos .metodos #cartoes .titulo-cartoes {
     margin-bottom: 5px;
   }
 
-  section#pagamentos .metodos #cartoes .icones-cartoes {
+  main#pagamentos .metodos #cartoes .icones-cartoes {
     display: flex;
     flex-wrap: wrap;
   }
 
-  section#pagamentos .metodos #cartoes .icones-cartoes img {
+  main#pagamentos .metodos #cartoes .icones-cartoes img {
     width: 15%;
   }
 
-  section#pagamentos .metodos #intermediario .meios-online {
+  main#pagamentos .metodos #intermediario .meios-online {
     display: flex;
     flex-wrap: wrap;
   }
 
-  section#pagamentos .metodos #intermediario .meios-online img {
+  main#pagamentos .metodos #intermediario .meios-online img {
     width: 15%;
   }
 
-  section#pagamentos .metodos #intermediario .meios-online .branco img, section#pagamentos .metodos #intermediario .meios-online .branco-2 {
+  main#pagamentos .metodos #intermediario .meios-online .branco img, main#pagamentos .metodos #intermediario .meios-online .branco-2 {
     width: 25%;
   }
 
-  section#pagamentos .metodos #intermediario .meios-online .branco img, section#pagamentos .metodos #intermediario .meios-online .branco-2 img {
+  main#pagamentos .metodos #intermediario .meios-online .branco img, main#pagamentos .metodos #intermediario .meios-online .branco-2 img {
     width: 100%;
   }
 
-  section#pagamentos .metodos #meios .metodos-adicionais {
+  main#pagamentos .metodos #meios .metodos-adicionais {
     display: flex;
   }
 
-  section#pagamentos .metodos #cartoes, section#pagamentos .metodos #intermediario, section#pagamentos .metodos #meios {
+  main#pagamentos .metodos #cartoes, main#pagamentos .metodos #intermediario, main#pagamentos .metodos #meios {
     width: 80%;
   }
 
-  section#pagamentos div.metodos hr {
+  main#pagamentos section.metodos hr {
     width: 80%;
   }
 
-  section#depoimentos h2.titulo-depoimentos {
+  main#depoimentos h2.titulo-depoimentos {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
 
-  section#depoimentos div.avaliacoes {
+  main#depoimentos section.avaliacoes {
     flex-wrap: wrap;
   }
 
-  section#depoimentos div.avaliacoes .depoimento {
+  main#depoimentos section.avaliacoes .depoimento {
     width: 47%;
     margin-bottom: 10px;
   }
 
-  section#depoimentos div.avaliacoes #depoimento-mulher {
+  main#depoimentos section.avaliacoes #depoimento-mulher {
     display: block;
     margin: auto;
     width: 60%;
   }
 
-  section#comunidade {
+  main#comunidade {
     padding: 50px 25px 40px 25px;
   }
 
-  section#comunidade div#novidades h2.titulo-atualizacoes {
+  main#comunidade section#novidades h2.titulo-atualizacoes {
     font-size: 1.5rem;
   }
 
-  section#comunidade div#novidades #div-botao {
+  main#comunidade section#novidades #div-botao {
     bottom: 4.7cap;
   }
 
-  section#comunidade footer.rodape h6.direitos {
+  main#comunidade footer.rodape h3.direitos {
     width: 150px;
   }
 }
