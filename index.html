@@ -76,8 +76,8 @@
       </ul>
     </nav>
 
-    <main class="oferta-do-dia efeito-reveal-oferta" id="promocao" tabindex="0">
-      <section class="oferta">
+    <main class="oferta-do-dia efeito-reveal-oferta" id="promocao" tabindex="0" title="oferta do dia">
+      <section class="oferta" tabindex="0" title="oferta">
         <span class="esquerda">CH</span>
         <h2 class="titulo-oferta">Oferta do dia</h2>
         <span class="direita">no</span>
@@ -119,6 +119,7 @@
           height="315"
           poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
           aria-label="exibição do tênis da adidas samba og"
+          tabindex="0"
         > teaser do tênis adidas samba og </video>
 
         <h3 class="escolha-cor">Escolha a sua cor</h3>
@@ -146,7 +147,7 @@
         </div>
       </section>
 
-      <section class="adicional" id="carrossel">
+      <section class="adicional" id="carrossel" tabindex="0" title="imagens do tênis em promoção">
         <img
           class="seta-esquerda"
           id="seta-left"
@@ -159,49 +160,49 @@
         />
 
         <ul class="slides">
-          <li class="slide fade" data-active>
+          <li class="slide fade" data-active tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_02_standard.avif"
               alt="parte de cima do tênis"
             />
           </li>
 
-          <li class="slide fade">
+          <li class="slide fade" tabindex="0">
             <img 
             src="src/image/Tenis_Samba_OG_Branco_B75806_01_standard (1).jpg" 
             alt="parte do lado do tênis" 
             />
           </li>
 
-          <li class="slide fade">
+          <li class="slide fade" tabindex="0">
             <img 
             src="src/image/Tenis_Samba_OG_Branco_B75806_03_standard.avif" 
             alt="parte da sola do tênis" 
             />
           </li>
 
-          <li class="slide fade">
+          <li class="slide fade" tabindex="0">
             <img 
             src="src/image/Tenis_Samba_OG_Branco_B75806_04_standard.avif" 
             alt="imagem do tênis - parte da frente" 
             />
           </li>
 
-          <li class="slide fade">
+          <li class="slide fade" tabindex="0">
             <img 
             src="src/image/Tenis_Samba_OG_Branco_B75806_05_standard.avif" 
             alt="imagem do tênis - parte de trás" 
             />
           </li>
 
-          <li class="slide fade">
+          <li class="slide fade" tabindex="0">
             <img 
             src="src/image/Tenis_Samba_OG_Branco_B75806_41_detail.avif" 
             alt="imagem aproximada mostrando detalhes da logo do tênis" 
             />
           </li>
 
-          <li class="slide fade">
+          <li class="slide fade" tabindex="0">
             <img 
             src="src/image/Tenis_Samba_OG_Branco_B75806_42_detail.avif" 
             alt="imagem aproximada mostrando os cadaços do tênis" 
@@ -222,16 +223,18 @@
       </section>
     </main>
 
-    <main class="lancamentos efeito-reveal-lancamentos" id="lancamentos" tabindex="0">
+    <main class="lancamentos efeito-reveal-lancamentos" id="lancamentos" tabindex="0" title="lançamentos">
       <h2 class="titulo-lancamento">Lançamentos</h2>
 
-      <section class="container" id="container" tabindex="0">
+      <section class="container" id="container">
         <div class="produto-lancamento efeito-reveal-produto1" id="produto1" tabindex="0">
           <video
             src="src/video/Tênis_Asics_Gel_Nagoya_6_Preto_e_Branco(1080p).mp4"
             playsinline
             class="video"
             id="video-lancamento1"
+            tabindex="0"
+            aria-label="exibição do tênis asics gel-nagoya 6"
           ></video>
           <p class="nome-lancamento">
             <a href="#" tabindex="0" id="link1"
@@ -249,6 +252,8 @@
             playsinline
             class="video"
             id="video-lancamento2"
+            tabindex="0"
+            aria-label="exibição do tênis nike air jordan XXXVIII low"
           ></video>
           <p class="nome-lancamento">
             <a href="#" tabindex="0" id="link2">NIKE AIR JORDAN XXXVIII LOW</a>
@@ -263,6 +268,8 @@
             playsinline
             class="video"
             id="video-lancamento3"
+            tabindex="0"
+            aria-label="exibição do tênis adidas tmnt splinter"
           ></video>
           <p class="nome-lancamento">
             <a href="#" tabindex="0" id="link3">TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a>
@@ -277,6 +284,8 @@
             playsinline
             class="video"
             id="video-lancamento4"
+            tabindex="0"
+            aria-label="exibição do tênis adidas tmnt shredder"
           ></video>
           <p class="nome-lancamento">
             <a href="#" tabindex="0" id="link4">TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a>
@@ -297,15 +306,17 @@
       <!-- Opcional -->
     </main>
 
-    <main class="destaques efeito-reveal-destaques" id="destaques" tabindex="0">
+    <main class="destaques efeito-reveal-destaques" id="destaques" tabindex="0" title="destaques e bem avaliados">
       <h2 class="titulo-destaque">Destaques</h2>
-      <section class="container" tabindex="0">
+      <section class="container">
         <div class="produto-destaque efeito-reveal-destaque1" id="destaque1" tabindex="0">
           <video
             src="src/video/ADIDAS_SAMBA_OG___KICKS_ON_FEET(720p).mp4"
             poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
             playsinline
             id="video-destaque1"
+            tabindex="0"
+            aria-label="exibição do tênis adidas samba o, g"
           ></video>
           <p class="nome-destaque"><a href="#" tabindex="0" id="link5">ADIDAS SAMBA OG</a></p>
           <p class="preco-destaque">R$399,99</p>
@@ -317,6 +328,8 @@
             src="src/video/Tênis_Adidas_FX3632_Ultimashow_Preto(720p)_1.mp4"
             playsinline
             id="video-destaque2"
+            tabindex="0"
+            aria-label="exibição do tênis adidas ultimashow"
           ></video>
           <p class="nome-destaque"><a href="#" tabindex="0" id="link6">TÊNIS ADIDAS ULTIMASHOW</a></p>
           <p class="preco-destaque">R$229,99</p>
@@ -329,6 +342,8 @@
             poster="src/image/file.avif"
             playsinline
             id="video-destaque3"
+            tabindex="0"
+            aria-label="exibição do sapato social masculino derby sandro moscoloni rafael marrom claro"
           ></video>
           <p class="nome-destaque">
             <a href="#"
@@ -348,6 +363,8 @@
             poster="src/image/file (1).avif"
             playsinline
             id="video-destaque4"
+            tabindex="0"
+            aria-label="exibição do sapato social masculino penny loafer sandro moscoloni miguel preto"
           ></video>
           <p class="nome-destaque">
             <a href="#"
@@ -368,11 +385,11 @@
       <!-- Opcional -->
     </main>
 
-    <main class="pagamento efeito-reveal-pagamento" id="pagamentos" tabindex="0">
+    <main class="pagamento efeito-reveal-pagamento" id="pagamentos" tabindex="0" title="meios de pagamento">
       <h2 class="titulo-pagamento">métodos de pagamento aceitos</h2>
 
-      <section class="metodos" tabindex="0">
-        <div class="cartoes efeito-reveal-cartoes" id="cartoes">
+      <section class="metodos">
+        <div class="cartoes efeito-reveal-cartoes" id="cartoes" tabindex="0" aria-describedby="cartoes">
           <h3 class="titulo-cartoes">
             Cartão de Crédito e Débito<img
               width="48px"
@@ -436,6 +453,7 @@
           class="intermediario efeito-reveal-intermediario"
           id="intermediario"
           tabindex="0"
+          aria-describedby="intermediario"
         >
           <h3 class="titulo-intermediario">Meios de Pagamento Online</h3>
 
@@ -467,7 +485,7 @@
 
         <hr />
 
-        <div class="outros-meios efeito-reveal-meios" id="meios" tabindex="0">
+        <div class="outros-meios efeito-reveal-meios" id="meios" tabindex="0" aria-describedby="meios">
           <h3 class="titulo-outros-meios">Outros Meios</h3>
 
           <div class="metodos-adicionais">
@@ -491,14 +509,17 @@
       </section>
     </main>
 
-    <main class="depoimentos efeito-reveal-depoimentos" id="depoimentos" tabindex="0">
+    <main class="depoimentos efeito-reveal-depoimentos" id="depoimentos" tabindex="0" title="depoimentos dos nossos clientes">
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
 
-      <section class="avaliacoes" tabindex="0">
-        <article class="depoimento" id="depoimento1" tabindex="0">
+      <section class="avaliacoes">
+        <article class="depoimento" id="depoimento1" tabindex="0" role="article" aria-label="foto do lucas silva, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Adorei minha experiência na Europe! A qualidade dos
+        calçados é excepcional e o conforto é indescritível. Recomendo a
+        todos!">
           <img
             src="src/image/pexels-hasibullah-zhowandai-248954-819530 (1).jpg"
-            alt="nome do cliente"
+            alt="foto do lucas silva"
+            id="imagem-lucas"
           />
           <h3 class="nome-cliente">lucas silva</h3>
           <p class="rating">
@@ -514,10 +535,13 @@
           </p>
         </article>
 
-        <article class="depoimento" id="depoimento2" tabindex="0">
+        <article class="depoimento" id="depoimento2" tabindex="0" role="article" aria-label="foto do joão paulo, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: A loja tem uma excelente variedade de calçados, desde tênis
+        esportivos até sapatos sociais. Comprei um par de botas que são
+        extremamente confortáveis e estilosas. foi uma ótima experiência
+        comprar nessa loja">
           <img
             src="src/image/pexels-latronico-713520 (1).jpg"
-            alt="nome do cliente"
+            alt="foto de joão paulo"
           />
           <h3 class="nome-cliente">joão paulo</h3>
           <p class="rating">
@@ -534,10 +558,14 @@
           </p>
         </article>
 
-        <article class="depoimento" id="depoimento-mulher" tabindex="0">
+        <article class="depoimento" id="depoimento-mulher" tabindex="0" role="article" aria-label="foto da ana clara, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Encontrei exatamente o que procurava na Europe. A
+        qualidade dos produtos é excelente. Além disso, a equipe de vendas
+        é super simpática e prestativa. Comprei um par de sandálias e
+        estou completamente satisfeita. Recomendo sem dúvidas e já estou
+        planejando a minha próxima compra!">
           <img
             src="src/image/pexels-pixabay-354951.jpg"
-            alt="nome do cliente"
+            alt="foto da ana clara"
           />
           <h3 class="nome-cliente">ana clara</h3>
           <p class="rating">
@@ -557,7 +585,7 @@
       </section>
     </main>
 
-    <main class="atualizacoes" id="comunidade" tabindex="0">
+    <main class="atualizacoes" id="comunidade" tabindex="0" title="atualizações da comunidade">
       <section class="comunidade efeito-reveal-comunidade" id="novidades">
         <h2 class="titulo-atualizacoes" tabindex="0">Se junte a nossa comunidade</h2>
 
@@ -586,7 +614,7 @@
         </div>
       </section>
 
-      <section class="creditos" tabindex="0">
+      <section class="creditos" tabindex="0" title="créditos e atribuições">
         <h2>CRÉDITOS</h2>
 
         <aside class="atribuicoes">
@@ -727,7 +755,7 @@
       <footer class="rodape">
         <h2 class="nome-loja">europe</h2>
 
-        <h3 class="direitos">
+        <h3 class="direitos" tabindex="0">
           &copy; 2024 [EUROPE]. Todos os direitos reservados.
         </h3>
       </footer>

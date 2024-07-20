@@ -34,3 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
         return re.test(email);
     };
 });
+
+document.getElementById('email-usuario').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        document.getElementById('button').click();
+    };
+});
