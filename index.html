@@ -36,7 +36,7 @@
       <section>
         <div class="logo" id="logo" tabindex="0" aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil" role="banner">
           <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca">
-          <h1 class="logotipo">urop</h1>
+          <h1 class="logotipo" role="heading" aria-level="1">urop</h1>
         </div>
 
         <nav class="navegacao nav-hidden" id="navigate" role="menu">
@@ -132,7 +132,7 @@
               class="cor"
               id="imagem1"
             />
-            <input type="radio" name="cor" id="branco" aria-label="tênis branco" tabindex="0" checked role="checkbox" aria-checked="true"/>
+            <input type="radio" name="cor" id="branco" aria-label="tênis branco" tabindex="0" checked role="radio" aria-checked="true"/>
           </div>
 
           <div id="cor-preta">
@@ -142,7 +142,7 @@
               class="cor"
               id="imagem2"
             />
-            <input type="radio" name="cor" id="preto" aria-label="tênis preto" role="checkbox" aria-checked="false"/>
+            <input type="radio" name="cor" id="preto" aria-label="tênis preto" role="radio" aria-checked="false"/>
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@
           role="button"
         />
 
-        <ul class="slides" role="slider">
+        <ul class="slides">
           <li class="slide fade" data-active tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_02_standard.avif"
@@ -309,10 +309,10 @@
       <!-- Opcional -->
     </main>
 
-    <main class="destaques efeito-reveal-destaques" id="destaques" tabindex="0" title="destaques e bem avaliados">
+    <main class="destaques efeito-reveal-destaques" id="destaques" tabindex="0" title="destaques e bem avaliados" role="main">
       <h2 class="titulo-destaque">Destaques</h2>
-      <section class="container">
-        <div class="produto-destaque efeito-reveal-destaque1" id="destaque1" tabindex="0">
+      <section class="container" role="main">
+        <div class="produto-destaque efeito-reveal-destaque1" id="destaque1" tabindex="0" role="region">
           <video
             src="src/video/ADIDAS_SAMBA_OG___KICKS_ON_FEET(720p).mp4"
             poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
@@ -321,12 +321,12 @@
             tabindex="0"
             aria-label="exibição do tênis adidas samba o, g"
           ></video>
-          <p class="nome-destaque"><a href="#" tabindex="0" id="link5">ADIDAS SAMBA OG</a></p>
+          <p class="nome-destaque"><a href="#" tabindex="0" id="link5" role="link">ADIDAS SAMBA OG</a></p>
           <p class="preco-destaque">R$399,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$40,00</p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque2" id="destaque2" tabindex="0">
+        <div class="produto-destaque efeito-reveal-destaque2" id="destaque2" tabindex="0" role="region">
           <video
             src="src/video/Tênis_Adidas_FX3632_Ultimashow_Preto(720p)_1.mp4"
             playsinline
@@ -334,12 +334,12 @@
             tabindex="0"
             aria-label="exibição do tênis adidas ultimashow"
           ></video>
-          <p class="nome-destaque"><a href="#" tabindex="0" id="link6">TÊNIS ADIDAS ULTIMASHOW</a></p>
+          <p class="nome-destaque"><a href="#" tabindex="0" id="link6" role="link">TÊNIS ADIDAS ULTIMASHOW</a></p>
           <p class="preco-destaque">R$229,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$23,00</p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque3" id="destaque3" tabindex="0">
+        <div class="produto-destaque efeito-reveal-destaque3" id="destaque3" tabindex="0" role="region">
           <video
             src="src/video/Sapato_Social_Masculino_Derby_Sandro_Moscoloni_Rafael(720p).mp4"
             poster="src/image/file.avif"
@@ -352,6 +352,7 @@
             <a href="#"
                tabindex="0"
                id="link7"
+               role="link"
               >SAPATO SOCIAL MASCULINO DERBY SANDRO MOSCOLONI RAFAEL MARROM
               CLARO</a
             >
@@ -360,7 +361,7 @@
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$17,09</p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque4" id="destaque4" tabindex="0"> 
+        <div class="produto-destaque efeito-reveal-destaque4" id="destaque4" tabindex="0" role="region"> 
           <video
             src="src/video/Sapato_Social_Masculino_Penny_Loafer_Sandro_Moscoloni_Miguel_Preto(720p).mp4"
             poster="src/image/file (1).avif"
@@ -373,6 +374,7 @@
             <a href="#"
                tabindex="0"
                id="link8"
+               role="link"
               >SAPATO SOCIAL MASCULINO PENNY LOAFER SANDRO MOSCOLONI MIGUEL
               PRETO</a
             >
@@ -382,17 +384,17 @@
         </div>
       </section>
 
-      <a class="loja" href="https://www.adidas.com.br/" target="_blank" tabindex="0" id="loja-destaques"
+      <a class="loja" href="https://www.adidas.com.br/" target="_blank" tabindex="0" id="loja-destaques" role="link"
         >Ir direto pra loja</a
       >
       <!-- Opcional -->
     </main>
 
-    <main class="pagamento efeito-reveal-pagamento" id="pagamentos" tabindex="0" title="meios de pagamento">
+    <main class="pagamento efeito-reveal-pagamento" id="pagamentos" tabindex="0" title="meios de pagamento" role="main">
       <h2 class="titulo-pagamento">métodos de pagamento aceitos</h2>
 
-      <section class="metodos">
-        <div class="cartoes efeito-reveal-cartoes" id="cartoes" tabindex="0" aria-describedby="cartoes">
+      <section class="metodos" role="group">
+        <div class="cartoes efeito-reveal-cartoes" id="cartoes" tabindex="0" aria-describedby="cartoes" role="region">
           <h3 class="titulo-cartoes">
             Cartão de Crédito e Débito<img
               width="48px"
@@ -457,6 +459,7 @@
           id="intermediario"
           tabindex="0"
           aria-describedby="intermediario"
+          role="region"
         >
           <h3 class="titulo-intermediario">Meios de Pagamento Online</h3>
 
@@ -488,7 +491,7 @@
 
         <hr />
 
-        <div class="outros-meios efeito-reveal-meios" id="meios" tabindex="0" aria-describedby="meios">
+        <div class="outros-meios efeito-reveal-meios" id="meios" tabindex="0" aria-describedby="meios" role="region">
           <h3 class="titulo-outros-meios">Outros Meios</h3>
 
           <div class="metodos-adicionais">
@@ -512,10 +515,10 @@
       </section>
     </main>
 
-    <main class="depoimentos efeito-reveal-depoimentos" id="depoimentos" tabindex="0" title="depoimentos dos nossos clientes">
+    <main class="depoimentos efeito-reveal-depoimentos" id="depoimentos" tabindex="0" title="depoimentos dos nossos clientes" role="main">
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
 
-      <section class="avaliacoes">
+      <section class="avaliacoes" role="main">
         <article class="depoimento" id="depoimento1" tabindex="0" role="article" aria-label="foto do lucas silva, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Adorei minha experiência na Europe! A qualidade dos
         calçados é excepcional e o conforto é indescritível. Recomendo a
         todos!">
@@ -588,11 +591,11 @@
       </section>
     </main>
 
-    <main class="atualizacoes" id="comunidade" tabindex="0" title="atualizações da comunidade">
-      <section class="comunidade efeito-reveal-comunidade" id="novidades">
+    <main class="atualizacoes" id="comunidade" tabindex="0" title="atualizações da comunidade" role="main">
+      <section class="comunidade efeito-reveal-comunidade" id="novidades" role="main">
         <h2 class="titulo-atualizacoes" tabindex="0">Se junte a nossa comunidade</h2>
 
-        <p class="texto-comunidade" tabindex="0">
+        <p class="texto-comunidade" tabindex="0" role="text">
           Quer ficar por dentro das nossas últimas novidades? Quer descontos
           especiais e promoções exclusivas? Junte-se a nossa comunidade agora!
           Receba atualizações sobre novos produtos, ofertas exclusivas e muito
@@ -609,7 +612,7 @@
         />
 
         <div class="secao-enviar" id="div-botao">
-          <button class="enviar" aria-label="enviar email">
+          <button class="enviar" aria-label="enviar email" role="button">
             <span class="material-symbols-outlined desativado" id="button"
               >arrow_forward</span
             >
@@ -617,106 +620,117 @@
         </div>
       </section>
 
-      <section class="creditos" tabindex="0" title="créditos e atribuições">
+      <section class="creditos" tabindex="0" title="créditos e atribuições" role="doc-credits">
         <h2>CRÉDITOS</h2>
 
         <aside class="atribuicoes">
           <div class="esquerda">
             <h3>imagens</h3>
-            <ul class="imagens">
-              <li>
+            <ul class="imagens" role="list">
+              <li role="doc-credit">
                 <a
                   href=" https://www.pexels.com/pt-br/foto/pessoa-em-calcas-marrons-camufladas-e-pretas-nike-sb-stefan-janoski-com-meias-pretas-1478442/"
                   title="foto da intro"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Foto de Ray Piedra</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://www.flaticon.com/free-icons/zoom-out"
                   title="zoom out icons"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Icone zoom - Gregor Cresnar - Flaticon</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://www.flaticon.com/br/icones-animados-gratis/seta-direita"
                   title="seta direita ícones animados"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Seta direita ícones animados criados por Freepik -
                   Flaticon</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://www.flaticon.com/br/icones-gratis/cartao-de-credito"
                   title="cartão de crédito ícones"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Cartão de crédito ícones criados por Freepik - Flaticon</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://creativecommons.org/licenses/by/2.5/"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >bandeira unionpay</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://creativecommons.org/licenses/by/2.5/"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >icone amazon pay</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://creativecommons.org/licenses/by/3.0/"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >icone apple pay</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://www.pexels.com/pt-br/foto/homem-de-top-azul-819530/"
                   title="depoimento 1"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Foto de Hasibullah Zhowandai no Pexels</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://www.pexels.com/pt-br/foto/fotografia-de-close-up-de-homem-barbudo-713520/"
                   title="depoimento 2"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Foto de Fernanda Latronico no Pexels</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://www.pexels.com/pt-br/foto/foco-superficial-de-mulher-vestindo-camiseta-preta-e-branca-354951/"
                   title="depoimento 3"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Foto de Pixabay no Pexels</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a 
                   href="app.logomakr.com/9NOyPZ"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Logomarca</a>
               </li>
             </ul>
@@ -724,27 +738,30 @@
           <div class="direita">
             <h3>videos</h3>
             <ul class="videos">
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://youtu.be/RHsL97buMC8?si=xdIrX8l4fJOlPkNp"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Tênis asics gel-nagoya</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://youtu.be/j1yU6pcQDIw?si=fT6YiyZrc75mV7ZJ"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Nike Air Jordan</a
                 >
               </li>
-              <li>
+              <li role="doc-credit">
                 <a
                   href="https://youtu.be/xDH61j3Dt9Y?si=DRVSH7xo7QAosjfL"
                   rel="nofollow"
                   target="_blank"
+                  role="link"
                   >Tênis Adidas TMNT</a
                 >
               </li>
@@ -755,10 +772,10 @@
 
       <hr />
 
-      <footer class="rodape">
-        <h2 class="nome-loja">europe</h2>
+      <footer class="rodape" role="contentinfo">
+        <h2 class="nome-loja" role="heading" aria-level="2">europe</h2>
 
-        <h3 class="direitos" tabindex="0">
+        <h3 class="direitos" tabindex="0" role="contentinfo">
           &copy; 2024 [EUROPE]. Todos os direitos reservados.
         </h3>
       </footer>
