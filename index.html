@@ -28,38 +28,38 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/js/reveal.js" defer></script>
     <script src="src/js/index.js" async></script>
-    <title>Document</title>
+    <title>Europe</title>
   </head>
 
   <body>
     <main class="home" id="topo">
       <section>
-        <div class="logo" id="logo" tabindex="0" aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil">
+        <div class="logo" id="logo" tabindex="0" aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil" role="banner">
           <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca">
           <h1 class="logotipo">urop</h1>
         </div>
 
-        <nav class="navegacao nav-hidden" id="navigate">
-          <ul>
-            <li><a href="#" target="_blank" tabindex="0" id="sobre" aria-label="saiba mais sobre a loja">sobre</a></li>
-            <li><a href="#" target="_blank" tabindex="0" id="homens" aria-label="para homens">para homens</a></li>
-            <li><a href="#" target="_blank" tabindex="0" id="mulheres" aria-label="para mulheres">para mulheres</a></li>
-            <li><a href="#" target="_blank" tabindex="0" id="loja-nav" aria-label="visitar loja">loja</a></li>
-            <li><a href="#" target="_blank" tabindex="0" id="contatos" aria-label="contatos">contatos</a></li>
+        <nav class="navegacao nav-hidden" id="navigate" role="menu">
+          <ul role="list">
+            <li><a href="#" target="_blank" tabindex="0" id="sobre" aria-label="saiba mais sobre a loja" role="link">sobre</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="homens" aria-label="para homens" role="link">para homens</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="mulheres" aria-label="para mulheres" role="link">para mulheres</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="loja-nav" aria-label="visitar loja" role="link">loja</a></li>
+            <li><a href="#" target="_blank" tabindex="0" id="contatos" aria-label="contatos" role="link">contatos</a></li>
           </ul>
         </nav>
       </section>
 
-      <img src="src/icons/menu.png" alt="abrir menu" class="menu" id="menu" onclick="revelarMenu()">
+      <img src="src/icons/menu.png" alt="abrir menu" class="menu" id="menu" onclick="revelarMenu()" role="menu">
       <img src="src/icons/close.png" alt="fechar menu" class="fechar hidden" id="fechar" onclick="esconderMenu()">
 
       <a id="compra1-nav" class="compra" href="https://www.adidas.com.br/" target="_blank"
-        tabindex="0">Compre agora seus sapatos!</a
+        tabindex="0" role="link">Compre agora seus sapatos!</a
       >
     </main>
 
-    <nav class="rotas" id="navbar" aria-label="menu de navegação para pular para uma seção do site" tabindex="0">
-      <ul class="navigation">
+    <nav class="rotas" id="navbar" aria-label="menu de navegação para pular para uma seção do site" tabindex="0" role="navigation">
+      <ul class="navigation" role="list">
         <li><a href="#topo" id="inicio" tabindex="0">Inicio</a></li>
         <li>></li>
         <li><a href="#promocao" id="oferta-do-dia-nav" tabindex="0">Oferta do dia</a></li>
@@ -76,7 +76,7 @@
       </ul>
     </nav>
 
-    <main class="oferta-do-dia efeito-reveal-oferta" id="promocao" tabindex="0" title="oferta do dia">
+    <main class="oferta-do-dia efeito-reveal-oferta" id="promocao" tabindex="0" title="oferta do dia" role="main">
       <section class="oferta" tabindex="0" title="oferta">
         <span class="esquerda">CH</span>
         <h2 class="titulo-oferta">Oferta do dia</h2>
@@ -89,7 +89,7 @@
           <strong style="font-size: 24px;">*</strong>de <del>R$699</del> por R$399 ou em 10x de R$40 sem juros
         </p>
         <span class="asterisco"><strong><span style="font-size: 24px;">*</span>Aumentar Fonte:</strong></span>
-        <button id="zoom-up">
+        <button id="zoom-up" role="button">
           <img
             class="zoom"
             src="src/icons/zoom-in.png"
@@ -109,7 +109,7 @@
           <label for="tamanho">Tamanho do calçado: </label>
           <input type="number" name="tamanhos" id="tamanho" min="1" max="99" tabindex="0"/>
         </p>
-        <a href="#" id="agora" class="comprar-agora" aria-label="compre agora esse tênis que está na promoção, mas antes de comprar, escolha a sua cor abaixo">comprar agora</a>
+        <a href="#" id="agora" class="comprar-agora" aria-label="compre agora esse tênis que está na promoção, mas antes de comprar, escolha a sua cor abaixo" role="link">comprar agora</a>
 
         <video
           class="video"
@@ -123,8 +123,8 @@
         > teaser do tênis adidas samba og </video>
 
         <h3 class="escolha-cor">Escolha a sua cor</h3>
-        <hr class="abaixo" />
-        <div class="cores">
+        <hr class="abaixo" role="separator"/>
+        <div class="cores" role="radiogroup">
           <div id="cor-branca">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_01_standard (1).jpg"
@@ -132,7 +132,7 @@
               class="cor"
               id="imagem1"
             />
-            <input type="radio" name="cor" id="branco" aria-label="tênis branco" tabindex="0" checked/>
+            <input type="radio" name="cor" id="branco" aria-label="tênis branco" tabindex="0" checked role="checkbox" aria-checked="true"/>
           </div>
 
           <div id="cor-preta">
@@ -142,7 +142,7 @@
               class="cor"
               id="imagem2"
             />
-            <input type="radio" name="cor" id="preto" aria-label="tênis preto"/>
+            <input type="radio" name="cor" id="preto" aria-label="tênis preto" role="checkbox" aria-checked="false"/>
           </div>
         </div>
       </section>
@@ -157,9 +157,10 @@
           onmouseout="this.src='src/icons/seta.png';style='top: 48%;'"
           data-change-slide-button="previous"
           tabindex="0"
+          role="button"
         />
 
-        <ul class="slides">
+        <ul class="slides" role="slider">
           <li class="slide fade" data-active tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_02_standard.avif"
@@ -219,15 +220,16 @@
           onmouseout="this.src='src/icons/seta.png';style='top: 48%;'"
           data-change-slide-button="next"
           tabindex="0"
+          role="button"
         />
       </section>
     </main>
 
-    <main class="lancamentos efeito-reveal-lancamentos" id="lancamentos" tabindex="0" title="lançamentos">
+    <main class="lancamentos efeito-reveal-lancamentos" id="lancamentos" tabindex="0" title="lançamentos" role="main">
       <h2 class="titulo-lancamento">Lançamentos</h2>
 
-      <section class="container" id="container">
-        <div class="produto-lancamento efeito-reveal-produto1" id="produto1" tabindex="0">
+      <section class="container" id="container" role="main">
+        <div class="produto-lancamento efeito-reveal-produto1" id="produto1" tabindex="0" role="region">
           <video
             src="src/video/Tênis_Asics_Gel_Nagoya_6_Preto_e_Branco(1080p).mp4"
             playsinline
@@ -237,7 +239,7 @@
             aria-label="exibição do tênis asics gel-nagoya 6"
           ></video>
           <p class="nome-lancamento">
-            <a href="#" tabindex="0" id="link1"
+            <a href="#" tabindex="0" id="link1" role="link"
               >TÊNIS ASICS GEL-NAGOYA 6 - FEMININO - PRETO COM BRANCO E
               DOURADO</a
             >
@@ -246,7 +248,7 @@
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$50,00</p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto2" id="produto2" tabindex="0">
+        <div class="produto-lancamento efeito-reveal-produto2" id="produto2" tabindex="0" role="region">
           <video
             src="src/video/Air_Jordan_38_Low_Black_Gamma_Blue_Basketball_Shoes(720p).mp4"
             playsinline
@@ -256,13 +258,13 @@
             aria-label="exibição do tênis nike air jordan XXXVIII low"
           ></video>
           <p class="nome-lancamento">
-            <a href="#" tabindex="0" id="link2">NIKE AIR JORDAN XXXVIII LOW</a>
+            <a href="#" tabindex="0" id="link2" role="link">NIKE AIR JORDAN XXXVIII LOW</a>
           </p>
           <p class="preco-lancamento">R$1.519,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$152,00</p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto3" id="produto3" tabindex="0">
+        <div class="produto-lancamento efeito-reveal-produto3" id="produto3" tabindex="0" role="region">
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Mater_Splinter_Shoes(720p).mp4"
             playsinline
@@ -272,13 +274,13 @@
             aria-label="exibição do tênis adidas tmnt splinter"
           ></video>
           <p class="nome-lancamento">
-            <a href="#" tabindex="0" id="link3">TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a>
+            <a href="#" tabindex="0" id="link3" role="link">TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a>
           </p>
           <p class="preco-lancamento">R$799,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$80,00</p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto4" id="produto4" tabindex="0">
+        <div class="produto-lancamento efeito-reveal-produto4" id="produto4" tabindex="0" role="region">
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Shredder_Shoes(720p).mp4"
             playsinline
@@ -288,7 +290,7 @@
             aria-label="exibição do tênis adidas tmnt shredder"
           ></video>
           <p class="nome-lancamento">
-            <a href="#" tabindex="0" id="link4">TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a>
+            <a href="#" tabindex="0" id="link4" role="link">TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a>
           </p>
           <p class="preco-lancamento">R$799,99</p>
           <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$80,00</p>
@@ -301,6 +303,7 @@
         target="_blank"
         tabindex="0"
         id="loja-lancamentos"
+        role="link"
         >Ir direto pra loja</a
       >
       <!-- Opcional -->
