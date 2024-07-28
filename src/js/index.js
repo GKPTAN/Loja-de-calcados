@@ -1,3 +1,13 @@
+import './confirm.js';
+import './reveal.js';
+import './submit.js';
+import './touchscreen2.js';
+
+import '../style/reset.css';
+import '../style/responsivo.css';
+import '../style/style.css';
+import '../style/submit.css';
+
 function mudarReveal() {
     if (window.innerWidth <= 820) {
         console.log(window.innerWidth);
