@@ -454,6 +454,10 @@
     width: 25vw;
   }
 
+  main#depoimentos section.avaliacoes .depoimento p.avaliacao {
+    text-align: left;
+  }
+
   main#comunidade #novidades {
     grid-template-columns: 100%;
     margin-bottom: 30px;
@@ -754,6 +758,10 @@
     display: block;
     margin: auto;
     width: 60%;
+  }
+
+  main#depoimentos section.avaliacoes #depoimento-mulher p.rating {
+    margin-bottom: 10px;
   }
 
   main#comunidade {
