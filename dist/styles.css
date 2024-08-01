@@ -802,6 +802,7 @@ html {
   src: url(ba4db301442ed78718f4.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
