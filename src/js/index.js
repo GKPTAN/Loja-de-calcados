@@ -8,12 +8,22 @@ import '../style/style.css';
 import '../style/submit.css';
 
 function mudarReveal() {
+    console.log("função está sendo chamada")
     if (window.innerWidth <= 820) {
-        console.log(window.innerWidth);
+        console.log("condição atendida ", window.innerWidth);
         const depoimentos = document.getElementById('depoimentos');
-        depoimentos.classList.remove('efeito-reveal-depoimentos');
-        depoimentos.classList.add('efeito-vertical-depoimentos');
-    };
+        if (depoimentos) {
+            console.log("arquivo encontrado");
+            depoimentos.classList.remove('efeito-reveal-depoimentos');
+            console.log("classe removida");
+            depoimentos.classList.add('efeito-vertical-depoimentos');
+            console.log("classe adicionada", depoimentos.classList);
+        } else {
+            console.log("arquivo não encontrado");
+        };
+    } else {
+        console.log("condição não atendida, largura de janela: ", window.innerWidth)
+    }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -181,6 +191,9 @@ function esconderMenu() {
     menuNavegacao.style.height = '0';
     menuNavegacao.style.padding = '0';
 };
+
+document.getElementById('menu').addEventListener('click', revelarMenu);
+document.getElementById('fechar').addEventListener('click', esconderMenu);
 
 updateFilter();
 mudarReveal();
