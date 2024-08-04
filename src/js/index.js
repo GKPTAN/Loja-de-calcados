@@ -1,5 +1,4 @@
 import './confirm.js';
-import './reveal.js';
 import './submit.js';
 import './touchscreen2.js';
 
@@ -157,8 +156,6 @@ function updateFilter() {
 branco.addEventListener('change', updateFilter);
 preto.addEventListener('change', updateFilter);
 
-updateFilter();
-
 function revelarMenu() {
     const menu = document.getElementById('menu');
     const fecharMenu = document.getElementById('fechar');
@@ -170,7 +167,7 @@ function revelarMenu() {
     menuNavegacao.style.width = '100%';
     menuNavegacao.style.height = '100%';
     menuNavegacao.style.padding = '10px 30px';
-}
+};
 
 function esconderMenu() {
     const menu = document.getElementById('menu');
@@ -183,6 +180,7 @@ function esconderMenu() {
     menuNavegacao.style.width = '0';
     menuNavegacao.style.height = '0';
     menuNavegacao.style.padding = '0';
-}
+};
 
+updateFilter();
 mudarReveal();

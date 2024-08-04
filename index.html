@@ -23,13 +23,26 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
-    <link rel="preload" as="image" href="https://gkptan.github.io/Loja-de-calcados/dist/8f7d13baffe4cfe5801a.webp">
+    <link rel="preload" href="dist/8f7d13baffe4cfe5801a.webp" as="image">
+    <link rel="preload" href="dist/364b2df4ecf0ef6f8f30.webp" as="image">
     <link rel="preload" href="dist/styles.css" as="style">
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="preload" href="dist/bundle.js" as="script">
-    <script src="https://unpkg.com/scrollreveal" defer></script>
-    <script src="dist/bundle.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/js/reveal.js" defer></script>
+    <script src="dist/bundle.js" defer></script>
     <title>Europe</title>
+    <style>
+      main#topo {
+        background-image: url(dist/8f7d13baffe4cfe5801a.webp);
+      }
+
+      @media (max-width: 1921px) {
+        main#topo {
+          background-image: url(dist/364b2df4ecf0ef6f8f30.webp);
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -770,7 +783,7 @@
       </footer>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   </body>
 </html>
