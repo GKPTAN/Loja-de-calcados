@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Compre calçados de qualidade na nossa loja online. Oferecemos tênis, sapatos sociais, ofertas especiais, lançamentos e muito mais. Experimente o conforto e estilo dos nossos produtos.">
-    <meta name="keywords" content="calçados, tênis, sapatos sociais, ofertas, lançamentos, compra online, moda, estilo">
+    <meta
+      name="description"
+      content="Compre calçados de qualidade na nossa loja online. Oferecemos tênis, sapatos sociais, ofertas especiais, lançamentos e muito mais. Experimente o conforto e estilo dos nossos produtos."
+    />
+    <meta
+      name="keywords"
+      content="calçados, tênis, sapatos sociais, ofertas, lançamentos, compra online, moda, estilo"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,12 +29,37 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
-    <link rel="preload" href="dist/8f7d13baffe4cfe5801a.webp" as="image">
-    <link rel="preload" href="dist/364b2df4ecf0ef6f8f30.webp" as="image">
-    <link rel="preload" href="dist/styles.css" as="style">
+    <link rel="preload" href="dist/8f7d13baffe4cfe5801a.webp" as="image" />
+    <link rel="preload" href="dist/364b2df4ecf0ef6f8f30.webp" as="image" />
+    <link rel="preload" href="dist/styles.css" as="style" />
     <link rel="stylesheet" href="dist/styles.css" />
-    <link rel="preload" href="dist/bundle.js" as="script">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preload" href="dist/bundle.js" as="script" />
+    <script>
+      function mudarReveal() {
+        console.log("função está sendo chamada");
+        if (window.innerWidth <= 820) {
+          console.log("condição atendida ", window.innerWidth);
+          const depoimentos = document.getElementById("depoimentos");
+          if (depoimentos) {
+            console.log("arquivo encontrado");
+            depoimentos.classList.remove("efeito-reveal-depoimentos");
+            console.log("classe removida");
+            depoimentos.classList.add("efeito-vertical-depoimentos");
+            console.log("classe adicionada", depoimentos.classList);
+          } else {
+            console.log("arquivo não encontrado");
+          }
+        } else {
+          console.log(
+            "condição não atendida, largura de janela: ",
+            window.innerWidth
+          );
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", mudarReveal);
+    </script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="src/js/reveal.js" defer></script>
     <script src="dist/bundle.js" defer></script>
     <title>Europe</title>
@@ -48,49 +79,154 @@
   <body>
     <main class="home" id="topo">
       <section>
-        <div class="logo" id="logo" tabindex="0" aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil" role="banner">
-          <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca">
+        <div
+          class="logo"
+          id="logo"
+          tabindex="0"
+          aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil"
+          role="banner"
+        >
+          <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca" />
           <h1 class="logotipo" role="heading" aria-level="1">urop</h1>
         </div>
 
         <nav class="navegacao nav-hidden" id="navigate" role="navigation">
           <ul role="menu">
-            <li role="none"><a href="#" target="_blank" tabindex="0" id="sobre" aria-label="saiba mais sobre a loja" role="menuitem">sobre</a></li>
-            <li role="none"><a href="#" target="_blank" tabindex="0" id="homens" aria-label="para homens" role="menuitem">para homens</a></li>
-            <li role="none"><a href="#" target="_blank" tabindex="0" id="mulheres" aria-label="para mulheres" role="menuitem">para mulheres</a></li>
-            <li role="none"><a href="#" target="_blank" tabindex="0" id="loja-nav" aria-label="visitar loja" role="menuitem">loja</a></li>
-            <li role="none"><a href="#" target="_blank" tabindex="0" id="contatos" aria-label="contatos" role="menuitem">contatos</a></li>
+            <li role="none">
+              <a
+                href="#"
+                target="_blank"
+                tabindex="0"
+                id="sobre"
+                aria-label="saiba mais sobre a loja"
+                role="menuitem"
+                >sobre</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="#"
+                target="_blank"
+                tabindex="0"
+                id="homens"
+                aria-label="para homens"
+                role="menuitem"
+                >para homens</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="#"
+                target="_blank"
+                tabindex="0"
+                id="mulheres"
+                aria-label="para mulheres"
+                role="menuitem"
+                >para mulheres</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="#"
+                target="_blank"
+                tabindex="0"
+                id="loja-nav"
+                aria-label="visitar loja"
+                role="menuitem"
+                >loja</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="#"
+                target="_blank"
+                tabindex="0"
+                id="contatos"
+                aria-label="contatos"
+                role="menuitem"
+                >contatos</a
+              >
+            </li>
           </ul>
         </nav>
       </section>
 
-      <img src="src/icons/menu.png" alt="abrir menu" class="menu" id="menu" role="menu">
-      <img src="src/icons/close.png" alt="fechar menu" class="fechar hidden" id="fechar">
+      <img
+        src="src/icons/menu.png"
+        alt="abrir menu"
+        class="menu"
+        id="menu"
+        role="menu"
+      />
+      <img
+        src="src/icons/close.png"
+        alt="fechar menu"
+        class="fechar hidden"
+        id="fechar"
+      />
 
-      <a id="compra1-nav" class="compra" href="https://www.adidas.com.br/" target="_blank"
-        tabindex="0" role="link">Compre agora seus sapatos!</a
+      <a
+        id="compra1-nav"
+        class="compra"
+        href="https://www.adidas.com.br/"
+        target="_blank"
+        tabindex="0"
+        role="link"
+        >Compre agora seus sapatos!</a
       >
     </main>
 
-    <nav class="rotas" id="navbar" aria-label="menu de navegação para pular para uma seção do site" tabindex="0" role="navigation">
+    <nav
+      class="rotas"
+      id="navbar"
+      aria-label="menu de navegação para pular para uma seção do site"
+      tabindex="0"
+      role="navigation"
+    >
       <ul class="navigation" role="list">
         <li><a href="#topo" id="inicio" tabindex="0">Inicio</a></li>
         <li>></li>
-        <li><a href="#promocao" id="oferta-do-dia-nav" tabindex="0">Oferta do dia</a></li>
+        <li>
+          <a href="#promocao" id="oferta-do-dia-nav" tabindex="0"
+            >Oferta do dia</a
+          >
+        </li>
         <li>></li>
-        <li><a href="#lancamentos" id="lancamentos-nav" tabindex="0">Lançamentos</a></li>
+        <li>
+          <a href="#lancamentos" id="lancamentos-nav" tabindex="0"
+            >Lançamentos</a
+          >
+        </li>
         <li>></li>
-        <li><a href="#destaques" id="destaques-nav" tabindex="0">Destaques</a></li>
+        <li>
+          <a href="#destaques" id="destaques-nav" tabindex="0">Destaques</a>
+        </li>
         <li>></li>
-        <li><a href="#pagamentos" id="meios-nav" tabindex="0">Meios de Pagamento</a></li>
+        <li>
+          <a href="#pagamentos" id="meios-nav" tabindex="0"
+            >Meios de Pagamento</a
+          >
+        </li>
         <li>></li>
-        <li><a href="#depoimentos" id="depoimentos-nav" tabindex="0">Depoimentos</a></li>
+        <li>
+          <a href="#depoimentos" id="depoimentos-nav" tabindex="0"
+            >Depoimentos</a
+          >
+        </li>
         <li>></li>
-        <li><a href="#comunidade" id="comunidade-nav" tabindex="0">Comunidade</a></li>
+        <li>
+          <a href="#comunidade" id="comunidade-nav" tabindex="0">Comunidade</a>
+        </li>
       </ul>
     </nav>
 
-    <main class="oferta-do-dia efeito-reveal-oferta" id="promocao" tabindex="0" title="oferta do dia" role="main">
+    <main
+      class="oferta-do-dia efeito-reveal-oferta"
+      id="promocao"
+      tabindex="0"
+      title="oferta do dia"
+      role="main"
+    >
       <section class="oferta" tabindex="0" title="oferta">
         <span class="esquerda">CH</span>
         <h2 class="titulo-oferta">Oferta do dia</h2>
@@ -100,9 +236,14 @@
 
         <p class="descricao-oferta" tabindex="0">Tênis Adidas Samba Og</p>
         <p class="preco-oferta upFonte" tabindex="0">
-          <strong style="font-size: 24px;">*</strong>de <del>R$699</del> por R$399 ou em 10x de R$40 sem juros
+          <strong style="font-size: 24px">*</strong>de <del>R$699</del> por
+          R$399 ou em 10x de R$40 sem juros
         </p>
-        <span class="asterisco"><strong><span style="font-size: 24px;">*</span>Aumentar Fonte:</strong></span>
+        <span class="asterisco"
+          ><strong
+            ><span style="font-size: 24px">*</span>Aumentar Fonte:</strong
+          ></span
+        >
         <button id="zoom-up" role="button">
           <img
             class="zoom"
@@ -121,9 +262,23 @@
 
         <p class="tamanho">
           <label for="tamanho">Tamanho do calçado: </label>
-          <input type="number" name="tamanhos" id="tamanho" min="1" max="99" tabindex="0"/>
+          <input
+            type="number"
+            name="tamanhos"
+            id="tamanho"
+            min="1"
+            max="99"
+            tabindex="0"
+          />
         </p>
-        <a href="#" id="agora" class="comprar-agora" aria-label="compre agora esse tênis que está na promoção, mas antes de comprar, escolha a sua cor abaixo" role="link">comprar agora</a>
+        <a
+          href="#"
+          id="agora"
+          class="comprar-agora"
+          aria-label="compre agora esse tênis que está na promoção, mas antes de comprar, escolha a sua cor abaixo"
+          role="link"
+          >comprar agora</a
+        >
 
         <video
           class="video"
@@ -134,10 +289,12 @@
           poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
           aria-label="exibição do tênis da adidas samba og"
           tabindex="0"
-        > teaser do tênis adidas samba og </video>
+        >
+          teaser do tênis adidas samba og
+        </video>
 
         <h3 class="escolha-cor">Escolha a sua cor</h3>
-        <hr class="abaixo" role="separator"/>
+        <hr class="abaixo" role="separator" />
         <div class="cores" role="radiogroup">
           <div id="cor-branca">
             <img
@@ -146,7 +303,16 @@
               class="cor"
               id="imagem1"
             />
-            <input type="radio" name="cor" id="branco" aria-label="tênis branco" tabindex="0" checked role="radio" aria-checked="true"/>
+            <input
+              type="radio"
+              name="cor"
+              id="branco"
+              aria-label="tênis branco"
+              tabindex="0"
+              checked
+              role="radio"
+              aria-checked="true"
+            />
           </div>
 
           <div id="cor-preta">
@@ -156,12 +322,24 @@
               class="cor"
               id="imagem2"
             />
-            <input type="radio" name="cor" id="preto" aria-label="tênis preto" role="radio" aria-checked="false"/>
+            <input
+              type="radio"
+              name="cor"
+              id="preto"
+              aria-label="tênis preto"
+              role="radio"
+              aria-checked="false"
+            />
           </div>
         </div>
       </section>
 
-      <section class="adicional" id="carrossel" tabindex="0" title="imagens do tênis em promoção">
+      <section
+        class="adicional"
+        id="carrossel"
+        tabindex="0"
+        title="imagens do tênis em promoção"
+      >
         <img
           class="seta-esquerda"
           id="seta-left"
@@ -183,44 +361,44 @@
           </li>
 
           <li class="slide fade" tabindex="0">
-            <img 
-            src="src/image/Tenis_Samba_OG_Branco_B75806_01_standard (1).jpg" 
-            alt="parte do lado do tênis" 
+            <img
+              src="src/image/Tenis_Samba_OG_Branco_B75806_01_standard (1).jpg"
+              alt="parte do lado do tênis"
             />
           </li>
 
           <li class="slide fade" tabindex="0">
-            <img 
-            src="src/image/Tenis_Samba_OG_Branco_B75806_03_standard.avif" 
-            alt="parte da sola do tênis" 
+            <img
+              src="src/image/Tenis_Samba_OG_Branco_B75806_03_standard.avif"
+              alt="parte da sola do tênis"
             />
           </li>
 
           <li class="slide fade" tabindex="0">
-            <img 
-            src="src/image/Tenis_Samba_OG_Branco_B75806_04_standard.avif" 
-            alt="imagem do tênis - parte da frente" 
+            <img
+              src="src/image/Tenis_Samba_OG_Branco_B75806_04_standard.avif"
+              alt="imagem do tênis - parte da frente"
             />
           </li>
 
           <li class="slide fade" tabindex="0">
-            <img 
-            src="src/image/Tenis_Samba_OG_Branco_B75806_05_standard.avif" 
-            alt="imagem do tênis - parte de trás" 
+            <img
+              src="src/image/Tenis_Samba_OG_Branco_B75806_05_standard.avif"
+              alt="imagem do tênis - parte de trás"
             />
           </li>
 
           <li class="slide fade" tabindex="0">
-            <img 
-            src="src/image/Tenis_Samba_OG_Branco_B75806_41_detail.avif" 
-            alt="imagem aproximada mostrando detalhes da logo do tênis" 
+            <img
+              src="src/image/Tenis_Samba_OG_Branco_B75806_41_detail.avif"
+              alt="imagem aproximada mostrando detalhes da logo do tênis"
             />
           </li>
 
           <li class="slide fade" tabindex="0">
-            <img 
-            src="src/image/Tenis_Samba_OG_Branco_B75806_42_detail.avif" 
-            alt="imagem aproximada mostrando os cadaços do tênis" 
+            <img
+              src="src/image/Tenis_Samba_OG_Branco_B75806_42_detail.avif"
+              alt="imagem aproximada mostrando os cadaços do tênis"
             />
           </li>
         </ul>
@@ -239,11 +417,22 @@
       </section>
     </main>
 
-    <main class="lancamentos efeito-reveal-lancamentos" id="lancamentos" tabindex="0" title="lançamentos" role="main">
+    <main
+      class="lancamentos efeito-reveal-lancamentos"
+      id="lancamentos"
+      tabindex="0"
+      title="lançamentos"
+      role="main"
+    >
       <h2 class="titulo-lancamento">Lançamentos</h2>
 
       <section class="container" id="container" role="main">
-        <div class="produto-lancamento efeito-reveal-produto1" id="produto1" tabindex="0" role="region">
+        <div
+          class="produto-lancamento efeito-reveal-produto1"
+          id="produto1"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Tênis_Asics_Gel_Nagoya_6_Preto_e_Branco(1080p).mp4"
             playsinline
@@ -253,16 +442,28 @@
             aria-label="exibição do tênis asics gel-nagoya 6"
           ></video>
           <p class="nome-lancamento">
-            <a href="https://youtu.be/RHsL97buMC8?si=Q2iG0O4CZfLfiNLD" tabindex="0" id="link1" role="link" target="_blank"
+            <a
+              href="https://youtu.be/RHsL97buMC8?si=Q2iG0O4CZfLfiNLD"
+              tabindex="0"
+              id="link1"
+              role="link"
+              target="_blank"
               >TÊNIS ASICS GEL-NAGOYA 6 - FEMININO - PRETO COM BRANCO E
               DOURADO</a
             >
           </p>
           <p class="preco-lancamento">R$499,99</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$50,00</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$50,00
+          </p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto2" id="produto2" tabindex="0" role="region">
+        <div
+          class="produto-lancamento efeito-reveal-produto2"
+          id="produto2"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Air_Jordan_38_Low_Black_Gamma_Blue_Basketball_Shoes(720p).mp4"
             playsinline
@@ -272,13 +473,27 @@
             aria-label="exibição do tênis nike air jordan XXXVIII low"
           ></video>
           <p class="nome-lancamento">
-            <a href="https://youtu.be/j1yU6pcQDIw?si=0lwlDbOBDpjAglHW" tabindex="0" id="link2" role="link" target="_blank">NIKE AIR JORDAN XXXVIII LOW</a>
+            <a
+              href="https://youtu.be/j1yU6pcQDIw?si=0lwlDbOBDpjAglHW"
+              tabindex="0"
+              id="link2"
+              role="link"
+              target="_blank"
+              >NIKE AIR JORDAN XXXVIII LOW</a
+            >
           </p>
           <p class="preco-lancamento">R$1.519,99</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$152,00</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$152,00
+          </p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto3" id="produto3" tabindex="0" role="region">
+        <div
+          class="produto-lancamento efeito-reveal-produto3"
+          id="produto3"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Mater_Splinter_Shoes(720p).mp4"
             playsinline
@@ -288,13 +503,27 @@
             aria-label="exibição do tênis adidas tmnt splinter"
           ></video>
           <p class="nome-lancamento">
-            <a href="https://youtu.be/VyCeBJaSnYc?si=5UWwYxevMV8il_fu" tabindex="0" id="link3" role="link" target="_blank">TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a>
+            <a
+              href="https://youtu.be/VyCeBJaSnYc?si=5UWwYxevMV8il_fu"
+              tabindex="0"
+              id="link3"
+              role="link"
+              target="_blank"
+              >TÊNIS ADIDAS TMNT SHELL-TOE SPLINTER</a
+            >
           </p>
           <p class="preco-lancamento">R$799,99</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$80,00</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$80,00
+          </p>
         </div>
 
-        <div class="produto-lancamento efeito-reveal-produto4" id="produto4" tabindex="0" role="region">
+        <div
+          class="produto-lancamento efeito-reveal-produto4"
+          id="produto4"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Adidas_Superstar_Shelltoe_Teenage_Mutant_Ninja_Turtles_Shredder_Shoes(720p).mp4"
             playsinline
@@ -304,10 +533,19 @@
             aria-label="exibição do tênis adidas tmnt shredder"
           ></video>
           <p class="nome-lancamento">
-            <a href="https://youtu.be/xDH61j3Dt9Y?si=VWDrKd1h0GJwmPE_" tabindex="0" id="link4" role="link" target="_blank">TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a>
+            <a
+              href="https://youtu.be/xDH61j3Dt9Y?si=VWDrKd1h0GJwmPE_"
+              tabindex="0"
+              id="link4"
+              role="link"
+              target="_blank"
+              >TÊNIS ADIDAS TMNT SHELL-TOE SHREDDER</a
+            >
           </p>
           <p class="preco-lancamento">R$799,99</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$80,00</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$80,00
+          </p>
         </div>
       </section>
 
@@ -323,10 +561,21 @@
       <!-- Opcional -->
     </main>
 
-    <main class="destaques efeito-reveal-destaques" id="destaques" tabindex="0" title="destaques e bem avaliados" role="main">
+    <main
+      class="destaques efeito-reveal-destaques"
+      id="destaques"
+      tabindex="0"
+      title="destaques e bem avaliados"
+      role="main"
+    >
       <h2 class="titulo-destaque">Destaques</h2>
       <section class="container" role="main">
-        <div class="produto-destaque efeito-reveal-destaque1" id="destaque1" tabindex="0" role="region">
+        <div
+          class="produto-destaque efeito-reveal-destaque1"
+          id="destaque1"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/ADIDAS_SAMBA_OG___KICKS_ON_FEET(720p).mp4"
             poster="src/image/Tenis_Samba_OG_Branco_B75806_01_standard.avif"
@@ -335,12 +584,28 @@
             tabindex="0"
             aria-label="exibição do tênis adidas samba o, g"
           ></video>
-          <p class="nome-destaque"><a href="https://youtu.be/RUW6X_J_c_0?si=_peGlelNs8ea6k8M" tabindex="0" id="link5" role="link" target="_blank">ADIDAS SAMBA OG</a></p>
+          <p class="nome-destaque">
+            <a
+              href="https://youtu.be/RUW6X_J_c_0?si=_peGlelNs8ea6k8M"
+              tabindex="0"
+              id="link5"
+              role="link"
+              target="_blank"
+              >ADIDAS SAMBA OG</a
+            >
+          </p>
           <p class="preco-destaque">R$399,99</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$40,00</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$40,00
+          </p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque2" id="destaque2" tabindex="0" role="region">
+        <div
+          class="produto-destaque efeito-reveal-destaque2"
+          id="destaque2"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Tênis_Adidas_FX3632_Ultimashow_Preto(720p)_1.mp4"
             playsinline
@@ -348,12 +613,28 @@
             tabindex="0"
             aria-label="exibição do tênis adidas ultimashow"
           ></video>
-          <p class="nome-destaque"><a href="https://youtu.be/r-qxlHQtmhI?si=sh_MZW3iVjiyAJJk" tabindex="0" id="link6" role="link" target="_blank">TÊNIS ADIDAS ULTIMASHOW</a></p>
+          <p class="nome-destaque">
+            <a
+              href="https://youtu.be/r-qxlHQtmhI?si=sh_MZW3iVjiyAJJk"
+              tabindex="0"
+              id="link6"
+              role="link"
+              target="_blank"
+              >TÊNIS ADIDAS ULTIMASHOW</a
+            >
+          </p>
           <p class="preco-destaque">R$229,99</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$23,00</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$23,00
+          </p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque3" id="destaque3" tabindex="0" role="region">
+        <div
+          class="produto-destaque efeito-reveal-destaque3"
+          id="destaque3"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Sapato_Social_Masculino_Derby_Sandro_Moscoloni_Rafael(720p).mp4"
             poster="src/image/file.avif"
@@ -363,20 +644,28 @@
             aria-label="exibição do sapato social masculino derby sandro moscoloni rafael marrom claro"
           ></video>
           <p class="nome-destaque">
-            <a href="https://youtu.be/fhMouApGwxY?si=lR09V7jPCivQwJsp"
-               tabindex="0"
-               id="link7"
-               role="link"
-               target="_blank"
+            <a
+              href="https://youtu.be/fhMouApGwxY?si=lR09V7jPCivQwJsp"
+              tabindex="0"
+              id="link7"
+              role="link"
+              target="_blank"
               >SAPATO SOCIAL MASCULINO DERBY SANDRO MOSCOLONI RAFAEL MARROM
               CLARO</a
             >
           </p>
           <p class="preco-destaque">R$170,91</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$17,09</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$17,09
+          </p>
         </div>
 
-        <div class="produto-destaque efeito-reveal-destaque4" id="destaque4" tabindex="0" role="region"> 
+        <div
+          class="produto-destaque efeito-reveal-destaque4"
+          id="destaque4"
+          tabindex="0"
+          role="region"
+        >
           <video
             src="src/video/Sapato_Social_Masculino_Penny_Loafer_Sandro_Moscoloni_Miguel_Preto(720p).mp4"
             poster="src/image/file (1).avif"
@@ -386,31 +675,52 @@
             aria-label="exibição do sapato social masculino penny loafer sandro moscoloni miguel preto"
           ></video>
           <p class="nome-destaque">
-            <a href="https://youtu.be/-1juoIHh9O8?si=SfGDK-3qrCENsDAh"
-               tabindex="0"
-               id="link8"
-               role="link"
-               target="_blank"
+            <a
+              href="https://youtu.be/-1juoIHh9O8?si=SfGDK-3qrCENsDAh"
+              tabindex="0"
+              id="link8"
+              role="link"
+              target="_blank"
               >SAPATO SOCIAL MASCULINO PENNY LOAFER SANDRO MOSCOLONI MIGUEL
               PRETO</a
             >
           </p>
           <p class="preco-destaque">R$170,91</p>
-          <p class="segunda-opcao upFonte"><strong style="font-size: 24px;">*</strong>ou até 10x de R$17,09</p>
+          <p class="segunda-opcao upFonte">
+            <strong style="font-size: 24px">*</strong>ou até 10x de R$17,09
+          </p>
         </div>
       </section>
 
-      <a class="loja" href="https://www.adidas.com.br/" target="_blank" tabindex="0" id="loja-destaques" role="link"
+      <a
+        class="loja"
+        href="https://www.adidas.com.br/"
+        target="_blank"
+        tabindex="0"
+        id="loja-destaques"
+        role="link"
         >Ir direto pra loja</a
       >
       <!-- Opcional -->
     </main>
 
-    <main class="pagamento efeito-reveal-pagamento" id="pagamentos" tabindex="0" title="meios de pagamento" role="main">
+    <main
+      class="pagamento efeito-reveal-pagamento"
+      id="pagamentos"
+      tabindex="0"
+      title="meios de pagamento"
+      role="main"
+    >
       <h2 class="titulo-pagamento">métodos de pagamento aceitos</h2>
 
       <section class="metodos" role="group">
-        <div class="cartoes efeito-reveal-cartoes" id="cartoes" tabindex="0" aria-describedby="cartoes" role="region">
+        <div
+          class="cartoes efeito-reveal-cartoes"
+          id="cartoes"
+          tabindex="0"
+          aria-describedby="cartoes"
+          role="region"
+        >
           <h3 class="titulo-cartoes">
             Cartão de Crédito e Débito<img
               width="48px"
@@ -507,7 +817,13 @@
 
         <hr />
 
-        <div class="outros-meios efeito-reveal-meios" id="meios" tabindex="0" aria-describedby="meios" role="region">
+        <div
+          class="outros-meios efeito-reveal-meios"
+          id="meios"
+          tabindex="0"
+          aria-describedby="meios"
+          role="region"
+        >
           <h3 class="titulo-outros-meios">Outros Meios</h3>
 
           <div class="metodos-adicionais">
@@ -531,13 +847,25 @@
       </section>
     </main>
 
-    <main class="depoimentos efeito-reveal-depoimentos" id="depoimentos" tabindex="0" title="depoimentos dos nossos clientes" role="main">
+    <main
+      class="depoimentos efeito-reveal-depoimentos"
+      id="depoimentos"
+      tabindex="0"
+      title="depoimentos dos nossos clientes"
+      role="main"
+    >
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
 
       <section class="avaliacoes" role="main">
-        <article class="depoimento" id="depoimento1" tabindex="0" role="article" aria-label="foto do lucas silva, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Adorei minha experiência na Europe! A qualidade dos
+        <article
+          class="depoimento"
+          id="depoimento1"
+          tabindex="0"
+          role="article"
+          aria-label="foto do lucas silva, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Adorei minha experiência na Europe! A qualidade dos
         calçados é excepcional e o conforto é indescritível. Recomendo a
-        todos!">
+        todos!"
+        >
           <img
             src="src/image/pexels-hasibullah-zhowandai-248954-819530 (1).jpg"
             alt="foto do lucas silva"
@@ -550,17 +878,22 @@
           </p>
           <p class="avaliacao">
             <q
-              >Adorei minha experiência na Europe! A qualidade dos
-              calçados é excepcional e o conforto é indescritível. Recomendo a
-              todos!</q
+              >Adorei minha experiência na Europe! A qualidade dos calçados é
+              excepcional e o conforto é indescritível. Recomendo a todos!</q
             >
           </p>
         </article>
 
-        <article class="depoimento" id="depoimento2" tabindex="0" role="article" aria-label="foto do joão paulo, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: A loja tem uma excelente variedade de calçados, desde tênis
+        <article
+          class="depoimento"
+          id="depoimento2"
+          tabindex="0"
+          role="article"
+          aria-label="foto do joão paulo, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: A loja tem uma excelente variedade de calçados, desde tênis
         esportivos até sapatos sociais. Comprei um par de botas que são
         extremamente confortáveis e estilosas. foi uma ótima experiência
-        comprar nessa loja">
+        comprar nessa loja"
+        >
           <img
             src="src/image/pexels-latronico-713520 (1).jpg"
             alt="foto de joão paulo"
@@ -580,11 +913,17 @@
           </p>
         </article>
 
-        <article class="depoimento" id="depoimento-mulher" tabindex="0" role="article" aria-label="foto da ana clara, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Encontrei exatamente o que procurava na Europe. A
+        <article
+          class="depoimento"
+          id="depoimento-mulher"
+          tabindex="0"
+          role="article"
+          aria-label="foto da ana clara, avaliação, 5 estrelas, data da avaliação, 13 de junho de 2024, depoimento do cliente: Encontrei exatamente o que procurava na Europe. A
         qualidade dos produtos é excelente. Além disso, a equipe de vendas
         é super simpática e prestativa. Comprei um par de sandálias e
         estou completamente satisfeita. Recomendo sem dúvidas e já estou
-        planejando a minha próxima compra!">
+        planejando a minha próxima compra!"
+        >
           <img
             src="src/image/pexels-pixabay-354951.jpg"
             alt="foto da ana clara"
@@ -596,10 +935,10 @@
           </p>
           <p class="avaliacao">
             <q
-              >Encontrei exatamente o que procurava na Europe. A
-              qualidade dos produtos é excelente. Além disso, a equipe de vendas
-              é super simpática e prestativa. Comprei um par de sandálias e
-              estou completamente satisfeita. Recomendo sem dúvidas e já estou
+              >Encontrei exatamente o que procurava na Europe. A qualidade dos
+              produtos é excelente. Além disso, a equipe de vendas é super
+              simpática e prestativa. Comprei um par de sandálias e estou
+              completamente satisfeita. Recomendo sem dúvidas e já estou
               planejando a minha próxima compra!</q
             >
           </p>
@@ -607,9 +946,21 @@
       </section>
     </main>
 
-    <main class="atualizacoes" id="comunidade" tabindex="0" title="atualizações da comunidade" role="main">
-      <section class="comunidade efeito-reveal-comunidade" id="novidades" role="main">
-        <h2 class="titulo-atualizacoes" tabindex="0">Se junte a nossa comunidade</h2>
+    <main
+      class="atualizacoes"
+      id="comunidade"
+      tabindex="0"
+      title="atualizações da comunidade"
+      role="main"
+    >
+      <section
+        class="comunidade efeito-reveal-comunidade"
+        id="novidades"
+        role="main"
+      >
+        <h2 class="titulo-atualizacoes" tabindex="0">
+          Se junte a nossa comunidade
+        </h2>
 
         <p class="texto-comunidade" tabindex="0" role="text">
           Quer ficar por dentro das nossas últimas novidades? Quer descontos
@@ -636,7 +987,12 @@
         </div>
       </section>
 
-      <section class="creditos" tabindex="0" title="créditos e atribuições" role="doc-credits">
+      <section
+        class="creditos"
+        tabindex="0"
+        title="créditos e atribuições"
+        role="doc-credits"
+      >
         <h2>CRÉDITOS</h2>
 
         <aside class="atribuicoes">
@@ -732,11 +1088,9 @@
                 >
               </li>
               <li>
-                <a 
-                  href="app.logomakr.com/9NOyPZ"
-                  rel="nofollow"
-                  target="_blank"
-                  >Logomarca</a>
+                <a href="app.logomakr.com/9NOyPZ" rel="nofollow" target="_blank"
+                  >Logomarca</a
+                >
               </li>
             </ul>
           </div>

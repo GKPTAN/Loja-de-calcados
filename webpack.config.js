@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     entry: './src/js/index.js',
@@ -29,5 +30,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'styles.css',
         }),
+        new BundleAnalyzerPlugin(),
     ],
 };

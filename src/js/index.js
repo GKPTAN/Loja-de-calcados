@@ -7,25 +7,6 @@ import '../style/responsivo.css';
 import '../style/style.css';
 import '../style/submit.css';
 
-function mudarReveal() {
-    console.log("função está sendo chamada")
-    if (window.innerWidth <= 820) {
-        console.log("condição atendida ", window.innerWidth);
-        const depoimentos = document.getElementById('depoimentos');
-        if (depoimentos) {
-            console.log("arquivo encontrado");
-            depoimentos.classList.remove('efeito-reveal-depoimentos');
-            console.log("classe removida");
-            depoimentos.classList.add('efeito-vertical-depoimentos');
-            console.log("classe adicionada", depoimentos.classList);
-        } else {
-            console.log("arquivo não encontrado");
-        };
-    } else {
-        console.log("condição não atendida, largura de janela: ", window.innerWidth)
-    }
-};
-
 document.addEventListener("DOMContentLoaded", () => {
     const botaoZoomUp = document.getElementById('zoom-up');
     const botaoZoomDown = document.getElementById('zoom-down');
