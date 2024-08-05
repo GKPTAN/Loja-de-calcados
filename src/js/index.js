@@ -177,4 +177,3 @@ document.getElementById('menu').addEventListener('click', revelarMenu);
 document.getElementById('fechar').addEventListener('click', esconderMenu);
 
 updateFilter();
-mudarReveal();
