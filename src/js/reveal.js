@@ -1,25 +1,3 @@
-function mudarReveal() {
-  console.log("função está sendo chamada");
-  if (window.innerWidth <= 820) {
-    console.log("condição atendida, largura da janela: ", window.innerWidth);
-    const depoimentos = document.getElementById("depoimentos");
-    if (depoimentos) {
-      console.log("elemento com o id depoimentos encontrado");
-      depoimentos.classList.remove("efeito-reveal-depoimentos");
-      console.log("classe removida do elemento");
-      depoimentos.classList.add("efeito-vertical-depoimentos");
-      console.log("classe adicionada no elemento: ", depoimentos.classList);
-    } else {
-      console.log("elemento não encontrado");
-    }
-  } else {
-    console.log(
-      "condição não atendida, largura de janela: ",
-      window.innerWidth
-    );
-  };
-};
-
 window.revelar = ScrollReveal({ reset: false });
 
 revelar.reveal(".efeito-reveal-oferta", {
@@ -388,5 +366,3 @@ revelar.reveal(".efeito-reveal-comunidade", {
   origin: "left",
   interval: 1000,
 });
-
-mudarReveal();

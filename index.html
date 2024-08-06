@@ -34,13 +34,17 @@
     <link rel="preload" href="dist/styles.css" as="style" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="preload" href="dist/bundle.js" as="script" />
-    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/js/reveal.js" defer></script>
     <script src="dist/bundle.js" defer></script>
     <title>Europe</title>
     <style>
       main#topo {
         background-image: url(dist/8f7d13baffe4cfe5801a.webp);
+      }
+
+      .efeito-vertical-depoimentos {
+        visibility: hidden;
       }
 
       @media (max-width: 1921px) {
@@ -1112,6 +1116,37 @@
       </footer>
     </main>
 
+    <script>
+      function mudarReveal() {
+        console.log("função está sendo chamada");
+        if (window.innerWidth <= 820) {
+          console.log(
+            "condição atendida, largura da janela: ",
+            window.innerWidth
+          );
+          const depoimentos = document.getElementById("depoimentos");
+          if (depoimentos) {
+            console.log("elemento com o id depoimentos encontrado");
+            depoimentos.classList.remove("efeito-reveal-depoimentos");
+            console.log("classe removida do elemento");
+            depoimentos.classList.add("efeito-vertical-depoimentos");
+            console.log(
+              "classe adicionada no elemento: ",
+              depoimentos.classList
+            );
+          } else {
+            console.log("elemento não encontrado");
+          }
+        } else {
+          console.log(
+            "condição não atendida, largura de janela: ",
+            window.innerWidth
+          );
+        };
+      };
+
+      mudarReveal();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   </body>
