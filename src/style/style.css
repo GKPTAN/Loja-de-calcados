@@ -5,6 +5,16 @@ html {
   scroll-padding-top: 170px;
 }
 
+@-moz-document url-prefix() {
+  main#promocao section.oferta span.esquerda {
+    top: -2%;
+  }
+
+  main#promocao section.oferta span.direita {
+    top: -2.7%;
+  }
+}
+
 @font-face {
   font-family: "Women and Shoes";
   src: url(../fonts/WomenAndShoes.ttf) format("truetype");

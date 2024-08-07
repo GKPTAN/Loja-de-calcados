@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
+
 * {
     margin: 0;
     padding: 0;
@@ -795,6 +796,16 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 170px;
+}
+
+@-moz-document url-prefix() {
+  main#promocao section.oferta span.esquerda {
+    top: -2%;
+  }
+
+  main#promocao section.oferta span.direita {
+    top: -2.7%;
+  }
 }
 
 @font-face {
