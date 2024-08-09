@@ -559,12 +559,14 @@
     align-items: center;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
   }
 
   main#topo section nav.nav-hidden {
     width: 0;
     height: 0;
     transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
   }
 
   main#topo section nav#navigate ul {
@@ -581,6 +583,7 @@
     top: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
   }
 
   main#topo img#fechar {
@@ -590,6 +593,7 @@
     top: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     transition-delay: 0.3s;
   }
 

@@ -9,6 +9,7 @@
   cursor: pointer;
   opacity: 1;
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .material-symbols-outlined:hover {
   background-color: green;
@@ -23,6 +24,7 @@
   font-size: 0;
   border-left-color: green;
   animation: rotating 2s 0.25s linear infinite;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
 }
 .onclic:hover {
   color: green;
@@ -54,6 +56,15 @@
     transform: rotate(360deg);
   }
 }/*# sourceMappingURL=submit.css.map */
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 
 .desativado {
   opacity: 0 !important;

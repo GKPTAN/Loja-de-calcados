@@ -112,6 +112,7 @@ body {
                 bottom: -2px;
                 left: 50%;
                 transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
               }
 
               &:hover::after {
@@ -145,11 +146,13 @@ body {
       top: 83%;
       left: 50%;
       transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
       border: 1px solid white;
       padding: 20px;
       border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
 
       &:hover {
         background-color: white;
@@ -189,6 +192,7 @@ body {
           bottom: -4px;
           left: 50%;
           transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
         }
 
         &:hover::after {
@@ -396,20 +400,24 @@ body {
         & #cor-branca {
           width: 30%;
           transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
 
           & img {
             width: 100%;
             transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
           }
         }
 
         & #cor-preta {
           width: 30%;
           transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
 
           & img {
             width: 100%;
             transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
           }
         }
 
@@ -444,6 +452,7 @@ body {
         top: 48%;
         left: 0;
         transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
         cursor: pointer;
       }
 
@@ -539,6 +548,7 @@ body {
       &:hover > :not(:hover) {
         opacity: 0.4 !important;
         transform: scale(0.9) !important;
+        -webkit-transform: scale(0.9) !important;
       }
 
       & .produto-lancamento {
@@ -550,6 +560,7 @@ body {
         align-items: center;
         gap: 10px;
         transition: 0.5s ease-in-out !important;
+        -webkit-transition: all 0.3s ease-in-out !important;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
 
@@ -599,6 +610,7 @@ body {
       border-radius: 25px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
 
       &:hover {
         background-color: white;
@@ -641,6 +653,7 @@ body {
       &:hover > :not(:hover) {
         opacity: 0.4 !important;
         transform: scale(0.9) !important;
+        -webkit-transform: scale(0.9) !important;
       }
 
       & .produto-destaque {
@@ -652,6 +665,7 @@ body {
         align-items: center;
         gap: 10px;
         transition: 0.5s ease-in-out !important;
+        -webkit-transition: all 0.3s ease-in-out;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
 
@@ -702,6 +716,7 @@ body {
       border-radius: 25px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
 
       &:hover {
         background-color: black;
@@ -762,6 +777,7 @@ body {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           column-gap: 15px;
+          -webkit-column-gap: 15px;
           row-gap: 5px;
 
           & img {
@@ -785,6 +801,7 @@ body {
           display: grid;
           grid-template-columns: 1fr 1fr;
           column-gap: 30px;
+          -webkit-column-gap: 30px;
           row-gap: 20px;
 
           & .branco {
@@ -815,6 +832,7 @@ body {
           display: grid;
           grid-template-columns: 1fr 1fr;
           column-gap: 15px;
+          -webkit-column-gap: 15px;
           margin-bottom: 20px;
 
           & div {
@@ -1006,6 +1024,7 @@ body {
                 text-decoration: none;
                 font-size: 12px;
                 transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
     
                 &:hover {
                   color: white;
@@ -1032,6 +1051,7 @@ body {
                 color: gray;
                 font-size: 12px;
                 transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
     
                     &:hover {
                     color: white;
@@ -1070,7 +1090,9 @@ body {
 
 .fade {
   animation-name: fade;
+  -webkit-animation-name: fade;
   animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
 }
 
 @keyframes fade {
