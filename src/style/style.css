@@ -76,6 +76,7 @@ body {
 
         & .logotipo {
           font-family: 'Montserrat', sans-serif;
+          fallback: initial;
           writing-mode: vertical-lr;
           text-orientation: upright;
           position: absolute;
