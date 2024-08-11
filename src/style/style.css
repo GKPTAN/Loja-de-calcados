@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 170px;
@@ -22,903 +22,904 @@ body {
   background-color: #cec7c3;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  & .home {
-    position: relative;
-    height: 62.67vh;
-    background-size: 100% 100%;
-    background-image: url(../image/pexels-craytive-1478442.webp);
-    color: white;
-    z-index: 1;
-    overflow: hidden;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
-      color: transparent;
-      z-index: 1;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 20%;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    }
-    & section {
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 30px;
-      & .logo {
-        margin-top: 30px;
-        padding: 0;
-        z-index: 2;
-        position: relative;
-        & img {
-          width: 250px;
-        }
-        & .logotipo {
-          font-family: 'Montserrat', sans-serif;
-          color: white;
-          writing-mode: vertical-lr;
-          -ms-writing-mode: tb-lr;
-          text-orientation: upright;
-          position: absolute;
-          top: 27.5%;
-          left: 43%;
-          text-transform: uppercase;
-        }
-      }
-      & .navegacao {
-        margin-top: 30px;
-        z-index: 2;
-        & ul {
-          display: flex;
-          gap: 100px;
-          list-style: none;
-          & li {
-            & a {
-              text-decoration: none;
-              color: white;
-              font-family: "Caladea", serif;
-              font-size: 18px;
-              cursor: pointer;
-              position: relative;
-              &::after {
-                content: "";
-                position: absolute;
-                width: 0%;
-                height: 0px;
-                background: white;
-                bottom: -2px;
-                left: 50%;
-                transition: all 0.3s ease-in-out;
-                -webkit-transition: all 0.3s ease-in-out;
-              }
-              &:hover::after {
-                width: 100%;
-                height: 3px;
-                left: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-    & .menu {
-        scale: 0;
-        visibility: hidden;
-      }
-    & .hidden {
-        scale: 0;
-        visibility: hidden;
-      }
-    & .compra {
-      position: absolute;
-      font-family: "Calligraffitti", cursive;
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: white;
-      z-index: 1;
-      top: 83%;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      border: 1px solid white;
-      padding: 20px;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      &:hover {
-        background-color: white;
-        color: black;
-      }
-      &:focus {
-        outline: 1px solid lightgreen;
-      }
-    }
-  }
-  & .rotas {
-    background-color: black;
-    color: white;
-    font-weight: 700;
-    padding: 20px 50px;
-    margin-bottom: 120px;
-    & .navigation {
-      display: flex;
-      list-style: none;
-      justify-content: space-between;
-      & li > a {
-        text-decoration: none;
-        color: white;
-        position: relative;
-        font-weight: normal;
-        &::after {
-          content: "";
-          position: absolute;
-          width: 0%;
-          height: 0px;
-          background: white;
-          bottom: -4px;
-          left: 50%;
-          transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-        }
-        &:hover::after {
-          width: 100%;
-          height: 3px;
-          left: 0;
-        }
-      }
-    }
-  }
-  & nav.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  & .oferta-do-dia {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    width: 80vw;
-    background-color: white;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    padding: 20px 0px 20px 20px;
-    border-right: 1px solid rgba(0, 0, 0, 0.363);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
-    box-shadow: 3px 3px 10px #9b9693;
-    border-bottom-right-radius: 10px;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      background: white;
-    }
-    &::before {
-      top: 0;
-      left: 0;
-      right: -10px;
-      width: 100%;
-      height: 1px;
-    }
-    &::after {
-      top: 0;
-      left: 0;
-      bottom: -10px;
-      width: 1px;
-      height: 100%;
-    }
-    & .oferta {
-      width: 57%;
-      position: relative;
-      border-right: 1px solid rgba(0, 0, 0, 0.363);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.363);
-      border-bottom-right-radius: 10px;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
-      padding-left: 3px;
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        background: white;
-      }
-      &::before {
-        top: 0;
-        left: 0;
-        right: 10px;
-        width: 100%;
-        height: 1px;
-      }
-      &::after {
-        top: 0;
-        left: 0;
-        bottom: 10px;
-        width: 1px;
-        height: 100%;
-      }
-      & .asterisco {
-        position: absolute;
-        top: 8.8%;
-        left: 75.2%;
-      }
-      & #zoom-up {
-        position: absolute;
-        top: 10%;
-        left: 92%;
-        border: none;
-        cursor: pointer;
-      }
-      & #zoom-down {
-        position: absolute;
-        top: 10%;
-        left: 95%;
-        border: none;
-        cursor: pointer;
-      }
-      & .esquerda {
-        font-family: "Women and Shoes";
-        font-size: 5rem;
-        position: absolute;
-        top: -0.5%;
-        left: 3%;
-        color: black;
-      }
-      & .direita {
-        font-family: "Women and Shoes";
-        font-size: 5rem;
-        position: absolute;
-        right: 2%;
-        top: -0.5%;
-      }
-      & .titulo-oferta {
-        font-family: "Caladea", serif;
-        font-size: 3rem;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 500;
-      }
-      & hr {
-        height: 2px;
-        width: 94%;
-        background-color: black;
-        border: none;
-        margin: auto;
-        margin-bottom: 10px;
-      }
-      & .descricao-oferta {
-        font-family: "Caladea", serif;
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-      }
-      & .preco-oferta {
-        font-family: "Caladea", serif;
-        font-size: 14px;
-        margin-bottom: 5px;
-        width: 80%;
-      }
-      & .tamanho {
-        display: inline;
-        font-family: "Caladea", serif;
-        margin-right: 10px;
-        & input[type="number"] {
-          width: 5%;
-          font-size: 18px;
-          text-indent: 1px;
-        }
-      }
-      & .comprar-agora {
-        text-decoration: none;
-        color: black;
-        &:hover {
-          text-decoration: underline;
-          color: darkblue;
-        }
-      }
-      & .video {
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      & .escolha-cor {
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-      & .abaixo {
-        margin: auto;
-      }
-      & .cores {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        width: 50%;
-        margin: auto;
-        padding: 0px 30px 0px 30px;
-        & #cor-branca {
-          width: 30%;
-          transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-          & img {
-            width: 100%;
-            transition: all 0.3s ease-in-out;
-            -webkit-transition: all 0.3s ease-in-out;
-          }
-        }
-        & #cor-preta {
-          width: 30%;
-          transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-          & img {
-            width: 100%;
-            transition: all 0.3s ease-in-out;
-            -webkit-transition: all 0.3s ease-in-out;
-          }
-        }
-        & #branco {
-          position: absolute;
-          left: 6cqi;
-          bottom: 0.6cap;
-          width: 20px;
-          height: 20px;
-        }
-        & #preto {
-          position: absolute;
-          right: 3.9cap;
-          bottom: 0.6cap;
-          width: 20px;
-          height: 20px;
-        }
-      }
-    }
-    & .adicional {
-      display: flex;
-      width: 40%;
-      justify-content: center;
-      position: relative;
-      padding-right: 10px;
-      & .seta-esquerda {
-        position: absolute;
-        z-index: 2;
-        top: 48%;
-        left: 0;
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        cursor: pointer;
-      }
-      & .slides {
-        list-style-type: none;
-        height: 100%;
-         & .slide {
-          width: 100%;
-          height: 100%;
-          display: none;
-            & img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
-            }
-         }
-         & .slide[data-active] {
-          display: block;
-         }
-      }
-      & .seta-direita {
-        position: absolute;
-        z-index: 2;
-        top: 48%;
-        right: 10px;
-        cursor: pointer;
-      }
-    }
-  }
-  & .efeito-reveal-oferta {
-    visibility: hidden;
-  }
-  & .lancamentos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    width: 80vw;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    padding: 50px;
-    box-shadow: 3px 3px 10px #4b4846;
-    border-radius: 10px;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      background: black;
-    }
-    &::before {
-      top: 0;
-      left: 0;
-      right: -10px;
-      width: 100%;
-      height: 1px;
-    }
-    &::after {
-      top: 0;
-      left: 0;
-      bottom: -10px;
-      width: 1px;
-      height: 100%;
-    }
-    & .titulo-lancamento {
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 50px;
-      font-size: 3rem;
-      font-family: "Caladea", serif;
-    }
-    & .container {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 50px;
-      &:hover > :not(:hover) {
-        opacity: 0.4 !important;
-        transform: scale(0.9) !important;
-        -webkit-transform: scale(0.9) !important;
-      }
-      & .produto-lancamento {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 16vw;
-        padding: 0px 10px 10px 10px;
-        align-items: center;
-        gap: 10px;
-        transition: 0.5s ease-in-out !important;
-        -webkit-transition: all 0.3s ease-in-out !important;
-        border-radius: 0px 0px 20px 20px;
-        cursor: pointer;
-        &:focus {
-          outline: 2px solid lightgreen;
-        }
-        & video {
-          width: 16vw;
-          cursor: pointer;
-        }
-        & .nome-lancamento {
-          font-family: "Caladea", serif;
-          font-weight: bold;
-          text-align: center;
-          & a {
-            text-decoration: none;
-            color: black;
-            &:hover {
-              text-decoration: underline;
-              color: cadetblue;
-            }
-          }
-        }
-        & .segunda-opcao {
-          font: normal 14px "Caladea", serif;
-          touch-action: pinch-zoom;
-        }
-      }
-    }
-    & .loja {
-      display: block;
-      margin: auto;
-      text-align: center;
-      font-family: "Calligraffitti", cursive;
-      font-size: 1.5rem;
-      width: 50%;
-      text-decoration: none;
-      color: white;
-      border: 1px solid green;
-      padding: 10px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      &:hover {
-        background-color: white;
-        color: black;
-      }
-    }
-  }
-  & .efeito-reveal-lancamentos {
-    visibility: hidden;
-    & .efeito-reveal-produto1, .efeito-reveal-produto2, .efeito-reveal-produto3, .efeito-reveal-produto4 {
-      visibility: hidden;
-    }
-  }
-  & .destaques {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80vw;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    padding: 50px;
-    & .titulo-destaque {
-      text-align: center;
-      text-transform: uppercase;
-      font-family: "Caladea", serif;
-      font-size: 3rem;
-      margin-bottom: 50px;
-    }
-    & .container {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 50px;
-      &:hover > :not(:hover) {
-        opacity: 0.4 !important;
-        transform: scale(0.9) !important;
-        -webkit-transform: scale(0.9) !important;
-      }
-      & .produto-destaque {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 16vw;
-        padding: 0px 10px 10px 10px;
-        align-items: center;
-        gap: 10px;
-        transition: 0.5s ease-in-out !important;
-        -webkit-transition: all 0.3s ease-in-out;
-        border-radius: 0px 0px 20px 20px;
-        cursor: pointer;
-        &:focus {
-          outline: 2px solid lightgreen;
-        }
-        & video {
-          width: 16vw;
-          cursor: pointer;
-        }
-        & .nome-destaque {
-          font-family: "Caladea", serif;
-          font-weight: bold;
-          text-align: center;
-          & a {
-            text-decoration: none;
-            color: black;
-            &:hover {
-              text-decoration: underline;
-              color: cadetblue;
-            }
-          }
-        }
-        & .segunda-opcao {
-          font: normal 14px "Caladea", serif;
-          touch-action: pinch-zoom;
-        }
-      }
-    }
-    & .loja {
-      display: block;
-      margin: auto;
-      text-align: center;
-      font-family: "Calligraffitti", cursive;
-      font-size: 1.5rem;
-      width: 50%;
-      text-decoration: none;
-      color: black;
-      border: 1px solid green;
-      background-color: #fff;
-      padding: 10px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      &:hover {
-        background-color: black;
-        color: white;
-      }
-    }
-  }
-  & .efeito-reveal-destaques {
-    visibility: hidden;
-    & .efeito-reveal-destaque1, .efeito-reveal-destaque2, .efeito-reveal-destaque3, .efeito-reveal-destaque4 {
-      visibility: hidden;
-    }
-  }
-  & .pagamento {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    justify-content: space-between;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    padding: 50px 50px;
-    & .titulo-pagamento {
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: "Caladea", serif;
-      font-size: 3rem;
-      margin-bottom: 50px;
-    }
-    & .metodos {
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 250px;
-      & .cartoes {
-        display: flex;
-        flex-direction: column;
-        & .titulo-cartoes {
-          display: flex;
-          align-items: center;
-          color: white;
-          font-family: "Caladea", serif;
-          text-align: center;
-          margin-bottom: 20px;
-          & img {
-            margin-left: 10px;
-          }
-        }
-        & .icones-cartoes {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          column-gap: 15px;
-          -webkit-column-gap: 15px;
-          row-gap: 5px;
-          & img {
-            max-width: 100%;
-          }
-        }
-      }
-      & .intermediario {
-        display: flex;
-        flex-direction: column;
-        & .titulo-intermediario {
-          color: white;
-          font-family: "Caladea", serif;
-          text-align: center;
-          margin-bottom: 20px;
-        }
-        & .meios-online {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 30px;
-          -webkit-column-gap: 30px;
-          row-gap: 20px;
-          & .branco {
-            background-color: white;
-            width: 50px;
-            border-radius: 50%;
-          }
-          & .branco-2 {
-            background-color: white;
-            border-radius: 20px;
-          }
-        }
-      }
-      & .outros-meios {
-        display: flex;
-        flex-direction: column;
-        & .titulo-outros-meios {
-          color: white;
-          font-family: "Caladea", serif;
-          text-align: center;
-          margin-bottom: 20px;
-        }
-        & .metodos-adicionais {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 15px;
-          -webkit-column-gap: 15px;
-          margin-bottom: 20px;
-          & div {
-            display: flex;
-            align-items: center;
-            & .nome {
-              margin-left: 2px;
-              color: white;
-            }
-          }
-        }
-        & .camera {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          & .titulo-camera {
-            color: white;
-            font-family: "Caladea", serif;
-            text-align: center;
-            margin-bottom: 20px;
-          }
-          & .fundo {
-            background-color: white;
-            width: 50px;
-          }
-        }
-      }
-    }
-  }
-  & .efeito-reveal-pagamento {
-    visibility: hidden;
-    & .efeito-reveal-cartoes, .efeito-reveal-intermediario, .efeito-reveal-meios {
-      visibility: hidden;
-    }
-  }
-  & .depoimentos {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    & .titulo-depoimentos {
-      font-family: "Caladea", serif;
-      text-align: center;
-      font-size: 3rem;
-      text-transform: uppercase;
-      margin-bottom: 50px;
-    }
-    & .avaliacoes {
-      display: flex;
-      justify-content: space-between;
-      & .depoimento {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 20vw;
-        & img {
-          width: 400px;
-          max-width: 100%;
-        }
-        & .nome-cliente {
-          font-family: "Caladea", serif;
-          text-transform: uppercase;
-        }
-        & .avaliacao {
-          text-align: justify;
-        }
-      }
-    }
-  }
-  & .efeito-reveal-depoimentos {
-    visibility: hidden;
-  }
-  & .atualizacoes {
-    background-color: black;
-    color: white;
-    margin-top: 200px;
-    padding: 50px 50px 40px 50px;
-    width: 100%;
-    & .comunidade {
-      display: grid;
-      grid-template-columns: 61% 39%;
-      width: 100%;
-      margin: auto;
-      position: relative;
-      & .titulo-atualizacoes {
-        font-family: "Caladea", serif;
-        font-size: 3rem;
-        grid-column: 1 / 2;
-        margin-top: 50px;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      & .texto-comunidade {
-        grid-column: 2 / 3;
-      }
-      & input[type="email"] {
-        background-color: #000;
-        color: white;
-        border: 1px solid white;
-        grid-column: 2 / 3;
-        margin-bottom: 60px;
-        padding: 20px;
-        border-radius: 10px;
-        &:focus{
-          outline: 2px solid green;
-        }
-        &::placeholder {
-          color: white;
-        }
-      }
-      & .secao-enviar {
-        display: flex;
-        position: absolute;
-        left: 0px;
-        bottom: 50.7%;
-        width: 99.5%;
-        border-radius: 10px;
-        justify-content: right;
-        & .enviar {
-          position: fixed;
-          background-color: transparent;
-          border: none;
-        }
-      }
-    }
-    & .efeito-reveal-comunidade {
-      visibility: hidden;
-    }
-    & hr {
-      margin-bottom: 20px;
-    }
-    & .creditos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-      & h2 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      & .atribuicoes {
-        display: flex;
-        & .esquerda {
-            margin-right: 20px;
-            & h4 {
-              margin-bottom: 10px;
-            }
-            & .imagens {
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              list-style: none;
-              & li > a {
-                color: gray;
-                text-decoration: none;
-                font-size: 12px;
-                transition: all 0.3s ease-in-out;
-                -webkit-transition: all 0.3s ease-in-out;
-                &:hover {
-                  color: white;
-                  text-decoration: underline;
-                }
-              }
-            }
-          }
-          & .direita {
-            & h4 {
-              margin-bottom: 10px;
-            }
-            & ul.videos {
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              list-style: none;
-              & li > a {
-                text-decoration: none;
-                color: gray;
-                font-size: 12px;
-                transition: all 0.3s ease-in-out;
-                -webkit-transition: all 0.3s ease-in-out;
-                    &:hover {
-                    color: white;
-                    text-decoration: underline;
-                    }
-                }
-            }
-        }
-      }
-    }
-    & .rodape {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      & .nome-loja {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-      }
-      & .direitos {
-        font-size: 16px;
-      }
-    }
-  }
+}
+body .home {
+  position: relative;
+  height: 62.67vh;
+  background-size: 100% 100%;
+  background-image: url(../image/pexels-craytive-1478442.webp);
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+}
+body .home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+  color: transparent;
+  z-index: 1;
+}
+body .home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+body .home section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+body .home section .logo {
+  margin-top: 30px;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+body .home section .logo img {
+  width: 250px;
+}
+body .home section .logo .logotipo {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  text-orientation: upright;
+  position: absolute;
+  top: 27.5%;
+  left: 43%;
+  text-transform: uppercase;
+}
+body .home section .navegacao {
+  margin-top: 30px;
+  z-index: 2;
+}
+body .home section .navegacao ul {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+}
+body .home section .navegacao ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Caladea", serif;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+body .home section .navegacao ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0px;
+  background: white;
+  bottom: -2px;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .home section .navegacao ul li a:hover::after {
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+body .home .menu {
+  scale: 0;
+  visibility: hidden;
+}
+body .home .hidden {
+  scale: 0;
+  visibility: hidden;
+}
+body .home .compra {
+  position: absolute;
+  font-family: "Calligraffitti", cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  z-index: 1;
+  top: 83%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .home .compra:hover {
+  background-color: white;
+  color: black;
+}
+body .home .compra:focus {
+  outline: 1px solid lightgreen;
+}
+body .rotas {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  padding: 20px 50px;
+  margin-bottom: 120px;
+}
+body .rotas .navigation {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+body .rotas .navigation li > a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-weight: normal;
+}
+body .rotas .navigation li > a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0px;
+  background: white;
+  bottom: -4px;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .rotas .navigation li > a:hover::after {
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+body nav.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body .oferta-do-dia {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 80vw;
+  background-color: white;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  padding: 20px 0px 20px 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.363);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+  box-shadow: 3px 3px 10px #9b9693;
+  border-bottom-right-radius: 10px;
+}
+body .oferta-do-dia::before, body .oferta-do-dia::after {
+  content: "";
+  position: absolute;
+  background: white;
+}
+body .oferta-do-dia::before {
+  top: 0;
+  left: 0;
+  right: -10px;
+  width: 100%;
+  height: 1px;
+}
+body .oferta-do-dia::after {
+  top: 0;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 100%;
+}
+body .oferta-do-dia .oferta {
+  width: 57%;
+  position: relative;
+  border-right: 1px solid rgba(0, 0, 0, 0.363);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+  padding-left: 3px;
+}
+body .oferta-do-dia .oferta::before, body .oferta-do-dia .oferta::after {
+  content: "";
+  position: absolute;
+  background: white;
+}
+body .oferta-do-dia .oferta::before {
+  top: 0;
+  left: 0;
+  right: 10px;
+  width: 100%;
+  height: 1px;
+}
+body .oferta-do-dia .oferta::after {
+  top: 0;
+  left: 0;
+  bottom: 10px;
+  width: 1px;
+  height: 100%;
+}
+body .oferta-do-dia .oferta .asterisco {
+  position: absolute;
+  top: 8.8%;
+  left: 75.2%;
+}
+body .oferta-do-dia .oferta #zoom-up {
+  position: absolute;
+  top: 10%;
+  left: 92%;
+  border: none;
+  cursor: pointer;
+}
+body .oferta-do-dia .oferta #zoom-down {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  border: none;
+  cursor: pointer;
+}
+body .oferta-do-dia .oferta .esquerda {
+  font-family: "Women and Shoes";
+  font-size: 5rem;
+  position: absolute;
+  top: -0.5%;
+  left: 3%;
+  color: black;
+}
+body .oferta-do-dia .oferta .direita {
+  font-family: "Women and Shoes";
+  font-size: 5rem;
+  position: absolute;
+  right: 2%;
+  top: -0.5%;
+}
+body .oferta-do-dia .oferta .titulo-oferta {
+  font-family: "Caladea", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+body .oferta-do-dia .oferta hr {
+  height: 2px;
+  width: 94%;
+  background-color: black;
+  border: none;
+  margin: auto;
+  margin-bottom: 10px;
+}
+body .oferta-do-dia .oferta .descricao-oferta {
+  font-family: "Caladea", serif;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+body .oferta-do-dia .oferta .preco-oferta {
+  font-family: "Caladea", serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 80%;
+}
+body .oferta-do-dia .oferta .tamanho {
+  display: inline;
+  font-family: "Caladea", serif;
+  margin-right: 10px;
+}
+body .oferta-do-dia .oferta .tamanho input[type=number] {
+  width: 5%;
+  font-size: 18px;
+  text-indent: 1px;
+}
+body .oferta-do-dia .oferta .comprar-agora {
+  text-decoration: none;
+  color: black;
+}
+body .oferta-do-dia .oferta .comprar-agora:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+body .oferta-do-dia .oferta .video {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .oferta-do-dia .oferta .escolha-cor {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+body .oferta-do-dia .oferta .abaixo {
+  margin: auto;
+}
+body .oferta-do-dia .oferta .cores {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  padding: 0px 30px 0px 30px;
+}
+body .oferta-do-dia .oferta .cores #cor-branca {
+  width: 30%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .oferta-do-dia .oferta .cores #cor-branca img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .oferta-do-dia .oferta .cores #cor-preta {
+  width: 30%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .oferta-do-dia .oferta .cores #cor-preta img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .oferta-do-dia .oferta .cores #branco {
+  position: absolute;
+  left: 6cqi;
+  bottom: 0.6cap;
+  width: 20px;
+  height: 20px;
+}
+body .oferta-do-dia .oferta .cores #preto {
+  position: absolute;
+  right: 3.9cap;
+  bottom: 0.6cap;
+  width: 20px;
+  height: 20px;
+}
+body .oferta-do-dia .adicional {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  position: relative;
+  padding-right: 10px;
+}
+body .oferta-do-dia .adicional .seta-esquerda {
+  position: absolute;
+  z-index: 2;
+  top: 48%;
+  left: 0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  cursor: pointer;
+}
+body .oferta-do-dia .adicional .slides {
+  list-style-type: none;
+  height: 100%;
+}
+body .oferta-do-dia .adicional .slides .slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+body .oferta-do-dia .adicional .slides .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+body .oferta-do-dia .adicional .slides .slide[data-active] {
+  display: block;
+}
+body .oferta-do-dia .adicional .seta-direita {
+  position: absolute;
+  z-index: 2;
+  top: 48%;
+  right: 10px;
+  cursor: pointer;
+}
+body .efeito-reveal-oferta {
+  visibility: hidden;
+}
+body .lancamentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  width: 80vw;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  padding: 50px;
+  box-shadow: 3px 3px 10px #4b4846;
+  border-radius: 10px;
+}
+body .lancamentos::before, body .lancamentos::after {
+  content: "";
+  position: absolute;
+  background: black;
+}
+body .lancamentos::before {
+  top: 0;
+  left: 0;
+  right: -10px;
+  width: 100%;
+  height: 1px;
+}
+body .lancamentos::after {
+  top: 0;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 100%;
+}
+body .lancamentos .titulo-lancamento {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-family: "Caladea", serif;
+}
+body .lancamentos .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+body .lancamentos .container:hover > :not(:hover) {
+  opacity: 0.4 !important;
+  transform: scale(0.9) !important;
+  -webkit-transform: scale(0.9) !important;
+}
+body .lancamentos .container .produto-lancamento {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 16vw;
+  padding: 0px 10px 10px 10px;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+}
+body .lancamentos .container .produto-lancamento:focus {
+  outline: 2px solid lightgreen;
+}
+body .lancamentos .container .produto-lancamento video {
+  width: 16vw;
+  cursor: pointer;
+}
+body .lancamentos .container .produto-lancamento .nome-lancamento {
+  font-family: "Caladea", serif;
+  font-weight: bold;
+  text-align: center;
+}
+body .lancamentos .container .produto-lancamento .nome-lancamento a {
+  text-decoration: none;
+  color: black;
+}
+body .lancamentos .container .produto-lancamento .nome-lancamento a:hover {
+  text-decoration: underline;
+  color: cadetblue;
+}
+body .lancamentos .container .produto-lancamento .segunda-opcao {
+  font: normal 14px "Caladea", serif;
+  touch-action: pinch-zoom;
+}
+body .lancamentos .loja {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 1.5rem;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .lancamentos .loja:hover {
+  background-color: white;
+  color: black;
+}
+body .efeito-reveal-lancamentos {
+  visibility: hidden;
+}
+body .efeito-reveal-lancamentos .efeito-reveal-produto1, body .efeito-reveal-lancamentos .efeito-reveal-produto2, body .efeito-reveal-lancamentos .efeito-reveal-produto3, body .efeito-reveal-lancamentos .efeito-reveal-produto4 {
+  visibility: hidden;
+}
+body .destaques {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  padding: 50px;
+}
+body .destaques .titulo-destaque {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Caladea", serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+body .destaques .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+body .destaques .container:hover > :not(:hover) {
+  opacity: 0.4 !important;
+  transform: scale(0.9) !important;
+  -webkit-transform: scale(0.9) !important;
+}
+body .destaques .container .produto-destaque {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 16vw;
+  padding: 0px 10px 10px 10px;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+}
+body .destaques .container .produto-destaque:focus {
+  outline: 2px solid lightgreen;
+}
+body .destaques .container .produto-destaque video {
+  width: 16vw;
+  cursor: pointer;
+}
+body .destaques .container .produto-destaque .nome-destaque {
+  font-family: "Caladea", serif;
+  font-weight: bold;
+  text-align: center;
+}
+body .destaques .container .produto-destaque .nome-destaque a {
+  text-decoration: none;
+  color: black;
+}
+body .destaques .container .produto-destaque .nome-destaque a:hover {
+  text-decoration: underline;
+  color: cadetblue;
+}
+body .destaques .container .produto-destaque .segunda-opcao {
+  font: normal 14px "Caladea", serif;
+  touch-action: pinch-zoom;
+}
+body .destaques .loja {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 1.5rem;
+  width: 50%;
+  text-decoration: none;
+  color: black;
+  border: 1px solid green;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .destaques .loja:hover {
+  background-color: black;
+  color: white;
+}
+body .efeito-reveal-destaques {
+  visibility: hidden;
+}
+body .efeito-reveal-destaques .efeito-reveal-destaque1, body .efeito-reveal-destaques .efeito-reveal-destaque2, body .efeito-reveal-destaques .efeito-reveal-destaque3, body .efeito-reveal-destaques .efeito-reveal-destaque4 {
+  visibility: hidden;
+}
+body .pagamento {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  padding: 50px 50px;
+}
+body .pagamento .titulo-pagamento {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Caladea", serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+body .pagamento .metodos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 250px;
+}
+body .pagamento .metodos .cartoes {
+  display: flex;
+  flex-direction: column;
+}
+body .pagamento .metodos .cartoes .titulo-cartoes {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Caladea", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .pagamento .metodos .cartoes .titulo-cartoes img {
+  margin-left: 10px;
+}
+body .pagamento .metodos .cartoes .icones-cartoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  -webkit-column-gap: 15px;
+  row-gap: 5px;
+}
+body .pagamento .metodos .cartoes .icones-cartoes img {
+  max-width: 100%;
+}
+body .pagamento .metodos .intermediario {
+  display: flex;
+  flex-direction: column;
+}
+body .pagamento .metodos .intermediario .titulo-intermediario {
+  color: white;
+  font-family: "Caladea", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .pagamento .metodos .intermediario .meios-online {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  -webkit-column-gap: 30px;
+  row-gap: 20px;
+}
+body .pagamento .metodos .intermediario .meios-online .branco {
+  background-color: white;
+  width: 50px;
+  border-radius: 50%;
+}
+body .pagamento .metodos .intermediario .meios-online .branco-2 {
+  background-color: white;
+  border-radius: 20px;
+}
+body .pagamento .metodos .outros-meios {
+  display: flex;
+  flex-direction: column;
+}
+body .pagamento .metodos .outros-meios .titulo-outros-meios {
+  color: white;
+  font-family: "Caladea", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .pagamento .metodos .outros-meios .metodos-adicionais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  -webkit-column-gap: 15px;
+  margin-bottom: 20px;
+}
+body .pagamento .metodos .outros-meios .metodos-adicionais div {
+  display: flex;
+  align-items: center;
+}
+body .pagamento .metodos .outros-meios .metodos-adicionais div .nome {
+  margin-left: 2px;
+  color: white;
+}
+body .pagamento .metodos .outros-meios .camera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .pagamento .metodos .outros-meios .camera .titulo-camera {
+  color: white;
+  font-family: "Caladea", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .pagamento .metodos .outros-meios .camera .fundo {
+  background-color: white;
+  width: 50px;
+}
+body .efeito-reveal-pagamento {
+  visibility: hidden;
+}
+body .efeito-reveal-pagamento .efeito-reveal-cartoes, body .efeito-reveal-pagamento .efeito-reveal-intermediario, body .efeito-reveal-pagamento .efeito-reveal-meios {
+  visibility: hidden;
+}
+body .depoimentos {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+body .depoimentos .titulo-depoimentos {
+  font-family: "Caladea", serif;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+body .depoimentos .avaliacoes {
+  display: flex;
+  justify-content: space-between;
+}
+body .depoimentos .avaliacoes .depoimento {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20vw;
+}
+body .depoimentos .avaliacoes .depoimento img {
+  width: 400px;
+  max-width: 100%;
+}
+body .depoimentos .avaliacoes .depoimento .nome-cliente {
+  font-family: "Caladea", serif;
+  text-transform: uppercase;
+}
+body .depoimentos .avaliacoes .depoimento .avaliacao {
+  text-align: justify;
+}
+body .efeito-reveal-depoimentos {
+  visibility: hidden;
+}
+body .atualizacoes {
+  background-color: black;
+  color: white;
+  margin-top: 200px;
+  padding: 50px 50px 40px 50px;
+  width: 100%;
+}
+body .atualizacoes .comunidade {
+  display: grid;
+  grid-template-columns: 61% 39%;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+body .atualizacoes .comunidade .titulo-atualizacoes {
+  font-family: "Caladea", serif;
+  font-size: 3rem;
+  grid-column: 1/2;
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .atualizacoes .comunidade .texto-comunidade {
+  grid-column: 2/3;
+}
+body .atualizacoes .comunidade input[type=email] {
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+  grid-column: 2/3;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+body .atualizacoes .comunidade input[type=email]:focus {
+  outline: 2px solid green;
+}
+body .atualizacoes .comunidade input[type=email]::-moz-placeholder {
+  color: white;
+}
+body .atualizacoes .comunidade input[type=email]::placeholder {
+  color: white;
+}
+body .atualizacoes .comunidade .secao-enviar {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  bottom: 50.7%;
+  width: 99.5%;
+  border-radius: 10px;
+  justify-content: right;
+}
+body .atualizacoes .comunidade .secao-enviar .enviar {
+  position: fixed;
+  background-color: transparent;
+  border: none;
+}
+body .atualizacoes .efeito-reveal-comunidade {
+  visibility: hidden;
+}
+body .atualizacoes hr {
+  margin-bottom: 20px;
+}
+body .atualizacoes .creditos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body .atualizacoes .creditos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .atualizacoes .creditos .atribuicoes {
+  display: flex;
+}
+body .atualizacoes .creditos .atribuicoes .esquerda {
+  margin-right: 20px;
+}
+body .atualizacoes .creditos .atribuicoes .esquerda h4 {
+  margin-bottom: 10px;
+}
+body .atualizacoes .creditos .atribuicoes .esquerda .imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+body .atualizacoes .creditos .atribuicoes .esquerda .imagens li > a {
+  color: gray;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .atualizacoes .creditos .atribuicoes .esquerda .imagens li > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+body .atualizacoes .creditos .atribuicoes .direita h4 {
+  margin-bottom: 10px;
+}
+body .atualizacoes .creditos .atribuicoes .direita ul.videos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+body .atualizacoes .creditos .atribuicoes .direita ul.videos li > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+body .atualizacoes .creditos .atribuicoes .direita ul.videos li > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+body .atualizacoes .rodape {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+body .atualizacoes .rodape .nome-loja {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+body .atualizacoes .rodape .direitos {
+  font-size: 16px;
 }
 .escolhido {
   background-color: rgb(92, 91, 91);
