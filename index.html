@@ -33,20 +33,17 @@
     <link rel="preload" href="dist/styles.css" as="style" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="preload" href="dist/bundle.js" as="script" />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="src/js/reveal.js" defer></script>
     <script src="dist/bundle.js" defer></script>
-    <script src="./modernizr-custom.js"></script>
     <title>Europe</title>
     <style>
       main#topo {
         background-image: url(dist/8f7d13baffe4cfe5801a.webp);
       }
-
       .efeito-vertical-depoimentos {
         visibility: hidden;
       }
-
       @media (max-width: 1921px) {
         main#topo {
           background-image: url(dist/364b2df4ecf0ef6f8f30.webp);
@@ -54,7 +51,6 @@
       }
     </style>
   </head>
-
   <body>
     <main class="home" id="topo" style="background-image: url(dist/8f7d13baffe4cfe5801a.webp); @media (max-width: 1921px) {background-image: url(dist/364b2df4ecf0ef6f8f30.webp);}">
       <section>
@@ -68,7 +64,6 @@
           <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca" />
           <h1 class="logotipo " role="heading" aria-level="1">urop</h1>
         </div>
-
         <nav class="navegacao nav-hidden" id="navigate" role="navigation">
           <ul role="menu">
             <li role="none">
@@ -129,7 +124,6 @@
           </ul>
         </nav>
       </section>
-
       <img
         src="src/icons/menu.png"
         alt="abrir menu"
@@ -143,7 +137,6 @@
         class="fechar hidden"
         id="fechar"
       />
-
       <a
         id="compra1-nav"
         class="compra"
@@ -154,7 +147,6 @@
         >Compre agora seus sapatos!</a
       >
     </main>
-
     <nav
       class="rotas"
       id="navbar"
@@ -198,7 +190,6 @@
         </li>
       </ul>
     </nav>
-
     <main
       class="oferta-do-dia efeito-reveal-oferta"
       id="promocao"
@@ -210,9 +201,7 @@
         <span class="esquerda">CH</span>
         <h2 class="titulo-oferta">Oferta do dia</h2>
         <span class="direita">no</span>
-
         <hr />
-
         <p class="descricao-oferta" tabindex="0">Tênis Adidas Samba Og</p>
         <p class="preco-oferta upFonte" tabindex="0">
           <strong style="font-size: 24px">*</strong>de <del>R$699</del> por
@@ -238,7 +227,6 @@
             title="diminuir fonte"
           />
         </button>
-
         <p class="tamanho">
           <label for="tamanho">Tamanho do calçado: </label>
           <input
@@ -258,7 +246,6 @@
           role="link"
           >comprar agora</a
         >
-
         <video
           class="video"
           id="video-oferta"
@@ -271,7 +258,6 @@
         >
           teaser do tênis adidas samba og
         </video>
-
         <h3 class="escolha-cor">Escolha a sua cor</h3>
         <hr class="abaixo" role="separator" />
         <div class="cores" role="radiogroup">
@@ -293,7 +279,6 @@
               aria-checked="true"
             />
           </div>
-
           <div id="cor-preta">
             <img
               src="src/image/Tenis_Samba_OG_Preto_B75807_01_standard.avif"
@@ -312,7 +297,6 @@
           </div>
         </div>
       </section>
-
       <section
         class="adicional"
         id="carrossel"
@@ -330,7 +314,6 @@
           tabindex="0"
           role="button"
         />
-
         <ul class="slides">
           <li class="slide fade" data-active tabindex="0">
             <img
@@ -338,42 +321,36 @@
               alt="parte de cima do tênis"
             />
           </li>
-
           <li class="slide fade" tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_01_standard (1).jpg"
               alt="parte do lado do tênis"
             />
           </li>
-
           <li class="slide fade" tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_03_standard.avif"
               alt="parte da sola do tênis"
             />
           </li>
-
           <li class="slide fade" tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_04_standard.avif"
               alt="imagem do tênis - parte da frente"
             />
           </li>
-
           <li class="slide fade" tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_05_standard.avif"
               alt="imagem do tênis - parte de trás"
             />
           </li>
-
           <li class="slide fade" tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_41_detail.avif"
               alt="imagem aproximada mostrando detalhes da logo do tênis"
             />
           </li>
-
           <li class="slide fade" tabindex="0">
             <img
               src="src/image/Tenis_Samba_OG_Branco_B75806_42_detail.avif"
@@ -381,7 +358,6 @@
             />
           </li>
         </ul>
-
         <img
           class="seta-direita"
           id="seta-right"
@@ -395,7 +371,6 @@
         />
       </section>
     </main>
-
     <main
       class="lancamentos efeito-reveal-lancamentos"
       id="lancamentos"
@@ -404,7 +379,6 @@
       role="main"
     >
       <h2 class="titulo-lancamento">Lançamentos</h2>
-
       <section class="container" id="container" role="main">
         <div
           class="produto-lancamento efeito-reveal-produto1"
@@ -436,7 +410,6 @@
             <strong style="font-size: 24px">*</strong>ou até 10x de R$50,00
           </p>
         </div>
-
         <div
           class="produto-lancamento efeito-reveal-produto2"
           id="produto2"
@@ -466,7 +439,6 @@
             <strong style="font-size: 24px">*</strong>ou até 10x de R$152,00
           </p>
         </div>
-
         <div
           class="produto-lancamento efeito-reveal-produto3"
           id="produto3"
@@ -496,7 +468,6 @@
             <strong style="font-size: 24px">*</strong>ou até 10x de R$80,00
           </p>
         </div>
-
         <div
           class="produto-lancamento efeito-reveal-produto4"
           id="produto4"
@@ -527,7 +498,6 @@
           </p>
         </div>
       </section>
-
       <a
         class="loja"
         href="https://www.nike.com.br/nav?sorting=DescReleaseDate"
@@ -537,9 +507,7 @@
         role="link"
         >Ir direto pra loja</a
       >
-      <!-- Opcional -->
     </main>
-
     <main
       class="destaques efeito-reveal-destaques"
       id="destaques"
@@ -578,7 +546,6 @@
             <strong style="font-size: 24px">*</strong>ou até 10x de R$40,00
           </p>
         </div>
-
         <div
           class="produto-destaque efeito-reveal-destaque2"
           id="destaque2"
@@ -607,7 +574,6 @@
             <strong style="font-size: 24px">*</strong>ou até 10x de R$23,00
           </p>
         </div>
-
         <div
           class="produto-destaque efeito-reveal-destaque3"
           id="destaque3"
@@ -638,7 +604,6 @@
             <strong style="font-size: 24px">*</strong>ou até 10x de R$17,09
           </p>
         </div>
-
         <div
           class="produto-destaque efeito-reveal-destaque4"
           id="destaque4"
@@ -670,7 +635,6 @@
           </p>
         </div>
       </section>
-
       <a
         class="loja"
         href="https://www.adidas.com.br/"
@@ -680,9 +644,7 @@
         role="link"
         >Ir direto pra loja</a
       >
-      <!-- Opcional -->
     </main>
-
     <main
       class="pagamento efeito-reveal-pagamento"
       id="pagamentos"
@@ -691,7 +653,6 @@
       role="main"
     >
       <h2 class="titulo-pagamento">métodos de pagamento aceitos</h2>
-
       <section class="metodos" role="group">
         <div
           class="cartoes efeito-reveal-cartoes"
@@ -707,58 +668,47 @@
               alt="icone cartão de crédito"
             />
           </h3>
-
           <div class="icones-cartoes">
             <img
               src="src/icons/1156716_club_diners_international_icon.png"
               alt="club diners international"
               title="club diners international"
             />
-
             <img
               src="src/icons/1156722_finance_jcb_logo_payment_icon.png"
               alt="JCB"
               title="JCB"
             />
-
             <img
               src="src/icons/1156750_finance_mastercard_payment_icon.png"
               alt="mastercard"
             />
-
             <img
               src="src/icons/209439_unionpay_icon.png"
               alt="unionpay"
               title="unionpay"
             />
-
             <img src="src/icons/294654_visa_icon.png" alt="visa" />
-
             <img
               src="src/icons/4373073_amex_card_credit_logo_logos_icon.png"
               alt="american express"
               title="american express"
             />
-
             <img
               src="src/icons/4373195_card_credit_discover_logo_logos_icon.png"
               alt="discover"
             />
-
             <img
               src="src/icons/elo_payment_method_card_icon_142740.png"
               alt="elo"
             />
-
             <img
               src="src/icons/hipercard_payment_method_card_icon_142739.png"
               alt="hipercard"
             />
           </div>
         </div>
-
         <hr />
-
         <div
           class="intermediario efeito-reveal-intermediario"
           id="intermediario"
@@ -767,24 +717,19 @@
           role="region"
         >
           <h3 class="titulo-intermediario">Meios de Pagamento Online</h3>
-
           <div class="meios-online">
             <img src="src/icons/pp_cc_mark_37x23.jpg" alt="paypal" />
-
             <img
               src="src/icons/1247732_amazon_payment_icon.png"
               alt="amazon pay"
             />
-
             <img
               src="src/icons/7123945_logo_pay_google_gpay_icon.svg"
               alt="google pay"
             />
-
             <div class="branco">
               <img src="src/icons/4923044_apple_pay_icon.png" alt="apple pay" />
             </div>
-
             <div class="branco-2">
               <img
                 src="src/icons/mercadopago-nuevo-seeklogo.svg"
@@ -793,9 +738,7 @@
             </div>
           </div>
         </div>
-
         <hr />
-
         <div
           class="outros-meios efeito-reveal-meios"
           id="meios"
@@ -804,10 +747,8 @@
           role="region"
         >
           <h3 class="titulo-outros-meios">Outros Meios</h3>
-
           <div class="metodos-adicionais">
             <img src="src/icons/pngwing.com.png" alt="boleto" title="boleto" />
-
             <div>
               <img src="src/icons/icons8-foto-48.png" alt="Pix" /><span
                 class="nome"
@@ -815,7 +756,6 @@
               >
             </div>
           </div>
-
           <div class="camera">
             <h3 class="titulo-camera">Ler QR Code</h3>
             <div class="fundo">
@@ -825,7 +765,6 @@
         </div>
       </section>
     </main>
-
     <main
       class="depoimentos efeito-reveal-depoimentos"
       id="depoimentos"
@@ -834,7 +773,6 @@
       role="main"
     >
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
-
       <section class="avaliacoes" role="main">
         <article
           class="depoimento"
@@ -862,7 +800,6 @@
             >
           </p>
         </article>
-
         <article
           class="depoimento"
           id="depoimento2"
@@ -891,7 +828,6 @@
             >
           </p>
         </article>
-
         <article
           class="depoimento"
           id="depoimento-mulher"
@@ -924,7 +860,6 @@
         </article>
       </section>
     </main>
-
     <main
       class="atualizacoes"
       id="comunidade"
@@ -940,14 +875,12 @@
         <h2 class="titulo-atualizacoes" tabindex="0">
           Se junte a nossa comunidade
         </h2>
-
         <p class="texto-comunidade" tabindex="0" role="text">
           Quer ficar por dentro das nossas últimas novidades? Quer descontos
           especiais e promoções exclusivas? Junte-se a nossa comunidade agora!
           Receba atualizações sobre novos produtos, ofertas exclusivas e muito
           mais diretamente no seu e-mail.
         </p>
-
         <input
           type="email"
           name="emails"
@@ -956,7 +889,6 @@
           aria-label="email"
           tabindex="0"
         />
-
         <div class="secao-enviar" id="div-botao">
           <button class="enviar" aria-label="enviar email" role="button">
             <span class="material-symbols-outlined desativado" id="button"
@@ -965,7 +897,6 @@
           </button>
         </div>
       </section>
-
       <section
         class="creditos"
         tabindex="0"
@@ -973,7 +904,6 @@
         role="doc-credits"
       >
         <h2>CRÉDITOS</h2>
-
         <aside class="atribuicoes">
           <div class="esquerda">
             <h3>imagens</h3>
@@ -1104,18 +1034,14 @@
           </div>
         </aside>
       </section>
-
       <hr />
-
       <footer class="rodape" role="contentinfo">
         <h2 class="nome-loja" aria-level="2">europe</h2>
-
         <h3 class="direitos" tabindex="0">
           &copy; 2024 [EUROPE]. Todos os direitos reservados.
         </h3>
       </footer>
     </main>
-
     <script>
       function mudarReveal() {
         console.log("função está sendo chamada");
@@ -1144,10 +1070,10 @@
           );
         };
       };
-
       mudarReveal();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="./modernizr-custom.js"></script>
   </body>
 </html>

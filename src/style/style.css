@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 170px;
 }
-
 @-moz-document url-prefix() {
   main#promocao section.oferta span.esquerda {
     top: -2%;
   }
-
   main#promocao section.oferta span.direita {
     top: -2.7%;
   }
 }
-
 @font-face {
   font-family: "Women and Shoes";
   src: url(../fonts/WomenAndShoes.ttf) format("truetype");
@@ -22,12 +18,10 @@ html {
   font-style: normal;
   font-display: swap;
 }
-
 body {
   background-color: #cec7c3;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-
   & .home {
     position: relative;
     height: 62.67vh;
@@ -36,7 +30,6 @@ body {
     color: white;
     z-index: 1;
     overflow: hidden;
-
     &::before {
       content: "";
       position: absolute;
@@ -48,7 +41,6 @@ body {
       color: transparent;
       z-index: 1;
     }
-
     &::after {
       content: "";
       position: absolute;
@@ -58,27 +50,21 @@ body {
       height: 20%;
       background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     }
-
     & section {
       display: flex;
       justify-content: space-between;
       padding: 0px 30px;
-
       & .logo {
         margin-top: 30px;
         padding: 0;
         z-index: 2;
         position: relative;
-
         & img {
           width: 250px;
         }
-
         & .logotipo {
           font-family: 'Montserrat', sans-serif;
-          color: white;
           writing-mode: vertical-lr;
-          -ms-writing-mode: tb-lr;
           text-orientation: upright;
           position: absolute;
           top: 27.5%;
@@ -86,16 +72,13 @@ body {
           text-transform: uppercase;
         }
       }
-      
       & .navegacao {
         margin-top: 30px;
         z-index: 2;
-
         & ul {
           display: flex;
           gap: 100px;
           list-style: none;
-
           & li {
             & a {
               text-decoration: none;
@@ -104,7 +87,6 @@ body {
               font-size: 18px;
               cursor: pointer;
               position: relative;
-
               &::after {
                 content: "";
                 position: absolute;
@@ -116,7 +98,6 @@ body {
                 transition: all 0.3s ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
               }
-
               &:hover::after {
                 width: 100%;
                 height: 3px;
@@ -127,17 +108,14 @@ body {
         }
       }
     }
-
     & .menu {
         scale: 0;
         visibility: hidden;
       }
-
     & .hidden {
         scale: 0;
         visibility: hidden;
       }
-
     & .compra {
       position: absolute;
       font-family: "Calligraffitti", cursive;
@@ -155,36 +133,30 @@ body {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
-
       &:hover {
         background-color: white;
         color: black;
       }
-
       &:focus {
         outline: 1px solid lightgreen;
       }
     }
   }
-
   & .rotas {
     background-color: black;
     color: white;
     font-weight: 700;
     padding: 20px 50px;
     margin-bottom: 120px;
-
     & .navigation {
       display: flex;
       list-style: none;
       justify-content: space-between;
-
       & li > a {
         text-decoration: none;
         color: white;
         position: relative;
         font-weight: normal;
-
         &::after {
           content: "";
           position: absolute;
@@ -196,7 +168,6 @@ body {
           transition: all 0.3s ease-in-out;
           -webkit-transition: all 0.3s ease-in-out;
         }
-
         &:hover::after {
           width: 100%;
           height: 3px;
@@ -205,14 +176,12 @@ body {
       }
     }
   }
-
   & nav.fixed {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
   }
-
   & .oferta-do-dia {
     display: flex;
     position: relative;
@@ -227,14 +196,12 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.363);
     box-shadow: 3px 3px 10px #9b9693;
     border-bottom-right-radius: 10px;
-
     &::before,
     &::after {
       content: "";
       position: absolute;
       background: white;
     }
-
     &::before {
       top: 0;
       left: 0;
@@ -242,7 +209,6 @@ body {
       width: 100%;
       height: 1px;
     }
-
     &::after {
       top: 0;
       left: 0;
@@ -250,7 +216,6 @@ body {
       width: 1px;
       height: 100%;
     }
-
     & .oferta {
       width: 57%;
       position: relative;
@@ -259,14 +224,12 @@ body {
       border-bottom-right-radius: 10px;
       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
       padding-left: 3px;
-
       &::before,
       &::after {
         content: "";
         position: absolute;
         background: white;
       }
-
       &::before {
         top: 0;
         left: 0;
@@ -274,7 +237,6 @@ body {
         width: 100%;
         height: 1px;
       }
-
       &::after {
         top: 0;
         left: 0;
@@ -282,13 +244,11 @@ body {
         width: 1px;
         height: 100%;
       }
-
       & .asterisco {
         position: absolute;
         top: 8.8%;
         left: 75.2%;
       }
-
       & #zoom-up {
         position: absolute;
         top: 10%;
@@ -296,7 +256,6 @@ body {
         border: none;
         cursor: pointer;
       }
-
       & #zoom-down {
         position: absolute;
         top: 10%;
@@ -304,7 +263,6 @@ body {
         border: none;
         cursor: pointer;
       }
-
       & .esquerda {
         font-family: "Women and Shoes";
         font-size: 5rem;
@@ -313,7 +271,6 @@ body {
         left: 3%;
         color: black;
       }
-
       & .direita {
         font-family: "Women and Shoes";
         font-size: 5rem;
@@ -321,7 +278,6 @@ body {
         right: 2%;
         top: -0.5%;
       }
-
       & .titulo-oferta {
         font-family: "Caladea", serif;
         font-size: 3rem;
@@ -329,7 +285,6 @@ body {
         text-align: center;
         font-weight: 500;
       }
-
       & hr {
         height: 2px;
         width: 94%;
@@ -338,59 +293,49 @@ body {
         margin: auto;
         margin-bottom: 10px;
       }
-
       & .descricao-oferta {
         font-family: "Caladea", serif;
         font-size: 1.5rem;
         margin-bottom: 5px;
       }
-
       & .preco-oferta {
         font-family: "Caladea", serif;
         font-size: 14px;
         margin-bottom: 5px;
         width: 80%;
       }
-
       & .tamanho {
         display: inline;
         font-family: "Caladea", serif;
         margin-right: 10px;
-
         & input[type="number"] {
           width: 5%;
           font-size: 18px;
           text-indent: 1px;
         }
       }
-
       & .comprar-agora {
         text-decoration: none;
         color: black;
-
         &:hover {
           text-decoration: underline;
           color: darkblue;
         }
       }
-
       & .video {
         display: block;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
       }
-
       & .escolha-cor {
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 10px;
       }
-
       & .abaixo {
         margin: auto;
       }
-
       & .cores {
         display: flex;
         position: relative;
@@ -398,31 +343,26 @@ body {
         width: 50%;
         margin: auto;
         padding: 0px 30px 0px 30px;
-
         & #cor-branca {
           width: 30%;
           transition: all 0.3s ease-in-out;
           -webkit-transition: all 0.3s ease-in-out;
-
           & img {
             width: 100%;
             transition: all 0.3s ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
           }
         }
-
         & #cor-preta {
           width: 30%;
           transition: all 0.3s ease-in-out;
           -webkit-transition: all 0.3s ease-in-out;
-
           & img {
             width: 100%;
             transition: all 0.3s ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
           }
         }
-
         & #branco {
           position: absolute;
           left: 6cqi;
@@ -430,7 +370,6 @@ body {
           width: 20px;
           height: 20px;
         }
-
         & #preto {
           position: absolute;
           right: 3.9cap;
@@ -440,14 +379,12 @@ body {
         }
       }
     }
-
     & .adicional {
       display: flex;
       width: 40%;
       justify-content: center;
       position: relative;
       padding-right: 10px;
-
       & .seta-esquerda {
         position: absolute;
         z-index: 2;
@@ -457,32 +394,24 @@ body {
         -webkit-transform: rotateY(180deg);
         cursor: pointer;
       }
-
       & .slides {
         list-style-type: none;
         height: 100%;
-
          & .slide {
           width: 100%;
           height: 100%;
           display: none;
-
             & img {
-              /*max-height: 65.86vh;
-              max-width: 65.86vw;*/
               width: 100%;
               height: 100%;
               object-fit: cover;
               object-position: center;
-              /*z-index: 1;*/
             }
          }
-
          & .slide[data-active] {
           display: block;
          }
       }
-
       & .seta-direita {
         position: absolute;
         z-index: 2;
@@ -492,11 +421,9 @@ body {
       }
     }
   }
-
   & .efeito-reveal-oferta {
     visibility: hidden;
   }
-
   & .lancamentos {
     display: flex;
     flex-direction: column;
@@ -509,14 +436,12 @@ body {
     padding: 50px;
     box-shadow: 3px 3px 10px #4b4846;
     border-radius: 10px;
-
     &::before,
     &::after {
       content: "";
       position: absolute;
       background: black;
     }
-
     &::before {
       top: 0;
       left: 0;
@@ -524,7 +449,6 @@ body {
       width: 100%;
       height: 1px;
     }
-
     &::after {
       top: 0;
       left: 0;
@@ -532,7 +456,6 @@ body {
       width: 1px;
       height: 100%;
     }
-
     & .titulo-lancamento {
       color: white;
       text-align: center;
@@ -541,18 +464,15 @@ body {
       font-size: 3rem;
       font-family: "Caladea", serif;
     }
-
     & .container {
       display: flex;
       justify-content: space-between;
       margin-bottom: 50px;
-
       &:hover > :not(:hover) {
         opacity: 0.4 !important;
         transform: scale(0.9) !important;
         -webkit-transform: scale(0.9) !important;
       }
-
       & .produto-lancamento {
         display: flex;
         flex-direction: column;
@@ -565,39 +485,32 @@ body {
         -webkit-transition: all 0.3s ease-in-out !important;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
-
         &:focus {
           outline: 2px solid lightgreen;
         }
-
         & video {
           width: 16vw;
           cursor: pointer;
         }
-
         & .nome-lancamento {
           font-family: "Caladea", serif;
           font-weight: bold;
           text-align: center;
-
           & a {
             text-decoration: none;
             color: black;
-
             &:hover {
               text-decoration: underline;
               color: cadetblue;
             }
           }
         }
-
         & .segunda-opcao {
           font: normal 14px "Caladea", serif;
           touch-action: pinch-zoom;
         }
       }
     }
-
     & .loja {
       display: block;
       margin: auto;
@@ -613,22 +526,18 @@ body {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
-
       &:hover {
         background-color: white;
         color: black;
       }
     }
   }
-
   & .efeito-reveal-lancamentos {
     visibility: hidden;
-
     & .efeito-reveal-produto1, .efeito-reveal-produto2, .efeito-reveal-produto3, .efeito-reveal-produto4 {
       visibility: hidden;
     }
   }
-
   & .destaques {
     display: flex;
     flex-direction: column;
@@ -638,7 +547,6 @@ body {
     margin-top: 120px;
     margin-bottom: 80px;
     padding: 50px;
-
     & .titulo-destaque {
       text-align: center;
       text-transform: uppercase;
@@ -646,18 +554,15 @@ body {
       font-size: 3rem;
       margin-bottom: 50px;
     }
-
     & .container {
       display: flex;
       justify-content: space-between;
       margin-bottom: 50px;
-
       &:hover > :not(:hover) {
         opacity: 0.4 !important;
         transform: scale(0.9) !important;
         -webkit-transform: scale(0.9) !important;
       }
-
       & .produto-destaque {
         display: flex;
         flex-direction: column;
@@ -670,39 +575,32 @@ body {
         -webkit-transition: all 0.3s ease-in-out;
         border-radius: 0px 0px 20px 20px;
         cursor: pointer;
-
         &:focus {
           outline: 2px solid lightgreen;
         }
-
         & video {
           width: 16vw;
           cursor: pointer;
         }
-
         & .nome-destaque {
           font-family: "Caladea", serif;
           font-weight: bold;
           text-align: center;
-
           & a {
             text-decoration: none;
             color: black;
-
             &:hover {
               text-decoration: underline;
               color: cadetblue;
             }
           }
         }
-
         & .segunda-opcao {
           font: normal 14px "Caladea", serif;
           touch-action: pinch-zoom;
         }
       }
     }
-
     & .loja {
       display: block;
       margin: auto;
@@ -719,22 +617,18 @@ body {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
-
       &:hover {
         background-color: black;
         color: white;
       }
     }
   }
-
   & .efeito-reveal-destaques {
     visibility: hidden;
-
     & .efeito-reveal-destaque1, .efeito-reveal-destaque2, .efeito-reveal-destaque3, .efeito-reveal-destaque4 {
       visibility: hidden;
     }
   }
-
   & .pagamento {
     display: flex;
     flex-direction: column;
@@ -743,7 +637,6 @@ body {
     margin-top: 120px;
     margin-bottom: 80px;
     padding: 50px 50px;
-
     & .titulo-pagamento {
       color: white;
       text-align: center;
@@ -752,16 +645,13 @@ body {
       font-size: 3rem;
       margin-bottom: 50px;
     }
-
     & .metodos {
       display: flex;
       justify-content: space-between;
       padding: 0px 250px;
-
       & .cartoes {
         display: flex;
         flex-direction: column;
-
         & .titulo-cartoes {
           display: flex;
           align-items: center;
@@ -769,97 +659,81 @@ body {
           font-family: "Caladea", serif;
           text-align: center;
           margin-bottom: 20px;
-
           & img {
             margin-left: 10px;
           }
         }
-
         & .icones-cartoes {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           column-gap: 15px;
           -webkit-column-gap: 15px;
           row-gap: 5px;
-
           & img {
             max-width: 100%;
           }
         }
       }
-
       & .intermediario {
         display: flex;
         flex-direction: column;
-
         & .titulo-intermediario {
           color: white;
           font-family: "Caladea", serif;
           text-align: center;
           margin-bottom: 20px;
         }
-
         & .meios-online {
           display: grid;
           grid-template-columns: 1fr 1fr;
           column-gap: 30px;
           -webkit-column-gap: 30px;
           row-gap: 20px;
-
           & .branco {
             background-color: white;
             width: 50px;
             border-radius: 50%;
           }
-
           & .branco-2 {
             background-color: white;
             border-radius: 20px;
           }
         }
       }
-
       & .outros-meios {
         display: flex;
         flex-direction: column;
-
         & .titulo-outros-meios {
           color: white;
           font-family: "Caladea", serif;
           text-align: center;
           margin-bottom: 20px;
         }
-
         & .metodos-adicionais {
           display: grid;
           grid-template-columns: 1fr 1fr;
           column-gap: 15px;
           -webkit-column-gap: 15px;
           margin-bottom: 20px;
-
           & div {
             display: flex;
             align-items: center;
-
             & .nome {
               margin-left: 2px;
               color: white;
             }
           }
         }
-
         & .camera {
           display: flex;
           flex-direction: column;
           align-items: center;
-
           & .titulo-camera {
             color: white;
             font-family: "Caladea", serif;
             text-align: center;
             margin-bottom: 20px;
           }
-
           & .fundo {
             background-color: white;
             width: 50px;
@@ -868,15 +742,12 @@ body {
       }
     }
   }
-
   & .efeito-reveal-pagamento {
     visibility: hidden;
-
     & .efeito-reveal-cartoes, .efeito-reveal-intermediario, .efeito-reveal-meios {
       visibility: hidden;
     }
   }
-
   & .depoimentos {
     display: flex;
     flex-direction: column;
@@ -884,7 +755,6 @@ body {
     margin: auto;
     margin-top: 120px;
     margin-bottom: 80px;
-
     & .titulo-depoimentos {
       font-family: "Caladea", serif;
       text-align: center;
@@ -892,52 +762,43 @@ body {
       text-transform: uppercase;
       margin-bottom: 50px;
     }
-
     & .avaliacoes {
       display: flex;
       justify-content: space-between;
-
       & .depoimento {
         display: flex;
         flex-direction: column;
         gap: 10px;
         width: 20vw;
-
         & img {
           width: 400px;
           max-width: 100%;
         }
-
         & .nome-cliente {
           font-family: "Caladea", serif;
           text-transform: uppercase;
         }
-
         & .avaliacao {
           text-align: justify;
         }
       }
     }
   }
-
   & .efeito-reveal-depoimentos {
     visibility: hidden;
   }
-
   & .atualizacoes {
     background-color: black;
     color: white;
     margin-top: 200px;
     padding: 50px 50px 40px 50px;
     width: 100%;
-
     & .comunidade {
       display: grid;
       grid-template-columns: 61% 39%;
       width: 100%;
       margin: auto;
       position: relative;
-
       & .titulo-atualizacoes {
         font-family: "Caladea", serif;
         font-size: 3rem;
@@ -946,11 +807,9 @@ body {
         text-align: center;
         text-transform: uppercase;
       }
-
       & .texto-comunidade {
         grid-column: 2 / 3;
       }
-
       & input[type="email"] {
         background-color: #000;
         color: white;
@@ -959,16 +818,13 @@ body {
         margin-bottom: 60px;
         padding: 20px;
         border-radius: 10px;
-
         &:focus{
           outline: 2px solid green;
         }
-
         &::placeholder {
           color: white;
         }
       }
-
       & .secao-enviar {
         display: flex;
         position: absolute;
@@ -977,7 +833,6 @@ body {
         width: 99.5%;
         border-radius: 10px;
         justify-content: right;
-
         & .enviar {
           position: fixed;
           background-color: transparent;
@@ -985,49 +840,39 @@ body {
         }
       }
     }
-
     & .efeito-reveal-comunidade {
       visibility: hidden;
     }
-
     & hr {
       margin-bottom: 20px;
     }
-
     & .creditos {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px;
-
       & h2 {
         text-align: center;
         margin-bottom: 20px;
       }
-
       & .atribuicoes {
         display: flex;
-
         & .esquerda {
             margin-right: 20px;
-
             & h4 {
               margin-bottom: 10px;
             }
-    
             & .imagens {
               display: flex;
               flex-direction: column;
               gap: 10px;
               list-style: none;
-    
               & li > a {
                 color: gray;
                 text-decoration: none;
                 font-size: 12px;
                 transition: all 0.3s ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
-    
                 &:hover {
                   color: white;
                   text-decoration: underline;
@@ -1035,26 +880,21 @@ body {
               }
             }
           }
-    
           & .direita {
-
             & h4 {
               margin-bottom: 10px;
             }
-    
             & ul.videos {
               display: flex;
               flex-direction: column;
               gap: 10px;
               list-style: none;
-    
               & li > a {
                 text-decoration: none;
                 color: gray;
                 font-size: 12px;
                 transition: all 0.3s ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
-    
                     &:hover {
                     color: white;
                     text-decoration: underline;
@@ -1064,44 +904,36 @@ body {
         }
       }
     }
-
     & .rodape {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
-
       & .nome-loja {
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
       }
-
       & .direitos {
         font-size: 16px;
       }
     }
   }
 }
-
 .escolhido {
   background-color: rgb(92, 91, 91);
 }
-
 .opacidade {
   opacity: 0.5;
 }
-
 .fade {
   animation-name: fade;
   -webkit-animation-name: fade;
   animation-duration: 1.2s;
   -webkit-animation-duration: 1.2s;
 }
-
 @keyframes fade {
   from {
     opacity: 0.5;
   }
-
   to {
     opacity: 1;
   }

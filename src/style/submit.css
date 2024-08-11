@@ -15,7 +15,6 @@
   background-color: green;
   color: white;
 }
-
 .onclic {
   width: 48px;
   height: 48px;
@@ -33,7 +32,6 @@
 .onclic::after {
   content: "";
 }
-
 .validate {
   width: 48px;
   height: 48px;
@@ -47,7 +45,6 @@
   font-family: "FontAwesome";
   content: "\f00c";
 }
-
 @keyframes rotating {
   from {
     transform: rotate(0deg);
@@ -55,8 +52,7 @@
   to {
     transform: rotate(360deg);
   }
-}/*# sourceMappingURL=submit.css.map */
-
+}
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(360deg);
@@ -65,7 +61,6 @@
     -webkit-transform: rotate(360deg);
   }
 }
-
 .desativado {
   opacity: 0 !important;
   cursor: auto !important;
