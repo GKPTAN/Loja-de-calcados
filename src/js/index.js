@@ -152,9 +152,9 @@ function revelarMenu() {
     const fecharMenu = document.getElementById('fechar');
     const menuNavegacao = document.getElementById('navigate');
 
-    menu.style.scale = '0';
+    menu.style.transform = 'scale(0)';
     fecharMenu.style.visibility = 'visible';
-    fecharMenu.style.scale = '0.5';
+    fecharMenu.style.transform = 'scale(0.5)';
     menuNavegacao.style.width = '100%';
     menuNavegacao.style.height = '100%';
     menuNavegacao.style.padding = '10px 30px';
@@ -165,9 +165,9 @@ function esconderMenu() {
     const fecharMenu = document.getElementById('fechar');
     const menuNavegacao = document.getElementById('navigate');
 
-    menu.style.scale = '0.5';
+    menu.style.transform = 'scale(0.5)';
     menu.style.transitionDelay = '0.3s';
-    fecharMenu.style.scale = '0';
+    fecharMenu.style.transform = 'scale(0)';
     menuNavegacao.style.width = '0';
     menuNavegacao.style.height = '0';
     menuNavegacao.style.padding = '0';

@@ -422,14 +422,14 @@ body {
   main#topo img#menu {
     z-index: 1000;
     position: absolute;
-    scale: 0.5;
+    transform: scale(0.5);
     top: 0;
     right: 0;
     visibility: visible;
     transition: all 0.3s ease-in-out;
   }
   main#topo img#fechar {
-    scale: 0;
+    transform: scale(0);
     z-index: 1000;
     position: absolute;
     top: 0;
@@ -448,7 +448,7 @@ body {
   main#topo section #logo h1.logotipo {
     font-size: 9px;
     top: 27%;
-    left: 6.8cap;
+    left: 7ch;
   }
   main#topo section nav#navigate {
     display: flex;
@@ -478,14 +478,14 @@ body {
   main#topo img#menu {
     z-index: 1000;
     position: absolute;
-    scale: 0.5;
+    transform: scale(0.5);
     top: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
   }
   main#topo img#fechar {
-    scale: 0;
+    transform: scale(0);
     z-index: 1000;
     position: absolute;
     top: 0;
@@ -752,11 +752,11 @@ body .home section .navegacao ul li a:hover::after {
   left: 0;
 }
 body .home .menu {
-  scale: 0;
+  transform: scale(0);
   visibility: hidden;
 }
 body .home .hidden {
-  scale: 0;
+  transform: scale(0);
   visibility: hidden;
 }
 body .home .compra {
