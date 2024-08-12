@@ -126,7 +126,7 @@ body {
   }
   main#promocao #preto {
     width: 10px;
-    right: 0.4cap;
+    right: 0.4ch;
     bottom: 0.3cap;
   }
   main#lancamentos .produto-lancamento {
@@ -634,7 +634,7 @@ body {
     font-size: 1.5rem;
   }
   main#comunidade section#novidades #div-botao {
-    bottom: 4.7cap;
+    bottom: 6ch;
   }
   main#comunidade footer.rodape h3.direitos {
     width: 150px;
