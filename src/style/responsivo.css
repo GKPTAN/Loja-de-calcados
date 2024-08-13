@@ -582,10 +582,13 @@
   main#pagamentos .metodos #intermediario .meios-online img {
     width: 15%;
   }
-  main#pagamentos .metodos #intermediario .meios-online .branco img, main#pagamentos .metodos #intermediario .meios-online .branco-2 {
+  main#pagamentos .metodos #intermediario .meios-online .branco img {
+    width: 100%;
+  }
+  main#pagamentos .metodos #intermediario .meios-online .branco-2 {
     width: 25%;
   }
-  main#pagamentos .metodos #intermediario .meios-online .branco img, main#pagamentos .metodos #intermediario .meios-online .branco-2 img {
+  main#pagamentos .metodos #intermediario .meios-online .branco-2 img {
     width: 100%;
   }
   main#pagamentos .metodos #meios .metodos-adicionais {
@@ -631,9 +634,30 @@
 }
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   main#topo section #logo h1.logotipo {
-    left: 11vw;
+    left: 10.5vw;
+  }
+  main#topo section nav#navigate ul {
+    gap: 25px;
   }
   main#topo a.compra {
     top: 80%;
+  }
+}
+@media (max-width: 320px) {
+  main#topo a.compra {
+    width: 60%;
+  }
+  main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
+    font-size: 1rem;
+    top: 4%;
+  }
+  main#lancamentos {
+    padding: 10px;
+  }
+  main#destaques {
+    padding: 10px;
+  }
+  main#pagamentos section.metodos div#intermediario div.meios-online div.branco-2 {
+    width: 60%;
   }
 }
