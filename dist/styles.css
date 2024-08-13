@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -642,7 +642,7 @@ body {
 }
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   main#topo section #logo h1.logotipo {
-    left: 9vw;
+    left: 10.5vw;
   }
   main#topo a.compra {
     top: 80%;
