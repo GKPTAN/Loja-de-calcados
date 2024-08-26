@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -1607,6 +1607,14 @@ body .atualizacoes .rodape .direitos {
   -webkit-animation-duration: 1.2s;
 }
 @keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
   from {
     opacity: 0.5;
   }

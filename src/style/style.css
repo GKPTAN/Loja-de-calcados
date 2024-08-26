@@ -941,3 +941,11 @@ body .atualizacoes .rodape .direitos {
     opacity: 1;
   }
 }
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
