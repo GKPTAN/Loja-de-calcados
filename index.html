@@ -65,8 +65,7 @@
           aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil"
           role="banner"
         >
-          <img src="src/icons/logomarca.png" alt="logomarca" id="logomarca" />
-          <h1 class="logotipo " role="heading" aria-level="1">urop</h1>
+          <img src="src/icons/logomarca-atualizada.png" alt="logomarca" id="logomarca" />
         </div>
         <nav class="navegacao nav-hidden" id="navigate" role="navigation">
           <ul role="menu">
@@ -202,35 +201,38 @@
       role="main"
     >
       <section class="oferta" tabindex="0" title="oferta">
-        <span class="esquerda">CH</span>
-        <h2 class="titulo-oferta">Oferta do dia</h2>
-        <span class="direita">no</span>
+        <h2 class="titulo-oferta">
+          <span class="esquerda">CH</span> 
+          Oferta do dia
+          <span class="direita">no</span></h2>
         <hr />
-        <p class="descricao-oferta" tabindex="0">Tênis Adidas Samba Og</p>
+        <div class="descricao-oferta" tabindex="0">
+          <p>Tênis Adidas Samba Og</p>
+          <div class="asterisco">
+            <strong><span style="font-size: 24px">*</span>Aumentar Fonte:</strong>
+            <span class="bottoms">
+              <button id="zoom-up" role="button">
+                <img
+                  class="zoom"
+                  src="src/icons/zoom-in.png"
+                  alt="aumentar fonte"
+                  title="aumentar fonte"
+                />
+              </button>
+              <button id="zoom-down">
+                <img
+                  src="src/icons/zoom-out.png"
+                  alt="diminuir fonte"
+                  title="diminuir fonte"
+                />
+              </button>
+            </span>
+          </div>
+        </div>
         <p class="preco-oferta upFonte" tabindex="0">
           <strong style="font-size: 24px">*</strong>de <del>R$699</del> por
           R$399 ou em 10x de R$40 sem juros
         </p>
-        <span class="asterisco"
-          ><strong
-            ><span style="font-size: 24px">*</span>Aumentar Fonte:</strong
-          ></span
-        >
-        <button id="zoom-up" role="button">
-          <img
-            class="zoom"
-            src="src/icons/zoom-in.png"
-            alt="aumentar fonte"
-            title="aumentar fonte"
-          />
-        </button>
-        <button id="zoom-down">
-          <img
-            src="src/icons/zoom-out.png"
-            alt="diminuir fonte"
-            title="diminuir fonte"
-          />
-        </button>
         <p class="tamanho">
           <label for="tamanho">Tamanho do calçado: </label>
           <input

@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 }
 @media (min-width: 1921px) {
     #topo {
-        background-image: url(364b2df4ecf0ef6f8f30.webp);
+        background-image: url(3d3101fc5b24ccb67d2f.webp);
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
@@ -83,6 +83,7 @@ body {
 }
 @media (max-width: 1440px) {
   main#promocao span.esquerda {
+    top: -1%;
     font-size: 3rem;
   }
   main#promocao span.direita {
@@ -500,7 +501,7 @@ body {
     background-color: rgba(0, 0, 0, 0.233);
   }
   main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   main#promocao section.oferta span.esquerda {
     top: 2.5%;
@@ -517,7 +518,7 @@ body {
   }
   main#promocao section.oferta div.cores {
     width: 80%;
-    padding: 0px 30px;
+    padding: 1rem 30px;
   }
   main#lancamentos h2.titulo-lancamento {
     font-size: 1.5rem;
@@ -652,6 +653,14 @@ body {
   }
   main#topo a.compra {
     top: 80%;
+  }
+}
+@media (max-width: 375px) {
+  main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
+    display: none;
+  }
+  main#promocao section.oferta .titulo-oferta {
+    justify-content: center;
   }
 }
 @media (max-width: 320px) {
@@ -865,7 +874,7 @@ body .oferta-do-dia {
   margin: auto;
   margin-top: 120px;
   margin-bottom: 80px;
-  padding: 20px 0px 20px 20px;
+  padding: 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.363);
   border-bottom: 1px solid rgba(0, 0, 0, 0.363);
   box-shadow: 3px 3px 10px #9b9693;
@@ -897,7 +906,7 @@ body .oferta-do-dia .oferta {
   border-bottom: 1px solid rgba(0, 0, 0, 0.363);
   border-bottom-right-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
-  padding-left: 3px;
+  padding: 2rem 1rem;
 }
 body .oferta-do-dia .oferta::before, body .oferta-do-dia .oferta::after {
   content: "";
@@ -919,38 +928,48 @@ body .oferta-do-dia .oferta::after {
   height: 100%;
 }
 body .oferta-do-dia .oferta .asterisco {
-  position: absolute;
+  /* position: absolute;
   top: 8.8%;
-  left: 75.2%;
+  left: 75.2%; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+body .oferta-do-dia .oferta .asterisco .bottoms {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 body .oferta-do-dia .oferta #zoom-up {
-  position: absolute;
+  /* position: absolute;
   top: 10%;
-  left: 92%;
+  left: 92%; */
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 body .oferta-do-dia .oferta #zoom-down {
-  position: absolute;
+  /* position: absolute;
   top: 10%;
-  left: 95%;
+  left: 95%; */
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 body .oferta-do-dia .oferta .esquerda {
   font-family: "Women and Shoes";
   font-size: 5rem;
-  position: absolute;
+  /* position: absolute;
   top: -0.5%;
-  left: 3%;
+  left: 3%; */
   color: black;
 }
 body .oferta-do-dia .oferta .direita {
   font-family: "Women and Shoes";
   font-size: 5rem;
-  position: absolute;
+  /* position: absolute;
   right: 2%;
-  top: -0.5%;
+  top: -0.5%; */
 }
 body .oferta-do-dia .oferta .titulo-oferta {
   font-family: "Caladea", serif;
@@ -958,19 +977,28 @@ body .oferta-do-dia .oferta .titulo-oferta {
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 body .oferta-do-dia .oferta hr {
   height: 2px;
-  width: 94%;
+  width: 100%;
   background-color: black;
   border: none;
   margin: auto;
   margin-bottom: 10px;
 }
 body .oferta-do-dia .oferta .descricao-oferta {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+body .oferta-do-dia .oferta .descricao-oferta p {
   font-family: "Caladea", serif;
   font-size: 1.5rem;
-  margin-bottom: 5px;
 }
 body .oferta-do-dia .oferta .preco-oferta {
   font-family: "Caladea", serif;
@@ -1016,7 +1044,7 @@ body .oferta-do-dia .oferta .cores {
   justify-content: space-between;
   width: 50%;
   margin: auto;
-  padding: 0px 30px 0px 30px;
+  padding: 1rem 30px 1rem 30px;
 }
 body .oferta-do-dia .oferta .cores #cor-branca {
   width: 30%;
@@ -1040,15 +1068,15 @@ body .oferta-do-dia .oferta .cores #cor-preta img {
 }
 body .oferta-do-dia .oferta .cores #branco {
   position: absolute;
-  left: 6cqi;
-  bottom: 0.6cap;
+  left: 5.8cqi;
+  bottom: 2.5cap;
   width: 20px;
   height: 20px;
 }
 body .oferta-do-dia .oferta .cores #preto {
   position: absolute;
-  right: 3.9cap;
-  bottom: 0.6cap;
+  right: 3.8cap;
+  bottom: 2.5cap;
   width: 20px;
   height: 20px;
 }
@@ -1080,8 +1108,8 @@ body .oferta-do-dia .adicional .slides .slide {
 body .oferta-do-dia .adicional .slides .slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }

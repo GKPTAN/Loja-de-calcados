@@ -72,6 +72,7 @@
 }
 @media (max-width: 1440px) {
   main#promocao span.esquerda {
+    top: -1%;
     font-size: 3rem;
   }
   main#promocao span.direita {
@@ -489,7 +490,7 @@
     background-color: rgba(0, 0, 0, 0.233);
   }
   main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   main#promocao section.oferta span.esquerda {
     top: 2.5%;
@@ -506,7 +507,7 @@
   }
   main#promocao section.oferta div.cores {
     width: 80%;
-    padding: 0px 30px;
+    padding: 1rem 30px;
   }
   main#lancamentos h2.titulo-lancamento {
     font-size: 1.5rem;
@@ -641,6 +642,14 @@
   }
   main#topo a.compra {
     top: 80%;
+  }
+}
+@media (max-width: 375px) {
+  main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
+    display: none;
+  }
+  main#promocao section.oferta .titulo-oferta {
+    justify-content: center;
   }
 }
 @media (max-width: 320px) {
