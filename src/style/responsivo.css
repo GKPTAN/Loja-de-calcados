@@ -490,17 +490,11 @@
     background-color: rgba(0, 0, 0, 0.233);
   }
   main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
-    font-size: 1.8rem;
-  }
-  main#promocao section.oferta span.esquerda {
-    top: 2.5%;
-  }
-  main#promocao section.oferta span.direita {
-    top: 2.5%;
-    right: 2.5%;
+    display: none;
   }
   main#promocao section.oferta h2.titulo-oferta {
     font-size: 1.5rem;
+    justify-content: center;
   }
   main#promocao section.oferta p.tamanho input[type="number"] {
     width: 10%;
@@ -644,21 +638,9 @@
     top: 80%;
   }
 }
-@media (max-width: 375px) {
-  main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
-    display: none;
-  }
-  main#promocao section.oferta .titulo-oferta {
-    justify-content: center;
-  }
-}
 @media (max-width: 320px) {
   main#topo a.compra {
     width: 60%;
-  }
-  main#promocao section.oferta span.esquerda, main#promocao section.oferta span.direita {
-    font-size: 1rem;
-    top: 4%;
   }
   main#lancamentos {
     padding: 10px;
