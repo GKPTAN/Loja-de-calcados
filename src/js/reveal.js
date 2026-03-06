@@ -1,14 +1,14 @@
-window.revelar = ScrollReveal({ reset: false });
+window.revelar = ScrollReveal({ reset: false }); //Inicializa o ScrollReveal, reset tem o valor false para que o efeito ocorra apenas uma vez
 
 revelar.reveal(".efeito-reveal-oferta", {
-  duration: 2000,
-  distance: "90px",
-  afterReveal: function (el) {
-    const videoOferta = document.getElementById("video-oferta");
-    const oferta = document.getElementById("promocao");
-    oferta.addEventListener("mouseover", () => {
-      if (videoOferta) {
-        videoOferta.muted = true;
+  duration: 2000, //duração do efeito em ms
+  distance: "90px", //distância do efeito
+  afterReveal: function (el) { //função executada após o efeito de revelação
+    const videoOferta = document.getElementById("video-oferta"); //pegamos o video da seção "oferta do dia"
+    const oferta = document.getElementById("promocao"); //pegamos o elemento que contém o video
+    oferta.addEventListener("mouseover", () => { //quando o mouse passar por cima do elemento
+      if (videoOferta) { //verificamos se o video existe
+        videoOferta.muted = true; //colocamos o video no mudo, pois o navegador bloqueia a reprodução automática de videos com som
         videoOferta
           .play()
           .then(() => {
@@ -18,7 +18,7 @@ revelar.reveal(".efeito-reveal-oferta", {
 
               videoOferta.removeEventListener("click", unmuteVideo);
             });
-          })
+          }) //quando o video recebe um clique, o som é ativado e os controles do video são exibidos
           .catch((error) => {
             console.error("falha ao reproduzir o video", error);
           });
@@ -27,21 +27,21 @@ revelar.reveal(".efeito-reveal-oferta", {
 
     oferta.addEventListener("mouseout", () => {
       videoOferta.pause();
-    });
+    }); //quando o mouse sai de cima do elemento, o video é pausado
   },
 });
 
 revelar.reveal(".efeito-reveal-lancamentos", {
   duration: 2000,
   distance: "90px",
-  origin: "bottom",
+  origin: "bottom", //origem do efeito, com "bottom" sobe de baixo para cima
 });
 
 revelar.reveal(".efeito-reveal-produto1", {
   duration: 2000,
   distance: "90px",
-  delay: 500,
-  easing: "ease-out",
+  delay: 500, //atraso antes do início do efeito
+  easing: "ease-out", //tipo de aceleração do efeito
 });
 
 revelar.reveal(".efeito-reveal-produto2", {
@@ -327,7 +327,7 @@ revelar.reveal(".efeito-reveal-cartoes", {
   duration: 2000,
   distance: "90px",
   delay: 500,
-  scale: 0.7,
+  scale: 0.7, //escala do efeito, 0.7 reduz o tamanho inicial para 70%
 });
 
 revelar.reveal(".efeito-reveal-intermediario", {
@@ -347,7 +347,7 @@ revelar.reveal(".efeito-reveal-meios", {
 revelar.reveal(".efeito-vertical-depoimentos", {
   duration: 2000,
   distance: "90px",
-  interval: 1000,
+  interval: 1000, //intervalo de 1 segundo entre os elementos revelados
 });
 
 revelar.reveal(".efeito-reveal-depoimentos", {
@@ -357,7 +357,7 @@ revelar.reveal(".efeito-reveal-depoimentos", {
   rotate: {
     x: 220,
     z: 70,
-  },
+  }, //adiciona uma rotação ao efeito de revelação, x para rotação horizontal e z para rotação em profundidade
 });
 
 revelar.reveal(".efeito-reveal-comunidade", {

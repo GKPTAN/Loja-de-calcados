@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO PALAVRAS CHAVES: melhorar o ranqueamento do site no navegador, baseado nas pesquisas dos usuários -->
     <meta
       name="description"
       content="Compre calçados de qualidade na nossa loja online. Oferecemos tênis, sapatos sociais, ofertas especiais, lançamentos e muito mais. Experimente o conforto e estilo dos nossos produtos."
-    />
+    /> <!-- descrição do site -->
     <meta
       name="keywords"
       content="calçados, tênis, sapatos sociais, ofertas, lançamentos, compra online, moda, estilo"
-    />
+    /> <!-- palvras chaves -->
     <link rel="shortcut icon" href="src/favicon/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,9 +38,9 @@
     <link rel="preload" href="dist/styles.css" as="style" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="preload" href="dist/bundle.js" as="script" />
-    <script src="https://unpkg.com/scrollreveal" defer></script>
-    <script src="src/js/reveal.js" defer></script>
-    <script src="dist/bundle.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script> <!-- Código do Scroll Reveal-->
+    <script src="src/js/reveal.js" defer></script> <!-- O atributo defer faz o script ser baixado em paralelo com o arquivo html, mas o script só é executado depois que todo o documento html carregar -->
+    <script src="dist/bundle.js" defer></script> <!-- no caso do Scroll Reveal, ele espera o documento HTML ficar completamente carregado, para depois executar a animação -->
     <title>Europe</title>
     <style>
       main#topo {
@@ -58,15 +59,17 @@
   <body>
     <main class="home" id="topo" style="background-image: url(dist/8f7d13baffe4cfe5801a.webp); @media (max-width: 1921px) {background-image: url(dist/364b2df4ecf0ef6f8f30.webp); @media (max-width: 425px) {background-image: url(src/image/responsivo-425px.webp);}}">
       <section>
+        <!-- LOGOMARCA DA LOJA -->
         <div
           class="logo"
           id="logo"
           tabindex="0"
           aria-label="bem vindo a loja Európe, a loja de calçados número 1 do brasil"
           role="banner"
-        >
+        > 
           <img src="src/icons/logomarca-atualizada.png" alt="logomarca" id="logomarca" />
-        </div>
+        </div> 
+        <!-- MENU -->
         <nav class="navegacao nav-hidden" id="navigate" role="navigation">
           <ul role="menu">
             <li role="none">
@@ -125,7 +128,7 @@
               >
             </li>
           </ul>
-        </nav>
+        </nav> 
       </section>
       <img
         src="src/icons/menu.png"
@@ -150,6 +153,7 @@
         >Compre agora seus sapatos!</a
       >
     </main>
+    <!-- MENU DE NAVEGAÇÃO DA LOJA -->
     <nav
       class="rotas"
       id="navbar"
@@ -192,7 +196,7 @@
           <a href="#comunidade" id="comunidade-nav" tabindex="0">Comunidade</a>
         </li>
       </ul>
-    </nav>
+    </nav> 
     <main
       class="oferta-do-dia efeito-reveal-oferta"
       id="promocao"
@@ -200,14 +204,17 @@
       title="oferta do dia"
       role="main"
     >
+      <!-- SEÇÃO OFERTA DO DIA-->
       <section class="oferta" tabindex="0" title="oferta">
         <h2 class="titulo-oferta">
           <span class="esquerda">CH</span> 
           Oferta do dia
           <span class="direita">no</span></h2>
         <hr />
+        <!-- DESCRIÇÃO DA OFERTA -->
         <div class="descricao-oferta" tabindex="0">
           <p>Tênis Adidas Samba Og</p>
+          <!-- OPÇÃO DE AUMENTAR OU DIMINUIR FONTE -->
           <div class="asterisco">
             <strong><span style="font-size: 24px">*</span>Aumentar Fonte:</strong>
             <span class="bottoms">
@@ -266,6 +273,7 @@
         </video>
         <h3 class="escolha-cor">Escolha a sua cor</h3>
         <hr class="abaixo" role="separator" />
+        <!-- ESCOLHA DE CORES -->
         <div class="cores" role="radiogroup">
           <div id="cor-branca">
             <img
@@ -303,6 +311,7 @@
           </div>
         </div>
       </section>
+      <!-- CARROSSEL DE IMAGENS DO PRODUTO -->
       <section
         class="adicional"
         id="carrossel"
@@ -376,7 +385,8 @@
           role="button"
         />
       </section>
-    </main>
+    </main> 
+    <!-- SEÇÃO DE LANÇAMENTOS-->
     <main
       class="lancamentos efeito-reveal-lancamentos"
       id="lancamentos"
@@ -514,6 +524,7 @@
         >Ir direto pra loja</a
       >
     </main>
+    <!-- SEÇÃO DE DESTAQUES -->
     <main
       class="destaques efeito-reveal-destaques"
       id="destaques"
@@ -648,6 +659,7 @@
         >Ir direto pra loja</a
       >
     </main>
+    <!-- MÉTODOS DE PAGAMENTO -->
     <main
       class="pagamento efeito-reveal-pagamento"
       id="pagamentos"
@@ -768,6 +780,7 @@
         </div>
       </section>
     </main>
+    <!-- DEPOIMENTOS -->
     <main
       class="depoimentos efeito-reveal-depoimentos"
       id="depoimentos"
@@ -777,6 +790,7 @@
     >
       <h2 class="titulo-depoimentos">Depoimentos dos nossos clientes</h2>
       <section class="avaliacoes" role="main">
+        <!-- DEPOIMENTO -->
         <article
           class="depoimento"
           id="depoimento1"
@@ -863,6 +877,7 @@
         </article>
       </section>
     </main>
+    <!-- SEÇÃO DE MAIS INFORMAÇÕES -->
     <main
       class="atualizacoes"
       id="comunidade"
@@ -884,6 +899,7 @@
           Receba atualizações sobre novos produtos, ofertas exclusivas e muito
           mais diretamente no seu e-mail.
         </p>
+        <!-- OPÇÃO PARA COLOCAR E-MAIL -->
         <input
           type="email"
           name="emails"
@@ -900,6 +916,7 @@
           </button>
         </div>
       </section>
+      <!-- CRÉDITOS DOS CONTRIBUIDORES EXTERNOS RELACIONADOS INDIRETAMENTE NO PROJETO -->
       <section
         class="creditos"
         tabindex="0"
@@ -1046,19 +1063,20 @@
       </footer>
     </main>
     <script>
-      function mudarReveal() {
+      function mudarReveal() { // essa função serve para mudar o efeito de revelação da seção de depoimentos quando a tela é menor que 820px, pois o efeito de giro faz essa seção ficar em 90°, o que faz ele ultrapassar a largura da janela.
+        // e quando ele é revelado, o espaço que sobra ainda permanece, talvez tenha outra maneira de resolver isso, se me der uma dica, agradeço.
         console.log("função está sendo chamada");
         if (window.innerWidth <= 820) {
           console.log(
             "condição atendida, largura da janela: ",
             window.innerWidth
           );
-          const depoimentos = document.getElementById("depoimentos");
+          const depoimentos = document.getElementById("depoimentos"); // PEGAMOS A SEÇÃO DE DEPOIMENTOS
           if (depoimentos) {
             console.log("elemento com o id depoimentos encontrado");
-            depoimentos.classList.remove("efeito-reveal-depoimentos");
+            depoimentos.classList.remove("efeito-reveal-depoimentos"); // REMOVEMOS O EFEITO DE GIRO
             console.log("classe removida do elemento");
-            depoimentos.classList.add("efeito-vertical-depoimentos");
+            depoimentos.classList.add("efeito-vertical-depoimentos"); //ADICIONAMOS O EFEITO DE FADE-IN
             console.log(
               "classe adicionada no elemento: ",
               depoimentos.classList

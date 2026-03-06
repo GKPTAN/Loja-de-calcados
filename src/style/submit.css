@@ -1,11 +1,11 @@
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; /* Permite controlar as variações de fonte em fontes variáveis */
   color: green;
   background-color: black;
   padding: 10px;
   border-radius: 50%;
   border: 2px solid green;
-  outline: none;
+  outline: none; /* É UMA LINHA AO REDOR DO ELEMENTO, GERALMENTE USADA PARA DESTACAR O FOCO EM CASOS DE ACESSIBILIDADE */
   cursor: pointer;
   opacity: 1;
   transition: all 0.3s ease-in-out;
@@ -15,6 +15,7 @@
   background-color: green;
   color: white;
 }
+/* BOTÃO DE CONFIRMAÇÃO DO E-MAIL */
 .onclic {
   width: 48px;
   height: 48px;
@@ -32,6 +33,7 @@
 .onclic::after {
   content: "";
 }
+/* QUANDO O E-MAIL É CONFIRMADO, MUDAMOS A VISUAL */
 .validate {
   width: 48px;
   height: 48px;
