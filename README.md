@@ -7,3 +7,6 @@
 ![Inicio do Site](/src/image/ShoesStore.png)
 
 * [Ver o site do projeto](https://gkptan.github.io/Loja-de-calcados/)
+
+## Estrutura do projeto
+
